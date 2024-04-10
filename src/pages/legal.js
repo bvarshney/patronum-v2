@@ -34,7 +34,7 @@ export default function Legal() {
         <>
             <PageLayout
                 pageTitle1="Legal"
-                pagePara="The only tool you'll ever need to streamline your Google Workspace management."
+                pagePara="Navigate & Understand Your Rights with Patronum"
                 imgSrc="legal.svg"
                 title={"Legal - Patronum"}
                 description={"Patronum provides a better way to Google Workspace (GSuite) Management. Patronum fully automates all the administrator and user tasks to ensure an efficient, effective and secure process."}
@@ -51,16 +51,16 @@ export default function Legal() {
                             <div className="lg:flex items-start justify-between">
                                 <h2 className="title-4xl text-anim">
                                     <span>
-                                        Lorem
+                                        Patronum 
                                     </span>
                                     <br />
                                     <span>
-                                        Lorem Ipsum
+                                        Legal Hub
                                     </span>
                                 </h2>
                                 <p className="content-p lg:w-1/3 w-[95%] lg:mt-[1vw] mt-[5vw] text-anim-2">
                                     <span>
-                                        Transform your Google Workspace experience with Patronum, the ultimate solution to your onboarding nightmares, permission hassles, and data compliance woes. Patronum is designed to streamline the management of Google Workspace.
+                                        Stay informed about your rights and responsibilities as a Patronum user with comprehensive access to our terms of use, privacy policies, compliance documentation, and legal disclaimers.
                                     </span>
                                 </p>
                             </div>

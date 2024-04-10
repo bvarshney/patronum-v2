@@ -87,7 +87,7 @@ export default function FeatureDetail(){
             <PageLayout
                 pageTitle1={'Google Drive'} 
                 pageTitle2={'Management'}
-                pagePara={"The only tool you'll ever need to streamline your Google Workspace management."} 
+                pagePara={"Get Better Control Over Users Google Drive Files & Folders."} 
                 imgSrc={'google-drive-management.svg'}
                 title={"Google Drive management with Patronum"}
                 description={"Google drive management allows IT, administrators, to see Google Drive in a whole new way. Patronum will help you manage Google Drive and make it feel like a local filesystem that will give you all the control and power."}

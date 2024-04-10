@@ -42,7 +42,7 @@ const PricingCard = ({ category, isAnnual, selectedCurrency, pricingImage }) => 
       </p>
       <p className='pricing-type'>{isAnnual ? '/Annually' : '/Monthly'}</p>
       <div className='pricing-link'>
-        <a href="#" className="link-btn">
+        <a href="/pricing" className="link-btn">
           <span className="btn-text">Get Started</span>
             <span className="btn-images">
                 <div>

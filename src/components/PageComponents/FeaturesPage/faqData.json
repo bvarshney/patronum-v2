@@ -350,6 +350,46 @@
         ]
     },
     {
+        "feature": "google_drive_management",
+        "faqs": [
+            {
+                "id": "01",
+                "title": "How does Patronum's Organizational Chart improve understanding of company structure?",
+                "content": "Patronum's Organizational Chart offers a visual representation of your company's hierarchy, making it easy to see how teams and departments are structured. It simplifies understanding the organizational layout, helping employees recognize their place within the company and how different roles interconnect, thus enhancing organizational clarity and coherence."
+              },
+              {
+                "id": "02",
+                "title": "Can I find employees based on specific skills or languages using Patronum?",
+                "content": "Yes, with Patronum's custom schema feature, you can quickly locate employees based on specific attributes, including skills, languages, or qualifications. This functionality allows for efficient searching within the Google Directory, making it easier to find the right person for specific tasks or projects."
+              },
+              {
+                "id": "03",
+                "title": "Is Patronum's Organizational Chart easy for all employees to use?",
+                "content": "Absolutely. Patronum is designed using Google Material Design, mirroring the familiar Google Workspace interface. This design choice ensures that the experience is highly intuitive, requiring minimal to no learning curve for users, thereby making it accessible to everyone in the organization."
+              },
+              {
+                "id": "04",
+                "title": "How can I view direct reporting structures within my organization using Patronum?",
+                "content": "Patronum enables you to view direct reports clearly within the organizational chart. This feature provides a straightforward view of who reports to whom across the organization, essential for managing teams and understanding reporting lines."
+              },
+              {
+                "id": "05",
+                "title": "How does Patronum facilitate unlocking talent within the organization?",
+                "content": "Patronum's search capability within the Google Directory allows you to uncover and leverage the diverse talents within your organization. By searching for specific skills, languages, or qualifications, you can identify employees who best fit the needs of particular tasks or roles, thus optimizing your workforce's potential."
+              },
+              {
+                "id": "06",
+                "title": "How does Patronum enhance collaboration within the organization?",
+                "content": "Patronum enhances collaboration by making it easier to connect with colleagues. You can search for a user within your organization and contact them via phone, email, or Google Meet directly through Patronum. This feature streamlines communication and fosters a more collaborative environment."
+              },
+              {
+                "id": "07",
+                "title": "Will Patronum's Organizational Chart integrate smoothly with our existing Google Workspace setup?",
+                "content": "Yes, Patronum is designed to integrate seamlessly with Google Workspace. Its use of Google Material Design ensures that it fits naturally within the Google ecosystem, providing a consistent user experience without disrupting your existing workspace setup."
+              }
+        ]
+    },
+    {
         "feature": "use_cases",
         "faqs": [
             {

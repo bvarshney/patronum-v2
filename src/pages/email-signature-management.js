@@ -57,7 +57,7 @@ export default function FeatureDetail(){
         {
             id: '01',
             title: 'Multiple Google Workspace email signatures',
-            para: ": Manage versatile email signatures tailored to various roles or departments, enhancing your organization's communication flexibility.",
+            para: "Manage versatile email signatures tailored to various roles or departments, enhancing your organization's communication flexibility.",
             img: "/assets/features/email-signature-management/detail-1.svg",
         },
         {

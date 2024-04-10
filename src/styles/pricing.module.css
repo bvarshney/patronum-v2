@@ -34,11 +34,8 @@
     color: #2A2A2A;
     font-size: 1.25vw;
     line-height: 2.5;
-}
-.featureList h4::before{
-    content: "✓";
-    font-size: 1vw;
-    margin-right: 1vw;
+    display: flex;
+    gap: 1vw;
 }
 .pricingPrice{
     color: #1a1a1a;
@@ -139,11 +136,9 @@
   }
   .featureList h4{
     font-size: 4.5vw;
+    gap: 2vw;
   }
-  .featureList h4:before{
-    font-size: 3.5vw;
-    margin-right: 4vw;
-  }
+
   .pricingCategory{
     font-size: 7vw;
     margin-bottom: 4vw;

@@ -18,25 +18,28 @@ const Pricing = () => {
       // Features for each category
     const features = {
         Education: [
-          'Basic Seo Tools',
-          'Unlock Campaign Features',
-          'Limited Keywords',
-          'Advance AI Features',
-          'Advance Support'
+          'Email Signature Management',
+          'Google Drive Management',
+          'Contact Sharing',
+          'Automated File Unsharing',
+          'Organisations Chart',
+          'Special Pricing for Backup Add-On'
         ],
         'Non-Profit': [
-          'Basic Seo Tools',
-          'Unlock Campaign Features',
-          'Limited Keywords',
-          'Advance AI Features',
-          'Advance Support'
+          'Email Signature Management',
+          'Google Drive Management',
+          'Contact Sharing',
+          'Automated File Unsharing',
+          'Organisations Chart',
+          'Backup Add-On at 3$/user/month'
         ],
         Business: [
-          'Basic Seo Tools',
-          'Unlock Campaign Features',
-          'Limited Keywords',
-          'Advance AI Features',
-          'Advance Support'
+          'Email Signature Management',
+          'Google Drive Management',
+          'Contact Sharing',
+          'Automated File Unsharing',
+          'Organisations Chart',
+          'Backup Add-On at 3$/user/month'
         ]
       };
 

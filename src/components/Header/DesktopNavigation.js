@@ -150,7 +150,7 @@ const DesktopNavigation = () => {
                                             <NavItem 
                                                 title={'For IT Admins'}
                                                 disc={'Administrate Smarter, Not Harder'}
-                                                link={'/patronum-for-it-admins'}
+                                                link={'#'}
                                                 img={'for-it-admins.svg'}
                                             />
                                         </ul>

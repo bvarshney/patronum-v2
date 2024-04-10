@@ -45,7 +45,7 @@ const useCasesData = [
         para1: "Patronum redefines the role of IT Administrators in Google Workspace management by offering a suite of tools that automate and simplify complex tasks. From user provisioning to meticulous security configurations and reliable data backups, it covers all bases, liberating IT staff from the trenches of day-to-day management.",
         para2: "This allows for a shift in focus to strategic initiatives that foster innovation and growth. As a nexus of control and efficiency, Patronum provides a safer, more organized digital environment, empowering IT Admins with the capability to preemptively address challenges and support a thriving digital ecosystem.",
         img: "/assets/home/patronum-for-it-admins.svg",
-        link: "/patronum-for-it-admins"
+        link: "#"
     },
 ];
 
@@ -54,9 +54,9 @@ export default function useCases(){
     return (
         <>
             <PageLayout 
-                pageTitle1={'Address Challenges'} 
-                pageTitle2={'Across Your Organisation'}
-                pagePara={"The only tool you'll ever need to streamline your Google Workspace management."} 
+                pageTitle1={'Unlocking Efficiency'} 
+                pageTitle2={'Across Departments'}
+                pagePara={"Break Barriers, Build Bridges & Harness the Full Potential of Google Workspace Across Your Organization"} 
                 imgSrc={'useCases.svg'}
                 title={"Patronum - One stop destination for G Suite management"}
                 description={"With the help of Patronum, you can save time by avoiding those monotonous and repetitive tasks. Patronum will help with G Suite management in whichever field you are in be it IT, HR, Marketing, Sales, Users or Education."}

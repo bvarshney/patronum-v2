@@ -95,7 +95,7 @@ export default function FeatureDetail(){
             <PageLayout
                 pageTitle1={'Google Workspace'} 
                 pageTitle2={'Backup'}
-                pagePara={"The only tool you'll ever need to streamline your Google Workspace management."} 
+                pagePara={"Best-in-Class Full Fidelity Backups"} 
                 imgSrc={'google-workspace-backup.svg'}
                 title={"Google Backup with Patronum"}
                 description={"Google Workspace contact sharing lets the users use Google Backup, which helps store information about users, groups, and external contacts."}
@@ -140,8 +140,8 @@ export default function FeatureDetail(){
                     <div className="container">
                         <div className="content">
                             <SectionTitle 
-                                sectionTitle1="Additional User Lifecycle"
-                                sectionTitle2="Management Features"
+                                sectionTitle1="Additional Google"
+                                sectionTitle2="Workspace Backup Features"
                             />
 
                             <div className="feature-detail-card-wrapper">

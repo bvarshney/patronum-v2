@@ -226,7 +226,7 @@ export default function About(){
                                 <SectionTitle 
                                     sectionTitle1='Featured By Top' 
                                     sectionTitle2= "Media Publications" 
-                                    sectionPara="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text." 
+                                    sectionPara="Patronum has been recognized for its innovation and impact in the Google Workspace, as featured in leading media publications."
                                 />
                             </div>
                             <div className="media-logos fadeUp">

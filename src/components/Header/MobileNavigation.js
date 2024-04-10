@@ -242,7 +242,7 @@ const MobileNavigation = ({ isOpen, setSideNavOpen }) => {
                                 </Link>
                             </li>
                             <li className=''>
-                                <Link href='/patronum-for-it-admins' className='py-2 px-4 rounded flex gap-4 items-center' aria-label='Use Cases - For IT Admins' >
+                                <Link href='#' className='py-2 px-4 rounded flex gap-4 items-center' aria-label='Use Cases - For IT Admins' >
                                     <div className='w-[4rem] h-[4rem] p-4 bg-head flex justify-center items-center rounded-full overflow-hidden'>
                                         <img loading='lazy' src='/assets/menu/for-it-admins.svg' alt='use case icon'/>
                                     </div>
