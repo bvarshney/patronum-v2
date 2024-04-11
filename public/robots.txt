@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://patronum.io/sitemap_index.xml
+Sitemap: https://www.patronum.io/sitemap_index.xml

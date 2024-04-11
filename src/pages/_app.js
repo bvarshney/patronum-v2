@@ -138,8 +138,8 @@ export default function App({ Component, pageProps, router }) {
             {
               "@context": "https://schema.org",
               "@type": "ImageObject",
-              "@id": "https://patronum.io/assets/seo/Google-Workspace.png",
-              "url": "https://patronum.io/assets/seo/Google-Workspace.png",
+              "@id": "https://www.patronum.io/assets/seo/Google-Workspace.png",
+              "url": "https://www.patronum.io/assets/seo/Google-Workspace.png",
               "width": "1295",
               "height": "594",
               "inLanguage": "en-US"

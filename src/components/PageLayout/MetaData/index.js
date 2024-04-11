@@ -8,12 +8,12 @@ export default function MetaData({ title, description, url, img, date_published,
                 title={title}
                 description={description}
                 openGraph={{
-                    url: `https://patronum.io/${url}`,
+                    url: `https://www.patronum.io/${url}`,
                     title: `${title}`,
                     "description": `${description}`,
                     images: [
                         {
-                        url: `https://patronum.io/assets/seo/${img}`,
+                        url: `https://www.patronum.io/assets/seo/${img}`,
                         width: 1290,
                         height: 594,
                         alt: "Patronum",
@@ -34,13 +34,13 @@ export default function MetaData({ title, description, url, img, date_published,
                     },
                     {
                     name: "twitter:image",
-                    content: `https://patronum.io/assets/seo/${img}`
+                    content: `https://www.patronum.io/assets/seo/${img}`
                     },
                 ]}
             />
             <Head>
-                <link rel="canonical" href={`https://patronum.io/${url}`} />
-                <link rel="alternate" href={`https://patronum.io/${url}`} hreflang="x-default"/>
+                <link rel="canonical" href={`https://www.patronum.io/${url}`} />
+                <link rel="alternate" href={`https://www.patronum.io/${url}`} hreflang="x-default"/>
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{
@@ -48,8 +48,8 @@ export default function MetaData({ title, description, url, img, date_published,
                         {
                             "@context": "https://schema.org",
                             "@type": "WebPage",
-                            "@id": `https://patronum.io/${url}#webpage`,
-                            "url": `https://patronum.io/${url}`,
+                            "@id": `https://www.patronum.io/${url}#webpage`,
+                            "url": `https://www.patronum.io/${url}`,
                             "name": `${title}`,
                             "description": `${description}`,
                             "datePublished": `${date_published}:00+00:00`,
@@ -59,7 +59,7 @@ export default function MetaData({ title, description, url, img, date_published,
                             "name": "Patronum",
                             "logo": {
                                 "@type": "ImageObject",
-                                "url": "https://patronum.io/logo.svg",
+                                "url": "https://www.patronum.io/logo.svg",
                             }
                             },
                             "about": {
@@ -85,7 +85,7 @@ export default function MetaData({ title, description, url, img, date_published,
                             "@id": `https://www.patronum.io/${url}#richSnippet`,
                             "datePublished": `${date_published}:00+00:00`,
                             "dateModified": `${date_modified}:00+00:00`,
-                            "url": `https://patronum.io/${url}`,
+                            "url": `https://www.patronum.io/${url}`,
                             "name": `${title}`,
                             "description": `${description}`,
                             "author": {
@@ -99,7 +99,7 @@ export default function MetaData({ title, description, url, img, date_published,
                                 "@id": `https://www.patronum.io/${url}#webpage`
                             },
                             "image" : {
-                                "@id" : `https://patronum.io/assets/seo/${img}`,
+                                "@id" : `https://www.patronum.io/assets/seo/${img}`,
                             },
                             "isPartOf" : {
                                 "@id" : `https://www.patronum.io/${url}#website`

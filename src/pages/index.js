@@ -240,12 +240,12 @@ export default function Home( { recentPosts } ) {
         title="Patronum - Best Platform for Google Workspace (GSuite) Management"
         description="Patronum provides a better way to Google Workspace (GSuite) Management. Patronum fully automates all the administrator and user tasks to ensure an efficient, effective and secure process."
         openGraph={{
-          url: "https://patronum.io",
+          url: "https://www.patronum.io",
           title: "Patronum - Best Platform for Google Workspace (GSuite) Management",
           "description": "Patronum provides a better way to Google Workspace (GSuite) Management. Patronum fully automates all the administrator and user tasks to ensure an efficient, effective and secure process.",
           images: [
             {
-              url: "https://patronum.io/assets/seo/Google-Workspace.png",
+              url: "https://www.patronum.io/assets/seo/Google-Workspace.png",
               width: 1290,
               height: 594,
               alt: "Patronum",
@@ -266,13 +266,13 @@ export default function Home( { recentPosts } ) {
             },
             {
               name: "twitter:image",
-              content: "https://patronum.io/assets/seo/Google-Workspace.png"
+              content: "https://www.patronum.io/assets/seo/Google-Workspace.png"
             },
           ]}
         />
     <Head>
-      <link rel="canonical" href="https://patronum.io" />
-      <link rel="alternate" href="https://patronum.io" hreflang="x-default" />
+      <link rel="canonical" href="https://www.patronum.io" />
+      <link rel="alternate" href="https://www.patronum.io" hreflang="x-default" />
       <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -280,8 +280,8 @@ export default function Home( { recentPosts } ) {
               {
                 "@context": "https://schema.org",
                 "@type": "WebPage",
-                "@id": "https://patronum.io/#webpage",
-                "url": "https://patronum.io",
+                "@id": "https://www.patronum.io/#webpage",
+                "url": "https://www.patronum.io",
                 "name": "Patronum - Best Platform for Google Workspace (GSuite) Management",
                 "description": "Patronum provides a better way to Google Workspace (GSuite) Management. Patronum fully automates all the administrator and user tasks to ensure an efficient, effective and secure process.",
                 "datePublished": "2020-12-21T12:01:00+00:00",
@@ -291,7 +291,7 @@ export default function Home( { recentPosts } ) {
                   "name": "Patronum",
                   "logo": {
                     "@type": "ImageObject",
-                    "url": "https://patronum.io/logo.svg",
+                    "url": "https://www.patronum.io/logo.svg",
                   }
                 },
                 "about": {
@@ -317,7 +317,7 @@ export default function Home( { recentPosts } ) {
                 "@id": "https://www.patronum.io/#richSnippet",
                 "datePublished": "2020-12-21T12:01:00+00:00",
                 "dateModified": "2024-04-04T12:00:00+00:00",
-                "url": "https://patronum.io",
+                "url": "https://www.patronum.io",
                 "name": "Patronum - Best Platform for Google Workspace (GSuite) Management",
                 "description": "Patronum provides a better way to Google Workspace (GSuite) Management. Patronum fully automates all the administrator and user tasks to ensure an efficient, effective and secure process.",
                 "author": {
@@ -331,7 +331,7 @@ export default function Home( { recentPosts } ) {
                   "@id": "https://www.patronum.io/#webpage"
                 },
                 "image" : {
-                  "@id" : "https://patronum.io/assets/seo/Google-Workspace.png",
+                  "@id" : "https://www.patronum.io/assets/seo/Google-Workspace.png",
                 },
                 "isPartOf" : {
                   "@id" : "https://www.patronum.io/#website"

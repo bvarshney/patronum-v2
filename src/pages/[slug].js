@@ -171,7 +171,7 @@ return (
                     publishedTime: post.date,
                     modifiedTime: post.modified,
                   },
-                  url: `https://patronum.io/${post.slug}`,
+                  url: `https://www.patronum.io/${post.slug}`,
                   title: post.seo.title,
                   "description": post.seo.description,
                   images: [
@@ -202,8 +202,8 @@ return (
                 ]}
             />
             <Head>
-                <link rel="canonical" href={`https://patronum.io/${post.slug}`} />
-                <link rel="alternate" href={`https://patronum.io/${post.slug}`} hreflang="x-default"/>
+                <link rel="canonical" href={`https://www.patronum.io/${post.slug}`} />
+                <link rel="alternate" href={`https://www.patronum.io/${post.slug}`} hreflang="x-default"/>
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{
@@ -211,8 +211,8 @@ return (
                         {
                             "@context": "https://schema.org",
                             "@type": "WebPage",
-                            "@id": `https://patronum.io/${post.slug}#webpage`,
-                            "url": `https://patronum.io/${post.slug}`,
+                            "@id": `https://www.patronum.io/${post.slug}#webpage`,
+                            "url": `https://www.patronum.io/${post.slug}`,
                             "name": post.seo.title,
                             "description": post.seo.description,
                             "datePublished": post.date,
@@ -222,14 +222,14 @@ return (
                             "name": "Patronum",
                             "logo": {
                                 "@type": "ImageObject",
-                                "url": "https://patronum.io/logo.svg",
+                                "url": "https://www.patronum.io/logo.svg",
                             }
                             },
                             "about": {
-                                "@id": `https://www.patronum.io/${post.slug}#organization`
+                                "@id": `https://www.www.patronum.io/${post.slug}#organization`
                             },
                             "isPartOf" : {
-                                "@id" : `https://www.patronum.io/${post.slug}#website`
+                                "@id" : `https://www.www.patronum.io/${post.slug}#website`
                             },
                             "inLanguage": "en_US",
                         }
@@ -257,7 +257,7 @@ return (
                             "name": post.seo.title,
                             "description": post.seo.description,
                             "@id": `https://www.patronum.io/${post.slug}#richSnippet`,
-                            "url": `https://patronum.io/${post.slug}`,
+                            "url": `https://www.patronum.io/${post.slug}`,
                             "isPartOf" : {
                                 "@id" : `https://www.patronum.io/${post.slug}#website`
                             },

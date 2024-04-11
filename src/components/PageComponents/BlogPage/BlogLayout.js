@@ -62,22 +62,22 @@ export default function BlogLayout( { children, postTitle, postAuthor, postDate,
                                     <p>Share Article</p>
                                     <div className="flex items-start justify-center lg:gap-[1vw] md:gap-[2vw] gap-[3vw]">
                                       <FacebookShareButton 
-                                          url={`https://patronum.io/${shareLink}`} 
-                                          quote={'Read more articles like this on our website - https://patronum.io'} 
+                                          url={`https://www.patronum.io/${shareLink}`} 
+                                          quote={'Read more articles like this on our website - https://www.patronum.io'} 
                                           hashtag={'#patronum'}
                                           >
                                           <img className="lg:w-[1.8vw] md:w-[2.8vw] w-[6vw]" src="/assets/icons/facebook.webp" alt="social icon" />
                                       </FacebookShareButton>
                                               
                                       <LinkedinShareButton 
-                                          url={`https://patronum.io/${shareLink}`} 
+                                          url={`https://www.patronum.io/${shareLink}`} 
                                           hashtag={'#patronum'}
                                           >
                                           <img className="lg:w-[1.8vw] md:w-[2.8vw] w-[6vw]" src="/assets/icons/linkedin.webp" alt="social icon" />
                                       </LinkedinShareButton>
                       
                                       <TwitterShareButton 
-                                          url={`https://patronum.io/${shareLink}`} 
+                                          url={`https://www.patronum.io/${shareLink}`} 
                                           title={postTitle}
                                           hashtag={'#patronum'}
                                           >
@@ -86,7 +86,7 @@ export default function BlogLayout( { children, postTitle, postAuthor, postDate,
                                       </TwitterShareButton>
 
                                       <WhatsappShareButton
-                                          url={`https://patronum.io/${shareLink}`} 
+                                          url={`https://www.patronum.io/${shareLink}`} 
                                           title={postTitle}
                                           hashtag={'#patronum'}
                                           >
