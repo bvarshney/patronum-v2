@@ -7,7 +7,7 @@ export default function Contact() {
         <>
             <PageLayout
                 pageTitle1={'Contact Us'} 
-                pagePara={"The only tool you'll ever need to streamline your Google Workspace management."} 
+                pagePara={"Say Hello! We Promise Good Vibes and Great Coffee! ☕"} 
                 imgSrc={'contact.svg'}
                 title={"Contact Us - Patronum"}
                 description={"Patronum provides a better way to Google Workspace (GSuite) Management. Patronum fully automates all the administrator and user tasks to ensure an efficient, effective and secure process."}

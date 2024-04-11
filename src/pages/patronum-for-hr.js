@@ -55,7 +55,7 @@ export default function UseCasesDetail(){
                             <SectionTitle 
                                 sectionTitle1="Use Cases:"
                                 sectionTitle2="Patronum for HR"
-                                sectionPara="Patronum redefines user lifecycle management by providing a consistent and unified experience within Google Workspace while significantly reducing IT expenditure in managing users and resources."
+                                sectionPara="Patronum acts as the bridge between your HR system and Google Workspace. By automating essential processes like onboarding, offboarding, and managing employee information, Patronum allows HR professionals to focus on strategic initiatives and employee engagement."
                             />
                             <div className="useCases-Info">
                                 {UseCasesInfo.map((usecase, index) => (

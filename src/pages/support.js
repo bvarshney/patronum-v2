@@ -9,7 +9,7 @@ export default function Support(){
         <>
             <PageLayout
                 pageTitle1={'Support'} 
-                pagePara={"The only tool you'll ever need to streamline your Google Workspace management."} 
+                pagePara={"Contact Our Experts for Personalized Support & Find Solutions Quickly"} 
                 imgSrc={'support.svg'}
                 title={"Patronum - Expert Google Workspace support within few minutes"}
                 description={"You no longer have to wait for any expert help and get direct support for G Suite Management with Patronum. We offer support through video call, chat and even screen sharing."}

@@ -16,18 +16,8 @@ import { Checkbox } from "@/components/ui/checkbox";
 import CountrySelector from "../ui/country-selector";
 import { COUNTRIES } from "@/lib/countries";
 import Link from "next/link";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
-
-const formSchema = z.object({
-    name: z.string().min(1, {message: "Name is required."}),
-    email: z.string().min(1, {message: "Email is required."}).email({message: "Invalid email format."}),
-    company: z.string().min(1, {message: "Company Name is required."}),
-    country: z.string().min(1, "Country is required."),
-    textarea: z.string().min(1, {message: "Message is Required."}),
-    terms: z.boolean().refine(value => value === true, {message: "You must agree to the terms."}),
-    pageURL: z.string(),
-});
 
 // Update the ContactForm component
 export default function BecomePartnerForm() {
@@ -36,6 +26,40 @@ export default function BecomePartnerForm() {
     const [submitting, setSubmitting] = useState(false);
     const [submissionError, setSubmissionError] = useState(null);
     const [submissionSuccess, setSubmissionSuccess] = useState(false);
+    const [blockedDomains, setBlockedDomains] = useState([]);
+
+    useEffect(() => {
+        // Fetch the JSON file containing 4700 emails
+        const fetchEmails = async () => {
+            try {
+                const response = await axios.get('/domainBlock.json');
+                const data = response.data;
+                const extractedDomains = data.map(item => Object.values(item)[0]); // Extract domains
+                setBlockedDomains(extractedDomains); // Set extracted domains as blockedDomains
+            } catch (error) {
+                console.error('Error fetching emails:', error);
+            }
+        };
+        fetchEmails();
+    }, []);
+
+    const formSchema = z.object({
+        name: z.string().min(1, {message: "Name is required."}),
+        email: z.string()
+            .min(1, {message: "Email is required."})
+            .email({message: "Invalid email format."})
+            .refine((email) => {
+            // Extract the domain from the email address
+            const domain = email.split("@")[1];
+            // Check if the domain is not in the blocked list
+            return !blockedDomains.includes(domain);
+        }, {message: "Please enter a valid business email."}),
+        company: z.string().min(1, {message: "Company Name is required."}),
+        country: z.string().min(1, "Country is required."),
+        textarea: z.string().min(1, {message: "Message is required."}),
+        terms: z.boolean().refine(value => value === true, {message: "You must agree to the terms."}),
+        pageURL: z.string(),
+    });
 
     const form = useForm({
         resolver: zodResolver(formSchema),
@@ -61,7 +85,9 @@ export default function BecomePartnerForm() {
             company: data.company,
             countryName, 
             pageURL: data.pageURL,
+            tag: "Partner Request",
         };
+        
         const message = `
             <h1><strong>Become Partner Form Submission</strong></h1>
             <p><strong>Name:</strong> ${data.name}</p>
@@ -72,14 +98,15 @@ export default function BecomePartnerForm() {
             <p><strong>Terms Agreement:</strong> ${data.terms ? 'Agreed' : 'Not Agreed'}</p>
             `;
         try {
+
+            // Send data to Mailchimp
+            await axios.post('/api/mail-chimp', formData);
+
             // Send email
             await axios.post('/api/send-email', {
                 message: message,
                 subject: "Become Partner Form Submission",
             }); 
-
-            // Send data to Mailchimp
-            await axios.post('/api/mail-chimp', formData);
             
             form.reset();
             setSubmitting(false);

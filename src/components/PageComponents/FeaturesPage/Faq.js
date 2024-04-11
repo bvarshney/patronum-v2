@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import FaqItem from '@/components/PageLayout/FaqItem'; 
 import faqData from './faqData.json'; 
 import PrimaryButton from '@/components/PageLayout/Button/PrimaryButton';
 import gsap from 'gsap';
@@ -14,11 +13,6 @@ import {
 gsap.registerPlugin(ScrollTrigger);
 
 const Faqs = ({ featureName }) => {
-    const [accordionOpen, setAccordionOpen] = useState(0);
-
-    const toggleAccordion = (index) => {
-        setAccordionOpen(index === accordionOpen ? null : index);
-    };
 
     useEffect(() => {
         const scaleAnims = document.querySelectorAll('.scaleAnim');
@@ -95,10 +89,6 @@ const Faqs = ({ featureName }) => {
                         </AccordionItem>
                       ))}
                     </Accordion>
-                  
-                    <div className="section-btn-container mt-16">
-                      <PrimaryButton link="#" btnText="View All FAQ's"/>
-                    </div>
                   </div>
               </div>
           </div>

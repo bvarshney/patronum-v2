@@ -30,9 +30,8 @@ export const getServerSideProps = async ({ res }) => {
 
   const mainPaths = [`${BASE_URL}/`]  
   const redirectPaths = [`${BASE_URL}/standard-contractual-clauses`, `${BASE_URL}/partner-agreement`, `${BASE_URL}/terms-and-conditions`, `${BASE_URL}/terms-and-conditions-for-direct-customers`, `${BASE_URL}/master-subscription-agreement`, `${BASE_URL}/data-processing-agreement`, `${BASE_URL}/bespinlabs-legal-agreements-faqs`];
-  const dynamicPaths = [`${BASE_URL}/blog/page/2`, `${BASE_URL}/blog/page/3`, `${BASE_URL}/blog/page/4`, `${BASE_URL}/blog/page/5`, `${BASE_URL}/blog/page/6`, `${BASE_URL}/blog/page/7`, `${BASE_URL}/blog/page/8`, `${BASE_URL}/blog/page/9`, `${BASE_URL}/blog/page/10`, `${BASE_URL}/blog/page/11`, `${BASE_URL}/blog/page/12`, `${BASE_URL}/blog/page/13`, `${BASE_URL}/blog/page/14`, `${BASE_URL}/blog/page/15`, `${BASE_URL}/blog/page/16`, `${BASE_URL}/blog/page/17`, `${BASE_URL}/blog/page/18`, `${BASE_URL}/blog/page/19`];
 
-  const allPaths = [...mainPaths, ...staticPaths, ...redirectPaths, ...dynamicPaths];
+  const allPaths = [...mainPaths, ...staticPaths, ...redirectPaths];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

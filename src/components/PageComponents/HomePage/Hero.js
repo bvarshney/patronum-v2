@@ -6,6 +6,14 @@ import ScrollToPlugin from "gsap/dist/ScrollToPlugin";
 
 gsap.registerPlugin(ScrollToPlugin);
 
+function supportsHEVCAlpha() {
+    const navigator = window.navigator;
+    const ua = navigator.userAgent.toLowerCase()
+    const hasMediaCapabilities = !!(navigator.mediaCapabilities && navigator.mediaCapabilities.decodingInfo)
+    const isSafari = ((ua.indexOf('safari') != -1) && (!(ua.indexOf('chrome')!= -1) && (ua.indexOf('version/')!= -1)))
+    return isSafari && hasMediaCapabilities
+}
+
 export default function Hero(){
 
     const { openModal } = useModal();
@@ -73,6 +81,11 @@ export default function Hero(){
         });
         return () => ctx.revert();
     }, []);
+
+      useEffect(() => {
+        const player = document.getElementById('player');
+        player.src = supportsHEVCAlpha() ? '/assets/home/Dashboard-Hero.mov' : '/assets/home/Dashboard-Hero.webm';
+      }, [supportsHEVCAlpha]);
 
     return(
         <>
@@ -146,17 +159,16 @@ export default function Hero(){
                                     </div>
                                 </div>
                             </button>
-
                         </div>
                         
                         <div className="hero-right">
                             <video 
-                                src="/assets/home/Dashboard-Hero.webm" 
+                                id="player"
                                 loading="lazy"
                                 alt='patronum dashboard showcase'
                                 className='hero-img'
                                 muted 
-                                autoPlay 
+                                autoPlay
                                 loop
                                 playsInline>
                             </video>

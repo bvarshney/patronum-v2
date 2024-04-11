@@ -20,7 +20,7 @@ const DesktopNavigation = () => {
                 <nav className='navbar lg:block hidden'>
                     <ul className='navbar-list'>
                         <li className='nav-list-item'>
-                            <Link href='/about-us' >
+                            <Link href='/about-us' className='page-link'>
                                 <div className='header-anim'>
                                     <span>
                                         About
@@ -32,7 +32,7 @@ const DesktopNavigation = () => {
                             onMouseEnter={() => setFeaturesDropdownOpen(true)}
                             onMouseLeave={() => setFeaturesDropdownOpen(false)}
                         >
-                            <Link href='/features' className='dropdown' >
+                            <Link href='/features' className='page-link dropdown' >
                                 <div className='header-anim'>
                                     <span>
                                         Features
@@ -42,65 +42,65 @@ const DesktopNavigation = () => {
                                     </svg>
                                 </div>
                             </Link>
-                                {isFeaturesDropdownOpen && (
-                                    <motion.div 
-                                        initial={{ y: -30, opacity: 0 }}
-                                        animate={{ y: 0, opacity: 1 }}
-                                        transition={{ duration: 0.4 }} 
-                                        className='nav-dropdown'>
-                                        <ul className='nav-dropdown-list'>
-                                            <NavItem 
-                                                title={'User Management'}
-                                                disc={'Automated User Onboarding & Offboarding'}
-                                                link={'/on-boarding'}
-                                                img={'onboarding.svg'}
-                                            />
-                                            <NavItem 
-                                                title={'Email Signatures'}
-                                                disc={'Centrally Managed Gmail Email Signatures'}
-                                                link={'/email-signature-management'}
-                                                img={'email-signature.svg'}
-                                            />
-                                            <NavItem 
-                                                title={'Workspace Backup'}
-                                                disc={'Best-in-Class Full Fidelity Backups'}
-                                                link={'/google-workspace-backup'}
-                                                img={'workspace-backup.svg'}
-                                            />
-                                            <NavItem 
-                                                title={'Google Drive Management'}
-                                                disc={'Manage, Update, or Move User Files'}
-                                                link={'/google-drive-management'}
-                                                img={'drive-management.svg'}
-                                            />
-                                            <NavItem 
-                                                title={'File Unsharing'}
-                                                disc={'Automatically Unshare file & Stay Compliant'}
-                                                link={'/google-drive-compliance'}
-                                                img={'file-sharing.svg'}
-                                            />
-                                            <NavItem 
-                                                title={'Contact Sharing'}
-                                                disc={'Seemless & Secure Contact Sharing'}
-                                                link={'/google-contact-sharing'}
-                                                img={'contact-sharing.svg'}
-                                            />
-                                            <NavItem 
-                                                title={'Organisational Chart'}
-                                                disc={'Locate & view organisation hierarchy'}
-                                                link={'/organisational-chart'}
-                                                img={'organisational-chart.svg'}
-                                            />
-                                        </ul>
-                                    </motion.div>
-                                )}
-                            </li>
+                            {isFeaturesDropdownOpen && (
+                                <motion.div 
+                                    initial={{ y: -30, opacity: 0 }}
+                                    animate={{ y: 0, opacity: 1 }}
+                                    transition={{ duration: 0.4 }} 
+                                    className='nav-dropdown'>
+                                    <ul className='nav-dropdown-list'>
+                                        <NavItem 
+                                            title={'User Management'}
+                                            disc={'Automated User Onboarding & Offboarding'}
+                                            link={'/on-boarding'}
+                                            img={'onboarding.svg'}
+                                        />
+                                        <NavItem 
+                                            title={'Email Signatures'}
+                                            disc={'Centrally Managed Gmail Email Signatures'}
+                                            link={'/email-signature-management'}
+                                            img={'email-signature.svg'}
+                                        />
+                                        <NavItem 
+                                            title={'Workspace Backup'}
+                                            disc={'Best-in-Class Full Fidelity Backups'}
+                                            link={'/google-workspace-backup'}
+                                            img={'workspace-backup.svg'}
+                                        />
+                                        <NavItem 
+                                            title={'Google Drive Management'}
+                                            disc={'Manage, Update, or Move User Files'}
+                                            link={'/google-drive-management'}
+                                            img={'drive-management.svg'}
+                                        />
+                                        <NavItem 
+                                            title={'File Unsharing'}
+                                            disc={'Automatically Unshare file & Stay Compliant'}
+                                            link={'/google-drive-compliance'}
+                                            img={'file-sharing.svg'}
+                                        />
+                                        <NavItem 
+                                            title={'Contact Sharing'}
+                                            disc={'Seemless & Secure Contact Sharing'}
+                                            link={'/google-contact-sharing'}
+                                            img={'contact-sharing.svg'}
+                                        />
+                                        <NavItem 
+                                            title={'Organisational Chart'}
+                                            disc={'Locate & view organisation hierarchy'}
+                                            link={'/organisational-chart'}
+                                            img={'organisational-chart.svg'}
+                                        />
+                                    </ul>
+                                </motion.div>
+                            )}
+                        </li>
 
                         <li className='nav-list-item' 
                             onMouseEnter={() => setUsecasesDropdownOpen(true)}
                             onMouseLeave={() => setUsecasesDropdownOpen(false)}
                             >
-                            <Link href='/use-cases' className='dropdown' >
+                            <Link href='/use-cases' className='page-link dropdown' >
                                 <div className='header-anim'>
                                     <span>
                                         Use Cases
@@ -161,7 +161,7 @@ const DesktopNavigation = () => {
                             onMouseEnter={() => setPriceDropdownOpen(true)}
                             onMouseLeave={() => setPriceDropdownOpen(false)}
                             >
-                            <Link href='/pricing' className='dropdown' >
+                            <Link href='/pricing' className='page-link dropdown' >
                                 <div className='header-anim'>
                                     <span>
                                         Pricing
@@ -217,7 +217,7 @@ const DesktopNavigation = () => {
                             onMouseEnter={() => setResourcesDropdownOpen(true)}
                             onMouseLeave={() => setResourcesDropdownOpen(false)}
                             >
-                            <Link href='#' className='dropdown'>
+                            <button className='page-link dropdown' aria-label="open resource dropdown">
                                 <div className='header-anim'>
                                     <span>
                                         Resources
@@ -226,7 +226,7 @@ const DesktopNavigation = () => {
                                         <path d="M1 1L6.5 6.5L12 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                                     </svg>
                                 </div>
-                            </Link>
+                            </button>
                                 {isResourcesDropdownOpen && (
                                     <motion.div 
                                         initial={{ y: -30, opacity: 0 }}
@@ -303,7 +303,7 @@ const DesktopNavigation = () => {
                                 )}
                             </li>
                         <li className='nav-list-item'>
-                            <Link className='' href='/partner-with-us' >
+                            <Link className='page-link' href='/partner-with-us' >
                                 <div className='header-anim'>
                                     <span>
                                         Partners
@@ -312,7 +312,7 @@ const DesktopNavigation = () => {
                             </Link>
                         </li>
                         <li className='nav-list-item'>
-                            <Link className='' href='/support' >
+                            <Link className='page-link' href='/support' >
                                 <div className='header-anim'>
                                     <span>
                                         Support

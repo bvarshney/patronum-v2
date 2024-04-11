@@ -33,7 +33,7 @@ export default function UseCasesDetail(){
             <PageLayout 
                 pageTitle1={'Patronum'} 
                 pageTitle2={'for Users'}
-                pagePara={"The only tool you'll ever need to streamline your Google Workspace management."} 
+                pagePara={"Simplify and Streamline Google Workspace for Every User Across Your Organization"} 
                 imgSrc={'use-cases-users.svg'}
                 title={"Patronum for Users - Patronum"}
                 description={"Patronum provides a better way to Google Workspace (GSuite) Management. Patronum fully automates all the administrator and user tasks to ensure an efficient, effective and secure process."}

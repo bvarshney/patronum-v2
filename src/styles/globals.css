@@ -717,20 +717,20 @@ section{
   font-family: 'Aeonik';
   font-weight: 500;
 }
-.nav-list-item>a{
+.nav-list-item>.page-link{
   font-size: 1.1vw;
   color: var(--text-body);
   transition: all 0.3s ease;
   position: relative;
   z-index: 1;
 }
-.nav-list-item>a svg{
+.nav-list-item>.page-link svg{
   width: 0.7vw;
   display: inline-block;
   margin-left: 5px;
   margin-bottom: 2px;
 }
-.nav-list-item>a.dropdown::before{
+.nav-list-item>.page-link.dropdown::before{
   content: '';
   height: 70px;
   background: none;
@@ -739,10 +739,10 @@ section{
   top: 0;
   width: 100%;
 }
-.nav-list-item>a span{
+.nav-list-item>.page-link span{
   position: relative;
 }
-.nav-list-item>a span::after{
+.nav-list-item>.page-link span::after{
   content: "";
   position: absolute;
   bottom: -2px;
@@ -754,11 +754,11 @@ section{
   transform-origin: right;
   transition: var(--transition-2);
 }
-.nav-list-item:hover>a span::after{
+.nav-list-item:hover>.page-link span::after{
   transform: scaleX(1);
   transform-origin: left;
 }
-.nav-list-item:hover>a{
+.nav-list-item:hover>.page-link{
   color: var(--primary);
 }
 
@@ -769,7 +769,7 @@ section{
   width: 100%;
   left: 0;
   top: 0;
-  padding-top: 100px;
+  padding-top: 5vw;
   background: #ffffff;
   border-top: 2px solid var(--gray-100);
   z-index: 0;
@@ -1539,7 +1539,7 @@ section{
   transition: 0.3s;
 }
 .faq-item.open .faq-content{
-  height: 6vw;
+  height: 7vw;
 }
 .faq-arrow{
   position: absolute;
@@ -3104,7 +3104,7 @@ section{
     width: 4vw;
   }
   .faq-item.open .faq-content{
-    height: 40vw;
+    height: 42vw;
   }
   .faq-item .faq-content .content-p{
     font-size: 3.5vw;
@@ -3779,7 +3779,7 @@ section{
     margin-bottom: 5vw;
   }
   .scroll-down-btn{
-  bottom: 6%;
+  bottom: 0;
   left: 0;
   }
   .scroll-down-btn .scroll-down-a>svg{
@@ -3872,7 +3872,7 @@ section{
     width: 20%;
   }
   #pageHero{
-    height: 80vh;
+    height: 100vh;
   }
   .page-hero-flex{
     flex-direction: column;

@@ -1,10 +1,10 @@
 import fetch from 'isomorphic-unfetch';
 
 export default async (req, res) => {
-  const { email, name, company, countryName, pageURL } = req.body; 
+  const { email, name, company, countryName, pageURL, tag } = req.body; 
 
-  console.log({ email, name, company, countryName, pageURL  }); 
-  if (!email || !name || !company || !countryName || !pageURL) { 
+  console.log({ email, name, company, countryName, pageURL, tag  }); 
+  if (!email || !name || !company || !countryName || !pageURL || !tag) { 
     return res.status(400).json({ error: 'All fields are required.' });
   }
 
@@ -22,10 +22,11 @@ export default async (req, res) => {
     const data = {
       email_address: email,
       status: 'subscribed',
+      tags: [`${tag}`],
       merge_fields: {
         FNAME: firstName,
         LNAME: lastName,
-        COUNTRY: countryName,
+        COUNTRY:  countryName,
         COMPANY: company,
         POPUPREQ: pageURL,
       },
