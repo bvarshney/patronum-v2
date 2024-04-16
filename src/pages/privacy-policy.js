@@ -19,7 +19,7 @@ export default function Page() {
                 <Hero
                     pageTitle1={"Privacy policy"}
                     pagePara={"Bespin Labs Limited hold the privacy of your personal information in the highest regard."}
-                    imgSrc={"cookie-policy.svg"}
+                    imgSrc={"privacy-policy.svg"}
                 />
                 <section className="" id="second-section">
                     <div className="container">

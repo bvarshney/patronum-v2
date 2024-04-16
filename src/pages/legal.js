@@ -114,6 +114,12 @@ export default function Legal() {
                                     img={"/anti-slavery-and-human-trafficking"}
                                     link="/anti-slavery-and-human-trafficking-statement"
                                 />
+                                <LegalCard 
+                                    id={"08"}
+                                    title={"Privacy Policy"}
+                                    img={"/privacy-policy"}
+                                    link="/privacy-policy"
+                                />
                             </div>
                         </div>
                     </div>
