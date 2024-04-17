@@ -163,6 +163,8 @@ export default function Hero(){
                         
                         <div className="hero-right">
                             <video 
+                                width={600}
+                                height={530}
                                 id="player"
                                 loading="lazy"
                                 alt='patronum dashboard showcase'

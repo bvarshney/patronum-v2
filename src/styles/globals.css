@@ -114,26 +114,6 @@ body{
   overflow-x: hidden;
 }
 
-/* Background Canvas */
-.canvas-container{
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  z-index: -1;
-}
-#gradient-canvas {
-  width: 100%;
-  height: 100%;
-  opacity: 0.3;
-  --gradient-color-1: #ffffff;
-  --gradient-color-2: #ffffff;
-  --gradient-color-3: #6ec3f4;
-  --gradient-color-4: #ffffff;
-}
-
 h1,h2,h3,h4,h5,h6{
   font-family: 'Aeonik';
   text-rendering: geometricPrecision;
@@ -722,7 +702,7 @@ section{
   color: var(--text-body);
   transition: all 0.3s ease;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 .nav-list-item>.page-link svg{
   width: 0.7vw;
@@ -772,7 +752,7 @@ section{
   padding-top: 5vw;
   background: #ffffff;
   border-top: 2px solid var(--gray-100);
-  z-index: 0;
+  z-index: -1;
   box-shadow: 1px 1px 10px #00000010;
   border-end-start-radius: 20px;
   border-end-end-radius: 20px;
