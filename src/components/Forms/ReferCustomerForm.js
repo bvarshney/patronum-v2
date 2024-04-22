@@ -102,7 +102,7 @@ export default function ReferCustomerForm() {
             await axios.post('/api/mail-chimp', formData);
             // Send email
 
-            await axios.post('/api/send-email', {
+            await axios.post('/api/mail', {
                 message: message,
                 subject: "Refer Customer Submission",
             });

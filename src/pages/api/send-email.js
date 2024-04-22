@@ -21,7 +21,6 @@ export default async (req, res) => {
       const mailOptions = {
         from: emailfrom,
         to: `paul.lees@bespinlabs.com, b@weareenigma.com, sales@bespinlabs.com`,
-        // to: 'hitesh@weareenigma.com',
         subject: subject || "Form Response",
         html: message,
       };

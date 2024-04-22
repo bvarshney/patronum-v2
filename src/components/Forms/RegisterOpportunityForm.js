@@ -130,7 +130,7 @@ export default function RegisterOpportunityForm() {
             await axios.post('/api/mail-chimp', formData);            
 
             // Send email
-            await axios.post('/api/send-email', {
+            await axios.post('/api/mail', {
                 message: message, 
                 subject: "Opportunity Form Submission",
             });
@@ -149,7 +149,7 @@ export default function RegisterOpportunityForm() {
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 contact-form">
         {/* Form fields */}
         <div className="w-full text-center">
-            <h3 className="text-[2.2vw] text-body font-medium">Partner Details</h3>
+            <h3 className="lg:text-[2.2vw] text-[4.7vw] text-body font-medium">Partner Details</h3>
         </div>
         
         {/* Name field */}
@@ -213,7 +213,7 @@ export default function RegisterOpportunityForm() {
         />
 
         <div className="w-full text-center">
-            <h3 className="text-[2.2vw] text-body font-medium">Opportunity Details</h3>
+            <h3 className="lg:text-[2.2vw] text-[4.7vw] text-body font-medium">Opportunity Details</h3>
         </div>
 
         {/* Name field */}

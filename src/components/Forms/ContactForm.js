@@ -97,7 +97,7 @@ export default function ContactForm() {
             await axios.post('/api/mail-chimp', formData);
 
             // Send email
-            await axios.post('/api/send-email', {
+            await axios.post('/api/mail', {
                 message: message,
                 subject: "Contact Form Submission",
             });
@@ -106,7 +106,6 @@ export default function ContactForm() {
             setSubmitting(false);
             setSubmissionSuccess(true);
         } catch (error) {
-            // console.error('Error sending email:', error);
             setSubmitting(false);
             setSubmissionError('Error sending email. Please try again later.');
         }

@@ -103,7 +103,7 @@ export default function BecomePartnerForm() {
             await axios.post('/api/mail-chimp', formData);
 
             // Send email
-            await axios.post('/api/send-email', {
+            await axios.post('/api/mail', {
                 message: message,
                 subject: "Become Partner Form Submission",
             }); 
