@@ -23,7 +23,6 @@ const Pricing = () => {
           'Contact Sharing',
           'Automated File Unsharing',
           'Organisations Chart',
-          'Special Pricing for Backup Add-On'
         ],
         'Non-Profit': [
           'Email Signature Management',
@@ -31,7 +30,6 @@ const Pricing = () => {
           'Contact Sharing',
           'Automated File Unsharing',
           'Organisations Chart',
-          'Backup Add-On at 3$/user/month'
         ],
         Business: [
           'Email Signature Management',
@@ -39,7 +37,6 @@ const Pricing = () => {
           'Contact Sharing',
           'Automated File Unsharing',
           'Organisations Chart',
-          'Backup Add-On at 3$/user/month'
         ]
       };
 

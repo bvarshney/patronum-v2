@@ -26,66 +26,61 @@ export default function FeatureDetail(){
             para: "Patronum Backup goes beyond just safeguarding your data—it also simplifies the restoration process. With its user-friendly self-service feature, end users gain the autonomy to restore their own data, including files and emails, swiftly and efficiently. This empowerment significantly reduces the workload on IT staff, streamlining the recovery process and allowing for immediate access to lost or deleted data without the typical delays. By democratizing data restoration, Patronum Backup not only enhances data security but also fosters a more efficient and resilient organizational workflow.",
             img: "/assets/features/google-workspace-backup/main-3.svg",
         },
-        {
-            title: 'Intelligent Ransomware Protection',
-            para: "In Google contact sharing your Google Contacts are updated automatically across various platforms: Desktop, Mobile, Tablet or Microsoft Outlook. Users get instant access to contacts across different devices automatically.",
-            img: "/assets/features/google-workspace-backup/main-4.svg",
-        },
     ]
 
     const featuresDetailCard = [
         {
             id: '01',
             title: 'Automated Backups',
-            para: "Effortlessly Manage and Automate Google Group Memberships.",
+            para: "Regular fully automed backups runs, resillient to google API errors.",
             img: "/assets/features/google-workspace-backup/detail-1.svg",
         },
         {
             id: '02',
             title: 'Flexible Restore',
-            para: "Empower Specific Users with Controlled Access to Manage Others' Google.",
+            para: "Restore data to the same/other accounts, in-place or to a new folder.",
             img: "/assets/features/google-workspace-backup/detail-2.svg",
         },
         {
             id: '03',
             title: 'Instant Offline Export',
-            para: "Simplify and Streamline the Sharing of Calendars within your Organisation.",
+            para: "Google Workspace backup data instant export in pst, docx & other native formats.",
             img: "/assets/features/google-workspace-backup/detail-3.svg",
         },
         {
             id: '04',
             title: '2FA Authentication',
-            para: "Utilise Ready-Made Policy Templates for Quick and Efficient.",
+            para: "Native support of Google 2FA for Google Workspace administrators and users.",
             img: "/assets/features/google-workspace-backup/detail-4.svg",
         },
         {
             id: '05',
             title: 'Storage Locations',
-            para: "Securely and Promptly Revoke User Access to Data and Resources.",
+            para: "Select a backup storage region, or use multiple storage locations.",
             img: "/assets/features/google-workspace-backup/detail-5.svg",
         },
         {
             id: '06',
             title: 'AI-Based Automation',
-            para: "Easily Manage and Delete Calendar Events, Ensuring Up-to-Date.",
+            para: "Backup uses AI to automate backup & reduce time needed to manage it.",
             img: "/assets/features/google-workspace-backup/detail-6.svg",
         },
         {
             id: '07',
             title: 'Versioning',
-            para: "Seamlessly Manage the Entire User Journey within Google Workspace.",
+            para: "Browse & restore any prior versions of Google Workspace data without time limit.",
             img: "/assets/features/google-workspace-backup/detail-7.svg",
         },
         {
             id: '08',
             title: 'Self-Service',
-            para: "Gain Immediate Insights with Live Tracking of all User Activities.",
+            para: "Configure end-user access to let them restore lost items.",
             img: "/assets/features/google-workspace-backup/detail-8.svg",
         },
         {
             id: '09',
             title: 'Encryption',
-            para: "Easily manage and delete calendar events, ensuring up-to-date.",
+            para: "Data at rest is encrypted with AES256 & TLS 1.2 for data in transit.",
             img: "/assets/features/google-workspace-backup/detail-9.svg",
         },
     ]
@@ -106,7 +101,7 @@ export default function FeatureDetail(){
                 keywords={"Google Workspace"}
                 >
 
-                <VideoPlayer videoId="POIX6FiWaN0" videoCover={"/assets/features/google-workspace-backup/video-cover.webp"}/>
+                <VideoPlayer disabled={true} videoCover={"/assets/features/google-workspace-backup/video-cover.webp"}/>
 
                 <FeatureDetailTitle
                     sectionTitle1="Google Workspace"

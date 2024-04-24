@@ -17,7 +17,7 @@ export default function Page() {
             />
             <Layout>
                 <Hero
-                    pageTitle1={"Privacy policy"}
+                    pageTitle1={"Privacy Policy"}
                     pagePara={"Bespin Labs Limited hold the privacy of your personal information in the highest regard."}
                     imgSrc={"privacy-policy.svg"}
                 />

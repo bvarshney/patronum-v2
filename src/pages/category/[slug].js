@@ -4,33 +4,30 @@ import { getPostsByCategoryId } from '@/lib/posts';
 
 import CategoryList from '@/components/PageComponents/BlogPage/CategoryList';
 import CategoryPosts from '@/components/PageComponents/BlogPage/CategoryPosts';
-import PageLayout from '@/components/PageLayout';
+import MetaData from '@/components/PageLayout/MetaData';
+import Layout from '@/components/Stairs';
 
 const Category = ({ category, posts, categories }) => {
   const [activeCategory, setActiveCategory] = useState(`${category.name}`);
 
   return (
     <>
-
-      <PageLayout
-        pageTitle1={"Our"}
-        pageTitle2={"Latest Blogs"}   
-        pagePara={"The only tool you'll ever need to streamline your Google Workspace management."}
-        imgSrc={"/blog.svg"}
-        title={`${category.name} Archive - Patronum`}
-        description={"Get all the information that can help you with effective & efficient management of your Google Workspace (Gsuite). Download our resources and participate in webinars to know more."}
-        url={`category/${category.slug}`}
-        img={"blog.jpg"}
-        date_published={"2020-12-21T12:00"}
-        date_modified={"2024-04-04T12:00"}
-        keywords={"Patronum,Google Workspace Manager"}
-        >
-
-          <section id="second-section">
-            <div className="container">
-              <div className="content-2">
+        <MetaData 
+          title={`${category.name} Archive - Patronum`}
+          description={"Get all the information that can help you with effective & efficient management of your Google Workspace (Gsuite). Download our resources and participate in webinars to know more."}
+          url={`category/${category.slug}`}
+          img={"blog.jpg"}
+          date_published={"2020-12-21T12:00"}
+          date_modified={"2024-04-04T12:00"}
+          keywords={"Patronum,Google Workspace Manager"}
+        />
+        <Layout>
+          <main>
+            <section id="second-section">
+              <div className="container">
+                <div className="content-2">
                 <div className='section-head'>
-                  <h4 className='title-4xl text-anim'>
+                  <h1 className='title-4xl text-anim'>
                     <span>
                       {category.name}
                     </span>
@@ -38,19 +35,20 @@ const Category = ({ category, posts, categories }) => {
                     <span>
                       Blogs
                     </span>
-                  </h4>
+                  </h1>
+
                 </div>
+                  <div className="lg:w-[105%] lg:ml-[-2.5%] ml-0 w-full">
+                      <CategoryList categories={categories} activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
+                  </div>
 
-                <div className="lg:w-[105%] lg:ml-[-2.5%] ml-0 w-full">
-                    <CategoryList categories={categories} activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
+                  <CategoryPosts posts={posts} />
+
                 </div>
-
-                <CategoryPosts posts={posts} />
-
               </div>
-            </div>
-          </section>
-        </PageLayout>
+            </section>
+          </main>
+        </Layout>
     </>
   );
 }

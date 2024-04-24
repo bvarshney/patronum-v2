@@ -56,7 +56,7 @@ export default function FeatureDetail(){
                 keywords={"Organisational Chart"}
                 >
 
-                <VideoPlayer videoId="POIX6FiWaN0" videoCover={"/assets/features/organisational-chart/video-cover.webp"}/> 
+                <VideoPlayer disabled={true} videoCover={"/assets/features/organisational-chart/video-cover.webp"}/> 
 
                 <FeatureDetailTitle
                     sectionTitle1="Organisational Chart"    
@@ -86,7 +86,7 @@ export default function FeatureDetail(){
                     sectionBreakText="Patronum's 'Organisational Chart' feature is designed to support seamless onboarding, promote transparency, and facilitate collaboration, thereby improving decision-making and fostering a more cohesive organizational culture."
                 />
 
-                <Faqs featureName="google_drive_management"/>
+                <Faqs featureName="organisational_chart"/>
 
             </PageLayout>
 

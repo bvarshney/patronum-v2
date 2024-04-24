@@ -16,7 +16,7 @@ export default function Cookie() {
                     initial={{opacity:0, y: 20, x: '-50%'}}
                     animate={{opacity: 1, y: 0}}
                     transition={{duration: 0.3, delay: 3, ease: [[0.215, 0.61, 0.355, 1]]}}
-                    className="z-[11] fixed bottom-0 md:mb-5 mb-[28vw] h-fit w-max py-2 px-3 left-1/2 bg-[#fafafa] rounded-full shadow-[0_2px_8px_0px_rgba(0,61,163,0.25)] md:text-base text-sm">
+                    className="z-[11] fixed bottom-0 md:mb-5 mb-[5vw] h-fit w-max py-2 px-3 left-1/2 bg-[#fafafa] rounded-full shadow-[0_2px_8px_0px_rgba(0,61,163,0.25)] md:text-base text-sm">
                     <div className="flex items-center justify-center gap-3">
                         <img alt='cookie-icon' src='/assets/icons/cookie-icon.png' className='lg:h-[1.5vw] lg:w-[1.5vw] w-6 h-6'/>
                         <span>This website uses cookies.

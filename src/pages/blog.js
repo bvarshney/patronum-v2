@@ -14,9 +14,9 @@ export default function Blogs( { posts, featuredPost, pagination, categories } )
     return (
         <>
             <PageLayout
-                pageTitle1={"Our"}
-                pageTitle2={"Latest Blogs"}   
-                pagePara={"The only tool you'll ever need to streamline your Google Workspace management."}
+                pageTitle1={"Expert Tips,"}
+                pageTitle2={" Insights & Latest News"}   
+                pagePara={"Dive into the latest updates, tips, and trends in Google Workspace management with Patronum."}
                 imgSrc={"/blog.svg"}
                 title={"Learn more about Google Workspace (G Suite) Management"}
                 description={"Get all the information that can help you with effective & efficient management of your Google Workspace (Gsuite). Download our resources and participate in webinars to know more."}

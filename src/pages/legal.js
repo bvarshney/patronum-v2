@@ -102,24 +102,72 @@ export default function Legal() {
                                     img={"partner-agreement"}
                                     link="https://docs.google.com/document/d/1UfaCFOtQfOLWkHHmR0p0iAHWqG7xEuh4ESWj5cCvy2c/edit#heading=h.30j0zll"
                                 />
-                                <LegalCard 
-                                    id={"06"}
-                                    title={"Cookie Policy"}
-                                    img={"cookie-policy"}
-                                    link="/cookie-policy"
-                                />
-                                <LegalCard 
-                                    id={"07"}
-                                    title={"Anti-slavery and Human Trafficking Statement"}
-                                    img={"/anti-slavery-and-human-trafficking"}
-                                    link="/anti-slavery-and-human-trafficking-statement"
-                                />
-                                <LegalCard 
-                                    id={"08"}
-                                    title={"Privacy Policy"}
-                                    img={"/privacy-policy"}
-                                    link="/privacy-policy"
-                                />
+                                <div className="legal-card fadeUp">
+                                    <div className="cards-num">
+                                        <span className="aeonik">
+                                            06
+                                        </span>
+                                    </div>
+                                    <div className="img">
+                                        <img 
+                                            src="/assets/legal/cookie-policy.svg" 
+                                            alt="Cookie Policy"
+                                            title="Cookie Policy"
+                                        />
+                                    </div>
+                                    <div className="info">
+                                        <span className="hr-1p" />
+                                        <h3 className="title-2xl aeonik">
+                                            Cookie Policy
+                                        </h3>
+                                        <span className="hr-1p" />
+                                        <LinkButton link="/cookie-policy" btnText="Read More"/>
+                                    </div>
+                                </div>
+                                <div className="legal-card fadeUp">
+                                    <div className="cards-num">
+                                        <span className="aeonik">
+                                            07
+                                        </span>
+                                    </div>
+                                    <div className="img">
+                                        <img 
+                                            src="/assets/legal/anti-slavery-and-human-trafficking.svg" 
+                                            alt="Anti-slavery and Human Trafficking Statement"
+                                            title="Anti-slavery and Human Trafficking Statement"
+                                        />
+                                    </div>
+                                    <div className="info">
+                                        <span className="hr-1p" />
+                                        <h3 className="title-2xl aeonik">
+                                            Anti-slavery and Human Trafficking Statement
+                                        </h3>
+                                        <span className="hr-1p" />
+                                        <LinkButton link="/anti-slavery-and-human-trafficking-statement" btnText="Read More"/>
+                                    </div>
+                                </div>
+                                <div className="legal-card fadeUp">
+                                    <div className="cards-num">
+                                        <span className="aeonik">
+                                            08
+                                        </span>
+                                    </div>
+                                    <div className="img">
+                                        <img 
+                                            src="/assets/legal/privacy-policy.svg" 
+                                            alt="Privacy Policy"
+                                            title="Privacy Policy"
+                                        />
+                                    </div>
+                                    <div className="info">
+                                        <span className="hr-1p" />
+                                        <h3 className="title-2xl aeonik">
+                                            Privacy Policy
+                                        </h3>
+                                        <span className="hr-1p" />
+                                        <LinkButton link="/privacy-policy" btnText="Read More"/>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

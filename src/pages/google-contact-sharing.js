@@ -58,13 +58,13 @@ export default function FeatureDetail(){
         },
         {
             id: '03',
-            title: 'User Level Permission Management',
+            title: 'User Level Permissions Management',
             para: "Assign and manage permissions for individual users on contact access.",
             img: "/assets/features/contact-sharing/detail-3.svg",
         },
         {
             id: '04',
-            title: 'Mobile/Tablet & Outlook sync',
+            title: 'Mobile/Tablet & Outlook Sync',
             para: "Synchronize contacts across mobile devices, tablets, and Outlook seamlessly.",
             img: "/assets/features/contact-sharing/detail-4.svg",
         },
@@ -110,7 +110,7 @@ export default function FeatureDetail(){
                 keywords={"google contact sharing,Google Workspace contact sharing"}
                 >
 
-                <VideoPlayer videoId="POIX6FiWaN0" videoCover={"/assets/features/contact-sharing/video-cover.webp"} />
+                <VideoPlayer disabled={false} videoId="ibhxOj9-qGQ" videoCover={"/assets/features/contact-sharing/video-cover.webp"} />
 
                 <FeatureDetailTitle
                     sectionTitle1="Contact Sharing"    

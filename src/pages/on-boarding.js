@@ -122,7 +122,7 @@ export default function FeatureDetail(){
                 keywords={"Google workspace"}
                 >
 
-                <VideoPlayer videoId="POIX6FiWaN0" videoCover={"/assets/features/onboarding/video-cover.webp"}/>
+                <VideoPlayer disabled={false} videoId="POIX6FiWaN0" videoCover={"/assets/features/onboarding/video-cover.webp"}/>
 
                 <FeatureDetailTitle
                     sectionTitle1="Onboarding & Offboarding"    

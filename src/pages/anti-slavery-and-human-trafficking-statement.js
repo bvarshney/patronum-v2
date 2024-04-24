@@ -19,7 +19,7 @@ export default function Page() {
                 <Hero
                     pageTitle1={"Anti-Slavery and Human"}
                     pageTitle2={"Trafficking Statement"}
-                    pagePara={"This policy explains the way in which cookies are used on our website."}
+                    pagePara={"Committing to Ethical Practices: Patronum's Stance Against Slavery and Human Trafficking"}
                     imgSrc={"anti-slavery-and-human-trafficking.svg"}
                 />
                 <section className="" id="second-section">

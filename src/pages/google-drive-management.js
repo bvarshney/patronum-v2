@@ -12,33 +12,33 @@ export default function FeatureDetail(){
 
     const featuresDetail = [
         {
-            title: 'Change Ownership',
-            para: "Patronum Google drive management feature allows you to change the ownership in no time. Manually change ownership of users’ files and folders directly from within the Patronum Google drive management interface.",
-            img: "/assets/features/google-drive-management/main-1.svg",
-        },
-        {
             title: 'Browse Users Files & Folders',
-            para: "Google drive management features allow IT – administrators – to browse all your Google Workspace users’ files and folders to provide better remote assistance with complete security. Now browse all your Google Workspace users files and folders without any hassles.’",
+            para: "Patronum’s Google Drive Management enables IT administrators to delve into Google Workspace with unparalleled clarity, perusing user files and folders as if strolling through a well-organized library. This feature not only enhances visibility but also streamlines support, reflecting a commitment to operational excellence",
             img: "/assets/features/google-drive-management/main-2.svg",
         },
         {
+            title: 'Change Ownership',
+            para: "Patronum redefines the flexibility of file management by allowing instantaneous ownership transfers. This seamless transition ensures that the flow of information and collaboration remains uninterrupted, regardless of personnel changes. Empower your team with the capability to pivot swiftly and maintain the continuity of your digital assets.",
+            img: "/assets/features/google-drive-management/main-1.svg",
+        },
+        {
             title: 'Update Sharing Settings',
-            para: "Patronum is built on a global scale technical infrastructure designed to provide security throughout. We have invested heavily in securing our infrastructure and we have engineers dedicated to keeping your data and information secure and private.",
+            para: "Patronum elevates the security and flexibility of file-sharing within your organization. By refining sharing settings, you can ensure that sensitive data remains protected while still promoting a culture of collaboration and transparency. This feature aligns with the meticulous data governance and strategic foresight characteristic of top-tier global enterprises.",
             img: "/assets/features/google-drive-management/main-3.svg",
         },
         {
             title: 'Move Files And Folders',
-            para: "In Google contact sharing your Google Contacts are updated automatically across various platforms: Desktop, Mobile, Tablet or Microsoft Outlook. Users get instant access to contacts across different devices automatically.",
+            para: "With Patronum, managing your Google Drive resembles orchestrating a strategic corporate restructuring. It allows IT administrators to optimize the digital workspace by moving files and folders to more appropriate locations, enhancing operational efficiency and maintaining an organized environment.",
             img: "/assets/features/google-drive-management/main-4.svg",
         },
         {
             title: 'Manage Shared drives',
-            para: "With Patronum you are in control of your Google Addressbook. Share contact labels with other users and assign permissions such as “Can Edit”, “Can Delete” and “Read Only”. Our interface is based on the same permissions model used within Google Docs making it super easy to understand and deploy.",
+            para: "Patronum transforms the management of Google Shared Drives, fostering a unified and organized approach to collaboration. This feature allows for more integrated control over shared spaces, ensuring that every resource is aligned with the company’s strategic goals, reflecting the unity and efficiency of your organization's workforce.",
             img: "/assets/features/google-drive-management/main-5.svg",
         },
         {
             title: 'Add Files From Other Users',
-            para: "Patronum provides administrators with an extensive logging feature which gives them the power to monitor and keep a track of updates to contact sharing throughout the whole system. See who is sharing what and to whom.",
+            para: "Ensure continuous productivity with Patronum’s capability to grant access to necessary files even when the original owner is unavailable. This feature supports a seamless workflow, ensuring no interruption in daily operations.",
             img: "/assets/features/google-drive-management/main-6.svg",
         },
     ]
@@ -47,37 +47,37 @@ export default function FeatureDetail(){
         {
             id: '01',
             title: 'Rename Files',
-            para: "Effortlessly Manage and Automate Google Group Memberships.",
+            para: "Easily update file names to maintain clarity and relevance in your digital archives.",
             img: "/assets/features/google-drive-management/detail-1.svg",
         },
         {
             id: '02',
             title: 'Add Files',
-            para: "Empower Specific Users with Controlled Access to Manage Others' Google.",
+            para: "Seamlessly upload and integrate new files into Google Drive from various sources.",
             img: "/assets/features/google-drive-management/detail-2.svg",
         },
         {
             id: '03',
             title: 'Move Files',
-            para: "Simplify and Streamline the Sharing of Calendars within your Organisation.",
+            para: "Effortlessly reorganize files and folders to optimize workspace efficiency.",
             img: "/assets/features/google-drive-management/detail-3.svg",
         },
         {
             id: '04',
             title: 'Change Ownership',
-            para: "Utilise Ready-Made Policy Templates for Quick and Efficient.",
+            para: "Quickly transfer file ownership to ensure continuous workflow and responsibility.",
             img: "/assets/features/google-drive-management/detail-4.svg",
         },
         {
             id: '05',
             title: 'Create New Folders',
-            para: "Securely and Promptly Revoke User Access to Data and Resources.",
+            para: "Establish new folders to better categorize and manage digital resources.",
             img: "/assets/features/google-drive-management/detail-5.svg",
         },
         {
             id: '06',
             title: 'Share Files',
-            para: "Easily Manage and Delete Calendar Events, Ensuring Up-to-Date.",
+            para: "Distribute files with internal or external parties, enhancing collaboration and access control.",
             img: "/assets/features/google-drive-management/detail-6.svg",
         },
     ]
@@ -98,13 +98,13 @@ export default function FeatureDetail(){
                 keywords={"Google Drive"}
                 >
 
-                <VideoPlayer videoId="POIX6FiWaN0" videoCover={"/assets/features/google-drive-management/video-cover.webp"}/> 
+                <VideoPlayer disabled={false} videoId="C5_kwNp10Zo" videoCover={"/assets/features/google-drive-management/video-cover.webp"}/> 
 
                 <FeatureDetailTitle
                     sectionTitle1="Google Drive Management"    
                     sectionTitle2="For Google Workspace"
-                    sectionPara="Are you struggling to manage your data in Google drive and looking for an optimum solution for Google drive management? Then Patronum is the right solution for you. Google drive management solutions from Patronum allows IT administration to see Google drive in a whole different way."
-                    sectionParaBig=" View users files and folders and review sharing permissions, including Google Shared Team Drives. With Patronum managing Google Drive feels more like managing a local filesystem with all the control and power IT administrators need."
+                    sectionPara="Struggling with Google Drive management? Patronum offers a robust solution that transforms how IT administrators interact with Google Drive, offering streamlined, intuitive controls that enhance both productivity and data security. "
+                    sectionParaBig="Patronum allows for detailed oversight of user files and folders, enabling administrators to review and adjust sharing permissions effortlessly. Additionally, Patronum provides access to and control over Google Shared Drives and the capability to add files from other users, ensuring seamless productivity and enhanced data management."
                 />
 
                 <section id="feature-detail-info">
@@ -125,7 +125,7 @@ export default function FeatureDetail(){
                 </section>
 
                 <SectionBreak 
-                    sectionBreakText="Patronum redefines User Lifecycle Management in Google Workspace by using automation, delivering unparalleled security and productivity, freeing you to focus on innovation and strategic growth."
+                    sectionBreakText="Patronum's Google Drive management feature streamlines data handling by facilitating efficient file organization, seamless sharing, and secure access control. This enhances collaboration and productivity across organization, by fostering a collaborative environment for all users."
                 />
 
                 <section id="feature-detail-card">
@@ -155,7 +155,7 @@ export default function FeatureDetail(){
                     </div>    
                 </section>
 
-                <Faqs featureName="on_boarding"/>
+                <Faqs featureName="google_drive_management"/>
 
             </PageLayout>
 

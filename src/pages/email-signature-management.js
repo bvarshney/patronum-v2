@@ -121,7 +121,7 @@ export default function FeatureDetail(){
                 keywords={"Google Workspace"}
                 >
 
-                <VideoPlayer videoId="POIX6FiWaN0" videoCover={"/assets/features/email-signature-management/video-cover.webp"}/>
+                <VideoPlayer disabled={false} videoId="HnoMlb97PjE" videoCover={"/assets/features/email-signature-management/video-cover.webp"}/>
 
                 <FeatureDetailTitle
                     sectionTitle1="Email Signature Management"    
@@ -148,7 +148,7 @@ export default function FeatureDetail(){
                 </section>
 
                 <SectionBreak 
-                    sectionBreakText="Patronum is seamlessly integrated into your Google Workspace environment, eliminating the need for complex IT knowledge or adjustments to SMTP or SPF settings. Its plug-and-play nature means you can quickly install Patronum and start creating perfect email signatures right away, ensuring your communications are always professional and branded."
+                    sectionBreakText="Transform how your organization presents itself with Patronum&#39;s cutting-edge email signature management. It isn’t just about how you create email signatures; it&#39;s about embodying your brand&#39;s professionalism, presenting a unified brand image and transforming every email into a brand-building opportunity."
                 />
 
                 <section id="feature-detail-card">

@@ -9,7 +9,7 @@ export default function PricePage() {
         <>
             <PageLayout
                 pageTitle1="No Setup Fee,"
-                pageTitle2="No Upsells, No Worries"
+                pageTitle2="No Surprises, No Worries"
                 pagePara="Honest, Transparent and Fair Pricing."
                 imgSrc="pricing.svg"
                 title={"Pricing - Patronum"}
