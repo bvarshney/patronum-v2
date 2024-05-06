@@ -168,9 +168,10 @@ export default function FeatureDetail(){
                                 sectionPara="Patronum Backup provides the most complete backup vs older vendor & native tools"
                             />
 
-                            <div class="backup-tab">
+                        <div className="lg:overflow-hidden overflow-x-scroll">
+                            <div className="backup-tab">
                             {/* <!--Table Card 1--> */}
-                                <div class="backup-tab-card tab-card-1 fadeLeft">
+                                <div className="backup-tab-card tab-card-1 fadeLeft">
                                     <div></div>
                                     <div>
                                         <h5>Product &amp; Technology</h5>	
@@ -190,8 +191,8 @@ export default function FeatureDetail(){
                                 </div>
 				
                                 {/* <!--Table Card 2--> */}
-                                <div class="backup-tab-card table-1 fadeUp">
-                                    <div class="tab-card-row-1">
+                                <div className="backup-tab-card table-1 fadeUp">
+                                    <div className="tab-card-row-1">
                                         <img 
                                             src="/assets/features/google-workspace-backup/compare-1.png"
                                             loading="lazy"
@@ -207,26 +208,26 @@ export default function FeatureDetail(){
                                         </p>
                                     </div>
                                     <div>
-                                        <h5><span class="tab-radio-btn"></span>Limited</h5>
+                                        <h5><span className="tab-radio-btn"></span>Limited</h5>
                                         <p>Emails deleted within 20-25 days can be recovered. No versioning is available, only the last known state is restored. Some labels (e.g. Drafts) cannot be restored.</p>
                                     </div>
                                     <div>
-                                        <h5><span class="tab-radio-btn"></span>Limited</h5>
+                                        <h5><span className="tab-radio-btn"></span>Limited</h5>
                                         <p>Last state of files deleted within 20-30 days can be recovered. No single file recovery (only all deleted items in a time period).</p>
                                     </div>
                                     <div>
-                                        <h5><span class="tab-radio-btn"></span>Limited</h5>
+                                        <h5><span className="tab-radio-btn"></span>Limited</h5>
                                         <p>Last state of Calendars and Contacts can be recovered within 20-30 days after deletion.</p>
                                     </div>
                                     <div>
-                                        <h5><span class="tab-radio-btn"></span>Limited</h5>
+                                        <h5><span className="tab-radio-btn"></span>Limited</h5>
                                         <p>Data restored only to the original location. Data you’re not trying to recover will also be replaced, as only bulk restore is possible.</p>
                                     </div>
                                 </div>
 				
                                 {/* <!--Table Card 3--> */}
-                                <div class="backup-tab-card table-2 fadeUp">
-                                    <div class="tab-card-row-1">
+                                <div className="backup-tab-card table-2 fadeUp">
+                                    <div className="tab-card-row-1">
                                         <img 
                                             src="/assets/features/google-workspace-backup/compare-2.png"
                                             loading="lazy"
@@ -242,26 +243,26 @@ export default function FeatureDetail(){
                                         </p>
                                     </div>
                                     <div>
-                                        <h5><span class="tab-radio-btn incomplete"></span>Incomplete</h5>
+                                        <h5><span className="tab-radio-btn incomplete"></span>Incomplete</h5>
                                         <p>Emails can be recovered (with versioning) in MBOX format. Some emails are not retained, label structure is not preserved.</p>
                                     </div>
                                     <div>
-                                        <h5><span class="tab-radio-btn"></span>Limited</h5>
+                                        <h5><span className="tab-radio-btn"></span>Limited</h5>
                                         <p>Deleted files are retained, but versioning only available for Google-native files. Directory structures are not restored.</p>
                                     </div>
                                     <div>
-                                        <h5><span class="tab-radio-btn incomplete"></span>Incomplete</h5>
+                                        <h5><span className="tab-radio-btn incomplete"></span>Incomplete</h5>
                                         <p>No versioning for non-Google files, Drive and Shared Drives metadata, Calendars or Contacts.</p>
                                     </div>
                                     <div>
-                                        <h5><span class="tab-radio-btn"></span>Limited</h5>
+                                        <h5><span className="tab-radio-btn"></span>Limited</h5>
                                         <p>No restore to Google Workspace, only manual offline export w/o folders &amp; labels. When user is deleted from Google Workspace, all backup data is erased as well.</p>
                                     </div>
                                 </div>
 				
                                 {/* <!--Table Card 4--> */}
-                                <div class="backup-tab-card table-3 fadeUp">
-                                    <div class="tab-card-row-1">
+                                <div className="backup-tab-card table-3 fadeUp">
+                                    <div className="tab-card-row-1">
                                         <h4>
                                             Legacy Google Workspace Backup
                                         </h4>
@@ -272,26 +273,26 @@ export default function FeatureDetail(){
                                         </p>
                                     </div>
                                     <div>
-                                        <h5><span class="tab-radio-btn partial"></span>Partial</h5>
+                                        <h5><span className="tab-radio-btn partial"></span>Partial</h5>
                                         <p>Most vendors don't preserve the nested Gmail labels structure upon backup/restore. For some vendors the backup frequency is limited to 1x/day.</p>
                                     </div>
                                     <div>
-                                        <h5><span class="tab-radio-btn"></span>Limited</h5>
+                                        <h5><span className="tab-radio-btn"></span>Limited</h5>
                                         <p>Data &amp; versions are preserved, but files can be silently skipped from backups and the number of retained versions may be limited.</p>
                                     </div>
                                     <div>
-                                        <h5><span class="tab-radio-btn partial"></span>Partial</h5>
+                                        <h5><span className="tab-radio-btn partial"></span>Partial</h5>
                                         <p>Backup of Google Workspace Contacts and Calendars. Only some vendors backup Google Sites &amp; Chats.</p>
                                     </div>
                                     <div>
-                                        <h5><span class="tab-radio-btn"></span>Limited</h5>
+                                        <h5><span className="tab-radio-btn"></span>Limited</h5>
                                         <p>Restore operations can take days and weeks. Export takes time &amp; many steps (request the export link, wait until it's ready, etc).</p>
                                     </div>
                                 </div>
 				
                                 {/* <!--Table Card 5--> */}
-                                <div class="backup-tab-card active table-4 fadeUp">
-                                    <div class="tab-card-row-1">
+                                <div className="backup-tab-card active table-4 fadeUp">
+                                    <div className="tab-card-row-1">
                                             <img 
                                                 src="/assets/features/google-workspace-backup/compare-p.png"
                                                 loading="lazy"
@@ -307,23 +308,24 @@ export default function FeatureDetail(){
                                         </p>
                                     </div>
                                     <div>
-                                        <h5><span class="tab-radio-btn full"></span>Full</h5>
+                                        <h5><span className="tab-radio-btn full"></span>Full</h5>
                                         <p>Gmail backup with 1-24x daily frequency, preserving nested Gmail label structures, full text search, instant online preview and PST/MBOX/EML export.</p>
                                     </div>
                                     <div>
-                                        <h5><span class="tab-radio-btn full"></span>Full</h5>
+                                        <h5><span className="tab-radio-btn full"></span>Full</h5>
                                         <p>Full fidelity backup (only vendor to backup/recover Drive document IDs), accurate backup of shared files &amp; unlimited versioning.</p>
                                     </div>
                                     <div>
-                                        <h5><span class="tab-radio-btn full"></span>Full</h5>
+                                        <h5><span className="tab-radio-btn full"></span>Full</h5>
                                         <p>Full support of Google Workspace apps and metadata with flexible export (MBOX, PST, EML, VFS, ICS).</p>
                                     </div>
                                     <div>
-                                        <h5><span class="tab-radio-btn full"></span>Full</h5>
+                                        <h5><span className="tab-radio-btn full"></span>Full</h5>
                                         <p>Only solution with full-text search, instant backup preview, in- place/non-destructive restore &amp; offline export via direct download.</p>
                                     </div>
                                 </div>
 			                </div>
+                        </div>
                         </div>
                     </div>
 

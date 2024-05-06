@@ -160,9 +160,9 @@
   .featureItem .featureImg img{
     width: 8vw;
   }
-  .content{
-    font-size: 4vw;
-    margin: 2.5vw 0;
+  .content span{
+    font-size: 3.5vw;
+    margin: 2vw 0;
   }
   .content span::before{
     margin-right: 2vw;
@@ -170,3 +170,6 @@
   }
 }
 /* =======================900px End============================== */
+
+/* =======================640px Start============================== */
+/* =======================640px End============================== */

@@ -23,17 +23,17 @@ export default function FeatureDetail(){
         },
         {
             title: 'Security-First Approach',
-            para: "Security is a top priority in user management. Patronum adopts a security-first approach, ensuring that user access privileges are appropriately revoked upon their departure from the organisation. This includes automatic password changes, updating recovery email addresses, and deleting all app-specific passwords, thereby maintaining the integrity and security of your Google Workspace.",
+            para: "Security is a top priority in user management. Patronum adopts a security-first approach, ensuring that user access privileges are appropriately revoked upon their departure from the organization. This includes automatic password changes, updating recovery email addresses, and deleting all app-specific passwords, thereby maintaining the integrity and security of your Google Workspace.",
             img: "/assets/features/onboarding/main-3.svg",
         },
         {
             title: 'Mobile Management',
-            para: "In a mobile-centric world, Patronum also extends its management capabilities to mobile devices. It automatically wipes mobile devices when users leave the organisation, ensuring that sensitive data remains securely within the organisation and does not leave with the departing employee.",
+            para: "In a mobile-centric world, Patronum also extends its management capabilities to mobile devices. It automatically wipes mobile devices when users leave the organization, ensuring that sensitive data remains securely within the organization and does not leave with the departing employee.",
             img: "/assets/features/onboarding/main-4.svg",
         },
         {
             title: 'Email Signature',
-            para: "Patronum provides complete email signature management within Google Workspace, ensuring that all communications are consistent and aligned with your organisation's branding and standards.",
+            para: "Patronum provides complete email signature management within Google Workspace, ensuring that all communications are consistent and aligned with your organization's branding and standards.",
             img: "/assets/features/onboarding/main-5.svg",
         },
         {
@@ -43,7 +43,7 @@ export default function FeatureDetail(){
         },
         {
             title: 'Shared Contacts Management',
-            para: "For organisations that rely heavily on Google contacts, Patronum offers a centralised management system to keep all Google Contacts in sync and well-managed, enhancing communication efficiency across the organisation.",
+            para: "For organizations that rely heavily on Google contacts, Patronum offers a centralised management system to keep all Google Contacts in sync and well-managed, enhancing communication efficiency across the organization.",
             img: "/assets/features/onboarding/main-8.svg",
         },
         {
@@ -75,7 +75,7 @@ export default function FeatureDetail(){
         {
             id: '04',
             title: 'Calendar Sharing',
-            para: "Simplify and streamline the sharing of calendars within your organisation, enhancing collaboration and scheduling.",
+            para: "Simplify and streamline the sharing of calendars within your organization, enhancing collaboration and scheduling.",
             img: "/assets/features/onboarding/detail-3.svg",
         },
         {
@@ -113,13 +113,13 @@ export default function FeatureDetail(){
                 pageTitle2={'Management'}
                 pagePara={"Seamless & Automated User Lifecycle Management for Google Workspace."} 
                 imgSrc={'feature-onboarding.svg'}
-                title={"Google workspace onboarding with Patronum"}
-                description={"You can give your users a consistent and unified experience with Google workspace and minimize the spending in managing users and resources. User onboarding and offboarding Google Workspace will give you such flexibility."}
+                title={"Google Workspace onboarding with Patronum"}
+                description={"You can give your users a consistent and unified experience with Google Workspace and minimize the spending in managing users and resources. User onboarding and offboarding Google Workspace will give you such flexibility."}
                 url={"on-boarding"}
                 img={"onboarding.jpg"}
                 date_published={"2020-12-21T06:37"}
                 date_modified={"2024-04-01T00:00"}
-                keywords={"Google workspace"}
+                keywords={"Google Workspace"}
                 >
 
                 <VideoPlayer disabled={false} videoId="POIX6FiWaN0" videoCover={"/assets/features/onboarding/video-cover.webp"}/>

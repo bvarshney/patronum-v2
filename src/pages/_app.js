@@ -40,6 +40,26 @@ export default function App({ Component, pageProps, router }) {
     }
   }, []);
 
+  useEffect(() => {
+    const handleRouteChange = () => {
+      // Disable pointer events on route change
+      document.body.style.pointerEvents = 'none';
+
+      // Enable pointer events when mouse moves
+      const enablePointerEvents = () => {
+        document.body.style.pointerEvents = 'auto';
+        document.removeEventListener('mousemove', enablePointerEvents);
+      };
+      document.addEventListener('mousemove', enablePointerEvents);
+    };
+
+    router.events.on('routeChangeStart', handleRouteChange);
+
+    return () => {
+      router.events.off('routeChangeStart', handleRouteChange);
+    };
+  }, [router]);
+
     useEffect(() => {
     const handleRouteChange = () => {
         window.scrollTo(0, 0)
@@ -79,6 +99,18 @@ export default function App({ Component, pageProps, router }) {
         openGraph={{
           type: 'website',
           locale: 'en_US',
+          title: "Patronum - Best Platform for Google Workspace (GSuite) Management",
+          "description": "Patronum provides a better way to Google Workspace (GSuite) Management. Patronum fully automates all the administrator and user tasks to ensure an efficient, effective and secure process.",
+          images: [
+            {
+              url: "https://www.patronum.io/assets/seo/Google-Workspace.png",
+              width: 1290,
+              height: 594,
+              alt: "Patronum",
+              type: "image/png",
+            },
+          ],
+          siteName: "Patronum",
         }}
         twitter={{
           site: 'Patronum',

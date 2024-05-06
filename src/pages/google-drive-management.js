@@ -90,7 +90,7 @@ export default function FeatureDetail(){
                 pagePara={"Get Better Control Over Users Google Drive Files & Folders."} 
                 imgSrc={'google-drive-management.svg'}
                 title={"Google Drive management with Patronum"}
-                description={"Google drive management allows IT, administrators, to see Google Drive in a whole new way. Patronum will help you manage Google Drive and make it feel like a local filesystem that will give you all the control and power."}
+                description={"Google Drive management allows IT, administrators, to see Google Drive in a whole new way. Patronum will help you manage Google Drive and make it feel like a local file system that will give you all the control and power."}
                 url={"google-drive-management"}
                 img={"google-drive-management.jpg"}
                 date_published={"2020-12-21T07:03"}

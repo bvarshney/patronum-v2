@@ -91,7 +91,7 @@ export default function ReferCustomerForm() {
             <h1><strong>Refer Customer Form Submission</strong></h1>
             <p><strong>Name:</strong> ${data.name}</p>
             <p><strong>Email:</strong> ${data.email}</p>
-            <p><strong>Organisation Name:</strong> ${data.company}</p>
+            <p><strong>Organization Name:</strong> ${data.company}</p>
             <p><strong>Country:</strong> ${countryName}</p>
             <p><strong>Message:</strong> ${data.textarea}</p>
             <p><strong>Terms Agreement:</strong> ${data.terms ? 'Agreed' : 'Not Agreed'}</p>
@@ -141,9 +141,9 @@ export default function ReferCustomerForm() {
             name="company"
             render= {({ field }) => (
                 <FormItem className="required">
-                    <FormLabel>Organisation Name</FormLabel>
+                    <FormLabel>Organization Name</FormLabel>
                     <FormControl>
-                        <Input placeholder="Enter Organisation Name" {...field}/>
+                        <Input placeholder="Enter Organization Name" {...field}/>
                     </FormControl>
                     <FormMessage />
                 </FormItem>

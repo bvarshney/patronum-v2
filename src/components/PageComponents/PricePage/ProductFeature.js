@@ -20,7 +20,7 @@ const ProductFeatures = () => {
             title: "Dashboard",
             img: '/assets/pricing/detail-1.png',
             description: [
-                'Top Organisation Shares',
+                'Top Organization Shares',
                 'Top Externally Shared Files',
                 'Top External Domains',
                 'Alerts & Reports',
@@ -169,7 +169,7 @@ const ProductFeatures = () => {
                 'Remove Connected 3rd Party Applications',
                 'Force user sign out',
                 'Hide User from Google Global Address book',
-                'Move User to different organisational unit within Google Directory',
+                'Move User to different organizational unit within Google Directory',
                 'Rename the User',
                 'Allocate leaver’s email address to another user or Google Group',
                 'Timed suspension of User',

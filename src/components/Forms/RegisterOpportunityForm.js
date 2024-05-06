@@ -112,12 +112,12 @@ export default function RegisterOpportunityForm() {
             <h3>Partner Details:</h3>
             <p><strong>Partner Name:</strong> ${data.name}</p>
             <p><strong>Partner Email:</strong> ${data.email}</p>
-            <p><strong>Partner Organisation Name:</strong> ${data.company}</p>
+            <p><strong>Partner Organization Name:</strong> ${data.company}</p>
             <p><strong>Partner Country:</strong> ${data.country}</p>
             <h3>Opportunity Details:</h3>
             <p><strong>Client Name:</strong> ${data.clname}</p>
             <p><strong>Client Email:</strong> ${data.clemail}</p>
-            <p><strong>Client Organisation Name:</strong> ${data.clcompany}</p>
+            <p><strong>Client Organization Name:</strong> ${data.clcompany}</p>
             <p><strong>Partner Country:</strong> ${countryName}</p>
             <p><strong>Client Google Workspace Domain:</strong> ${data.cldomain}</p>
             <p><strong>Client Number of Licensed User:</strong> ${data.cluser}</p><br>
@@ -173,9 +173,9 @@ export default function RegisterOpportunityForm() {
             name="company"
             render= {({ field }) => (
                 <FormItem className="required">
-                    <FormLabel>Organisation Name</FormLabel>
+                    <FormLabel>Organization Name</FormLabel>
                     <FormControl>
-                        <Input placeholder="Enter Organisation Name" {...field}/>
+                        <Input placeholder="Enter Organization Name" {...field}/>
                     </FormControl>
                     <FormMessage />
                 </FormItem>
@@ -237,9 +237,9 @@ export default function RegisterOpportunityForm() {
             name="clcompany"
             render= {({ field }) => (
                 <FormItem className="required">
-                    <FormLabel>Client Organisation Name</FormLabel>
+                    <FormLabel>Client Organization Name</FormLabel>
                     <FormControl>
-                        <Input placeholder="Client Organisation Name" {...field}/>
+                        <Input placeholder="Client Organization Name" {...field}/>
                     </FormControl>
                     <FormMessage />
                 </FormItem>

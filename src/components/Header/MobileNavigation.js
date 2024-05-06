@@ -160,13 +160,13 @@ const MobileNavigation = ({ isOpen, setSideNavOpen }) => {
                                 </Link>
                             </li>
                             <li className=''>
-                                <Link href='/organisational-chart' className='py-2 px-4 rounded flex gap-4 items-center' aria-label='Features - Organisational Chart' >
+                                <Link href='/organizational-chart' className='py-2 px-4 rounded flex gap-4 items-center' aria-label='Features - Organizational Chart' >
                                     <div className='w-[4rem] h-[4rem] p-4 bg-head flex justify-center items-center rounded-full overflow-hidden'>
-                                        <img loading='lazy' src='/assets/menu/organisational-chart.svg' alt='use case icon'/>
+                                        <img loading='lazy' src='/assets/menu/organizational-chart.svg' alt='use case icon'/>
                                     </div>
                                     <div>
-                                        <p className='text-xl font-500'>Organisational Chart</p>
-                                        <p className='text-base'>Locate & view organisation hierarchy</p>
+                                        <p className='text-xl font-500'>Organizational Chart</p>
+                                        <p className='text-base'>Locate & view organization hierarchy</p>
                                     </div>
                                 </Link>
                             </li>
@@ -307,17 +307,6 @@ const MobileNavigation = ({ isOpen, setSideNavOpen }) => {
                                 </Link>
                             </li>
                             <li className=''>
-                                <Link href='/webinars' className='py-2 px-4 rounded flex gap-4 items-center' aria-label='Resources - Webinars' >
-                                    <div className='w-[4rem] h-[4rem] p-4 bg-head flex justify-center items-center rounded-full overflow-hidden'>
-                                        <img loading='lazy' src='/assets/menu/resource-webinars.svg' alt='resource icon'/>
-                                    </div>
-                                    <div>
-                                        <p className='text-xl font-500'>Webinars</p>
-                                        <p className='text-base'>Engage With Experts Live</p>
-                                    </div>
-                                </Link>
-                            </li>
-                            <li className=''>
                                 <Link href='/case-studies' className='py-2 px-4 rounded flex gap-4 items-center' aria-label='Resources - Case Studies' >
                                     <div className='w-[4rem] h-[4rem] p-4 bg-head flex justify-center items-center rounded-full overflow-hidden'>
                                         <img loading='lazy' src='/assets/menu/resource-case-studies.svg' alt='resource icon'/>
@@ -339,6 +328,17 @@ const MobileNavigation = ({ isOpen, setSideNavOpen }) => {
                                     </div>
                                 </Link>
                             </li> */}
+                            <li className=''>
+                                <Link href='/webinars' className='py-2 px-4 rounded flex gap-4 items-center' aria-label='Resources - Webinars' >
+                                    <div className='w-[4rem] h-[4rem] p-4 bg-head flex justify-center items-center rounded-full overflow-hidden'>
+                                        <img loading='lazy' src='/assets/menu/resource-webinars.svg' alt='resource icon'/>
+                                    </div>
+                                    <div>
+                                        <p className='text-xl font-500'>Webinars</p>
+                                        <p className='text-base'>Engage With Experts Live</p>
+                                    </div>
+                                </Link>
+                            </li>
                             <li className=''>
                                 <Link href='https://community.patronum.io' target='_blank' className='py-2 px-4 rounded flex gap-4 items-center' aria-label='Resources - Community'>
                                     <div className='w-[4rem] h-[4rem] p-4 bg-head flex justify-center items-center rounded-full overflow-hidden'>

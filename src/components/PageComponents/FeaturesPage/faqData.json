@@ -20,7 +20,7 @@
             {
                 "id": "04",
                 "title": "Is it possible to customise onboarding workflows with Patronum?",
-                "content": "Yes, Patronum offers customisable onboarding workflows. Organisations can tailor these processes to meet their specific requirements, ensuring that every new employee's onboarding experience aligns with organisational protocols and needs."
+                "content": "Yes, Patronum offers customisable onboarding workflows. Organizations can tailor these processes to meet their specific requirements, ensuring that every new employee's onboarding experience aligns with organizational protocols and needs."
             },
             {
                 "id": "05",
@@ -30,12 +30,12 @@
             {
                 "id": "06",
                 "title": "Can Patronum automate email setup and signature configuration for new users?",
-                "content": "Absolutely, Patronum automates the email setup process for new users, including configuring email accounts and standardising email signatures according to the organisation's branding guidelines."
+                "content": "Absolutely, Patronum automates the email setup process for new users, including configuring email accounts and standardising email signatures according to the organization's branding guidelines."
             },
             {
                 "id": "07",
                 "title": "Does Patronum support bulk user onboarding and offboarding?",
-                "content": "Yes, Patronum supports bulk user onboarding and offboarding, allowing organisations to efficiently manage large-scale additions or removals of users in Google Workspace."
+                "content": "Yes, Patronum supports bulk user onboarding and offboarding, allowing organizations to efficiently manage large-scale additions or removals of users in Google Workspace."
             },
             {
                 "id": "08",
@@ -45,7 +45,7 @@
             {
                 "id": "09",
                 "title": "Can Patronum automate the transfer of files and documents to new users?",
-                "content": "Yes, Patronum can automate the transferring of necessary files and documents to new users. It ensures that new employees have immediate access to all the required resources, streamlining their integration into the organisation."
+                "content": "Yes, Patronum can automate the transferring of necessary files and documents to new users. It ensures that new employees have immediate access to all the required resources, streamlining their integration into the organization."
             },
             {
                 "id": "10",
@@ -55,7 +55,7 @@
             {
                 "id": "11",
                 "title": "How does Patronum handle user data backup during offboarding?",
-                "content": "Patronum ensures that all user data, including emails, documents, and calendar information, is securely backed up during offboarding. This process allows for the safe archiving of important data, which can be accessed or transferred as needed, ensuring that no critical information is lost when a user leaves the organisation."
+                "content": "Patronum ensures that all user data, including emails, documents, and calendar information, is securely backed up during offboarding. This process allows for the safe archiving of important data, which can be accessed or transferred as needed, ensuring that no critical information is lost when a user leaves the organization."
             },
             {
                 "id": "12",
@@ -80,7 +80,7 @@
         ]
     },
     {
-        "feature": "organisational_chart",
+        "feature": "organizational_chart",
         "faqs": [
             {
                 "id": "01",
@@ -619,7 +619,7 @@
             },
             {
                 "id": "06",
-                "title": "I’m a Non-Profit / Education organisation. Do you offer discounts?",
+                "title": "I’m a Non-Profit / Education organization. Do you offer discounts?",
                 "content": "Yes, we offer huge discounts for non-profit and education organizations."
             }
         ]

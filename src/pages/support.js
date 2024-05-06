@@ -88,13 +88,13 @@ export default function Support(){
                                 />
                                 <SupportCard
                                     featTitle={"Video Call"}
-                                    featPara1={"At Patronum we know that sometimes it’s just easier to have a face to face conversation in order to explain your challenge. Likewise, it’s often quick for our support team to speak with you in order to explain how things can be done better. That’s why we’ve built video chat directly into the Patronum interface. Start a chat and allow our support experts to escalate your chat to a face to face video call."}
+                                    featPara1={"At Patronum we know that sometimes it’s just easier to have a face to face converzation in order to explain your challenge. Likewise, it’s often quick for our support team to speak with you in order to explain how things can be done better. That’s why we’ve built video chat directly into the Patronum interface. Start a chat and allow our support experts to escalate your chat to a face to face video call."}
                                     featImg={"/assets/support/video-call.svg"}
                                     btnText="Chat With Us"
                                 />
                                 <SupportCard
                                     featTitle={"Screen Sharing"}
-                                    featPara1={"At Patronum we don’t want you to have to create a long and complex support ticket. We want to help you at precisely the right time and place where you’re having trouble. Within Patronum we’ve added built-in chat, video and even screensharing so that we can provide the very best customer service in the industry. Too many software organisation rely on a support ticketing system where customers log issues and someone will eventually get back to you. That model is broke, with Patronum we want to help you immediately, directly from within our application."}
+                                    featPara1={"At Patronum we don’t want you to have to create a long and complex support ticket. We want to help you at precisely the right time and place where you’re having trouble. Within Patronum we’ve added built-in chat, video and even screensharing so that we can provide the very best customer service in the industry. Too many software organization rely on a support ticketing system where customers log issues and someone will eventually get back to you. That model is broke, with Patronum we want to help you immediately, directly from within our application."}
                                     featImg={"/assets/support/screen-sharing.svg"}
                                     btnText="Chat With Us"
                                 />

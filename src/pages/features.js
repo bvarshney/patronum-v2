@@ -48,11 +48,11 @@ const featuresData = [
         link: "/google-workspace-backup"
     },
     {
-        title: 'Organisational Chart',
+        title: 'Organizational Chart',
         para1: "Patronum's Organizational Chart is a powerful tool for navigating and understanding the structure of your organization within Google Workspace. This feature provides a clear and detailed view of the company hierarchy, showing who reports to whom and the relationships between different team members. The Organizational Chart is particularly useful for new employees who need to understand the company structure and for managers who need to keep track of team dynamics.",
         para2: "The Patronum People Search feature, integrated within the Organizational Chart, makes finding and connecting with colleagues easy, fostering a more connected and collaborative work environment.",
         img: "/assets/home/features-7.svg",
-        link: "/organisational-chart"
+        link: "/organizational-chart"
     },
 ];
 

@@ -86,10 +86,10 @@ const DesktopNavigation = () => {
                                             img={'contact-sharing.svg'}
                                         />
                                         <NavItem 
-                                            title={'Organisational Chart'}
-                                            disc={'Locate & view organisation hierarchy'}
-                                            link={'/organisational-chart'}
-                                            img={'organisational-chart.svg'}
+                                            title={'Organizational Chart'}
+                                            disc={'Locate & view organization hierarchy'}
+                                            link={'/organizational-chart'}
+                                            img={'organizational-chart.svg'}
                                         />
                                     </ul>
                                 </motion.div>
@@ -253,12 +253,6 @@ const DesktopNavigation = () => {
                                                 img={'resource-ebooks.svg'}
                                             />
                                             <NavItem 
-                                                title={'Webinars'}
-                                                disc={'Engage With Experts Live'}
-                                                link={'/webinars'}
-                                                img={'resource-webinars.svg'}
-                                            />
-                                            <NavItem 
                                                 title={'Case Studies'}
                                                 disc={"Patronum's Real-World Success Stories"}
                                                 link={'/case-studies'}
@@ -270,6 +264,12 @@ const DesktopNavigation = () => {
                                                 link={'/product-videos'}
                                                 img={'resource-product-videos.svg'}
                                             /> */}
+                                            <NavItem 
+                                                title={'Webinars'}
+                                                disc={'Engage With Experts Live'}
+                                                link={'/webinars'}
+                                                img={'resource-webinars.svg'}
+                                            />
                                             <li className='nav-drop-list-item'>
                                                 <Link href='https://community.patronum.io' target='_blank' className='nav-drop-list-hover' >
                                                     <div className='img'>

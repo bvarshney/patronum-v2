@@ -183,8 +183,8 @@ export default function Hero(){
                                 <circle className="hero-svg-circle" cx="43" cy="43" r="42" stroke="currentColor" strokeWidth="2"/>
                             </svg>
                             <span className="scroll-img-container">
-                                <img data="first" src="/assets/icons/arrow-scroll.png" alt="arrow-image"/>
-                                <img data="second" src="/assets/icons/arrow-scroll.png" alt="arrow-image"/>
+                                <img data="first" src="/assets/icons/arrow-down-big.svg" alt="arrow-image"/>
+                                <img data="second" src="/assets/icons/arrow-down-big.svg" alt="arrow-image"/>
                             </span>
                         </button>
                     </div>

@@ -14,7 +14,7 @@ const Category = ({ category, posts, categories }) => {
     <>
         <MetaData 
           title={`${category.name} Archive - Patronum`}
-          description={"Get all the information that can help you with effective & efficient management of your Google Workspace (Gsuite). Download our resources and participate in webinars to know more."}
+          description={"Get all the information that can help you with effective & efficient management of your Google Workspace (GSuite). Download our resources and participate in webinars to know more."}
           url={`category/${category.slug}`}
           img={"blog.jpg"}
           date_published={"2020-12-21T12:00"}
@@ -78,7 +78,7 @@ export async function getStaticProps({ params = {} } = {}) {
       posts,
       categories,
     },
-    revalidate: 10,
+    revalidate: 500,
   };
 }
 

@@ -16,7 +16,7 @@ const accordionData = [
     {
         title: 'File Unsharing & Compliances',
         content: "In a world where business information flows freely across employees, departments, and external entities, from suppliers to customers, managing your company's data effectively is crucial. Our intuitive policies enable you to effortlessly clean up file sharing with external organizations.",
-        more: "With Patronum you can gain comprehensive insights into external access to your data and revoke it as necessary or you can easily set up policies that automate the clean-up of file sharing with external organisations.",
+        more: "With Patronum you can gain comprehensive insights into external access to your data and revoke it as necessary or you can easily set up policies that automate the clean-up of file sharing with external organizations.",
         img: 'assets/home/features-2.svg',
         link: '/google-drive-compliance',
     },

@@ -313,7 +313,7 @@ export default function Home( { recentPosts } ) {
                 "@context": "https://schema.org",
                 "@type": "Article",
                 "headline": "Patronum - Best Platform for Google Workspace (GSuite) Management",
-                "keywords" : "Patronum,Google Workspace,Gsuite Management",
+                "keywords" : "Patronum,Google Workspace,GSuite Management",
                 "@id": "https://www.patronum.io/#richSnippet",
                 "datePublished": "2020-12-21T12:01:00+00:00",
                 "dateModified": "2024-04-04T12:00:00+00:00",
@@ -372,6 +372,6 @@ export async function getStaticProps() {
     props: {
       recentPosts,
     },
-    revalidate: 10,
+    revalidate: 500,
   };
 }

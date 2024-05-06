@@ -359,7 +359,7 @@ export async function getStaticProps({ params }) {
         post,
         recentPosts,
       },
-      revalidate: 10,
+      revalidate: 500,
     };
   } catch (error) {
     console.error('Error fetching data:', error);
@@ -369,7 +369,7 @@ export async function getStaticProps({ params }) {
         post: null, // Use null instead of undefined
         recentPosts: [],
       },
-      revalidate: 10,
+      revalidate: 500,
     };
   }
 }

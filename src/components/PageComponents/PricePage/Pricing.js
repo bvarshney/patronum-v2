@@ -22,21 +22,21 @@ const Pricing = () => {
           'Google Drive Management',
           'Contact Sharing',
           'Automated File Unsharing',
-          'Organisations Chart',
+          'Organizations Chart',
         ],
         'Non-Profit': [
           'Email Signature Management',
           'Google Drive Management',
           'Contact Sharing',
           'Automated File Unsharing',
-          'Organisations Chart',
+          'Organizations Chart',
         ],
         Business: [
           'Email Signature Management',
           'Google Drive Management',
           'Contact Sharing',
           'Automated File Unsharing',
-          'Organisations Chart',
+          'Organizations Chart',
         ]
       };
 

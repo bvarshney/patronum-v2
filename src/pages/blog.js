@@ -19,7 +19,7 @@ export default function Blogs( { posts, featuredPost, pagination, categories } )
                 pagePara={"Dive into the latest updates, tips, and trends in Google Workspace management with Patronum."}
                 imgSrc={"/blog.svg"}
                 title={"Learn more about Google Workspace (G Suite) Management"}
-                description={"Get all the information that can help you with effective & efficient management of your Google Workspace (Gsuite). Download our resources and participate in webinars to know more."}
+                description={"Get all the information that can help you with effective & efficient management of your Google Workspace (GSuite). Download our resources and participate in webinars to know more."}
                 url={"blog"}
                 img={"blog.jpg"}
                 date_published={"2020-12-21T12:00"}
@@ -121,6 +121,6 @@ export async function getStaticProps({ params }) {
           basePath: slug ? `/categories/${slug}/page` : '/blog',
         },
       },
-      revalidate: 10,
+      revalidate: 500,
     };
   }

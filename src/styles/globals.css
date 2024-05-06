@@ -2375,10 +2375,7 @@ section{
     margin-top: 20px;
   }
   .backup-tab {
-    grid-template-columns: 20% 35% 35%;
-  }
-  .backup-tab-card.table-2, .backup-tab-card.table-3{
-    display: none;
+    width: 200%;
   }
   .backup-tab-card.tab-card-1 h5{
     font-size: 2vw;
@@ -2403,12 +2400,8 @@ section{
     margin-top: 50px;
   }
   .backup-tab {
-    grid-template-columns: 90%;
+    width: 300%;
     text-align: left;
-  }
-  .backup-tab-card.tab-card-1, 
-  .backup-tab-card.table-1{
-    display: none;
   }
   .tab-card-row-1 img{
     width: 40px;
@@ -2418,6 +2411,9 @@ section{
   }
   .backup-tab-card p{
     font-size: 3.8vw;
+  }
+  .backup-tab-card.tab-card-1 h5{
+    font-size: 4vw;
   }
 }
 
@@ -2560,6 +2556,7 @@ section{
 
 .cards-wrapper.webinar{
   row-gap: 5vw;
+  align-items: stretch;
 }
 
 .cards-wrapper.guide{
@@ -3533,9 +3530,12 @@ section{
   /* Partner with us 900px */
   .partner-card{
     width: 100%;
-    margin-bottom: 10vw;
+    margin-bottom: 16vw;
     padding: 0 7%;
-    gap: 5vw;
+    gap: 4vw;
+  }
+  .partner-card-link {
+    margin-top: 15vw;
   }
   .partner-card img {
     width: 30%;
@@ -3549,6 +3549,16 @@ section{
     height: 6.5vw;
     font-size: 3vw;
   }
+
+  .partner-info-wrapper .section-list-head .cards-num span{
+    width: 6.5vw;
+    height: 6.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
   .partner-info-wrapper .section-list-head{
     padding: 2vw 2vw;
     gap: 2vw;
@@ -3808,7 +3818,7 @@ section{
 
   /* Link Button */
 .link-btn{
-  font-size: 4vw;
+  font-size: 4.2vw;
 }
 .link-btn .btn-images{
   width: 7vw;
@@ -3846,6 +3856,11 @@ section{
 
 
   /* About Page 640px CSS Start */
+  .faq-item-content .faq-number{
+    font-size: 11px;
+    width: 24px;
+    height: 24px;
+  }
   .footer-contact-bg{
     height: 100.4vw;
   }
@@ -3853,7 +3868,7 @@ section{
     width: 20%;
   }
   #pageHero{
-    height: 100vh;
+    height: 85vh;
   }
   .page-hero-flex{
     flex-direction: column;
