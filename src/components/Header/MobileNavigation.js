@@ -160,9 +160,9 @@ const MobileNavigation = ({ isOpen, setSideNavOpen }) => {
                                 </Link>
                             </li>
                             <li className=''>
-                                <Link href='/organizational-chart' className='py-2 px-4 rounded flex gap-4 items-center' aria-label='Features - Organizational Chart' >
+                                <Link href='/organisational-chart' className='py-2 px-4 rounded flex gap-4 items-center' aria-label='Features - Organizational Chart' >
                                     <div className='w-[4rem] h-[4rem] p-4 bg-head flex justify-center items-center rounded-full overflow-hidden'>
-                                        <img loading='lazy' src='/assets/menu/organizational-chart.svg' alt='use case icon'/>
+                                        <img loading='lazy' src='/assets/menu/organisational-chart.svg' alt='use case icon'/>
                                     </div>
                                     <div>
                                         <p className='text-xl font-500'>Organizational Chart</p>

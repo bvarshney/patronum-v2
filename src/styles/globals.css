@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("./fonts.css");
+
 * {
   margin: 0;
   padding: 0;
@@ -127,68 +129,6 @@ p{
   line-height: 1.5;
   text-rendering: geometricPrecision;
 }
-
-/*01. Fonts */
-/*==============FONTS===================*/
-
-/* Ageo */
-@font-face {
-  font-family: 'Ageo';
-  src: url('/assets/fonts/Ageo/Ageo.woff2') format('woff2');
-       font-weight: 400;
-       font-display: swap;
-       font-style: normal;
-}
-@font-face {
-  font-family: 'Ageo';
-  src: url('/assets/fonts/Ageo/Ageo-Medium.woff2') format('woff2');
-       font-weight: 500;
-       font-display: swap;
-       font-style: normal;
-}
-
-/* Aeonik */
-@font-face {
-  font-family: 'Aeonik';
-  src: url('/assets/fonts/Aeonik/Aeonik-Light.otf') format('otf');
-  src: url('/assets/fonts/Aeonik/Aeonik-Light.woff2') format('woff2');
-       font-weight: 300;
-       font-display: swap;
-       font-style: normal;
-}
-@font-face {
-  font-family: 'Aeonik';
-  src: url('/assets/fonts/Aeonik/Aeonik-Regular.otf') format('otf');
-  src: url('/assets/fonts/Aeonik/Aeonik-Regular.woff2') format('woff2');
-       font-weight: 400;
-       font-display: swap;
-       font-style: normal;
-}
-@font-face {
-  font-family: 'Aeonik';
-  src: url('/assets/fonts/Aeonik/Aeonik-Medium.otf') format('otf');
-  src: url('/assets/fonts/Aeonik/Aeonik-Medium.woff2') format('woff2');
-       font-weight: 500;
-       font-display: swap;
-       font-style: normal;
-}
-@font-face {
-  font-family: 'Aeonik';
-  src: url('/assets/fonts/Aeonik/Aeonik-MediumItalic.otf') format('otf');
-  src: url('/assets/fonts/Aeonik/Aeonik-MediumItalic.woff2') format('woff2');
-       font-weight: 500;
-       font-display: swap;
-       font-style: italic;
-}
-@font-face {
-  font-family: 'Aeonik';
-  src: url('/assets/fonts/Aeonik/Aeonik-Bold.otf') format('otf');
-  src: url('/assets/fonts/Aeonik/Aeonik-Bold.woff2') format('woff2');
-       font-weight: 700;
-       font-display: swap;
-       font-style: normal;
-}
-/*==============FONTS END===================*/
 
 .container-lg{
   width: 90%;
@@ -3978,6 +3918,7 @@ section{
     overflow-y: hidden;
     overflow-x: auto;
   }
+
   .blog_blogContent__Tf9Rv .wp-block-table table{
     width: max-content;
   }

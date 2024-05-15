@@ -88,8 +88,8 @@ const DesktopNavigation = () => {
                                         <NavItem 
                                             title={'Organizational Chart'}
                                             disc={'Locate & view organization hierarchy'}
-                                            link={'/organizational-chart'}
-                                            img={'organizational-chart.svg'}
+                                            link={'/organisational-chart'}
+                                            img={'organisational-chart.svg'}
                                         />
                                     </ul>
                                 </motion.div>

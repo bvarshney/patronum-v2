@@ -8,7 +8,7 @@ export const getServerSideProps = async ({ res }) => {
   const BASE_URL = frontendUrl;
 
   const staticPaths = fs
-    .readdirSync("src/pages")
+    .readdirSync("./src/pages")
     .filter((staticPage) => {
       return ![
         "api",

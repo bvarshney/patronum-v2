@@ -11,32 +11,32 @@ export default function FeatureDetail(){
         {
             title: 'Easy to use',
             para: "Patronum's Organizational Chart is designed with the user in mind, utilizing Google Material Design to ensure a seamless and familiar experience across Google Workspace. This intuitive interface makes navigating and understanding your organization's structure straightforward and hassle-free, even for new users. It's all about enhancing usability without the learning curve, integrating smoothly with the tools your team already uses every day.",
-            img: "/assets/features/organizational-chart/main-1.svg",
+            img: "/assets/features/organisational-chart/main-1.svg",
         },
         {
             title: 'Custom Schema',
             para: "The power of Patronum lies in its ability to utilize the native Google Directory's custom schema, enabling users to quickly and effortlessly find and locate colleagues based on specific attributes like skills or languages. This feature not only simplifies the search process but also adds a layer of customization to how you view and interact with your organization's directory, making it a breeze to connect with the right people.",
-            img: "/assets/features/organizational-chart/main-2.svg",
+            img: "/assets/features/organisational-chart/main-2.svg",
         },
         {
             title: 'Hierarchical Display',
             para: "Discover a new perspective on your organization with Patronum's hierarchical display. This feature visually represents the structure of your company, allowing you to see the relationships and hierarchies within your team at a glance. It's an invaluable tool for understanding how departments and individuals fit together within the larger organizational puzzle.",
-            img: "/assets/features/organizational-chart/main-3.svg",
+            img: "/assets/features/organisational-chart/main-3.svg",
         },
         {
             title: 'Direct Reports',
             para: "Understanding the reporting relationships within your organization is crucial. With Patronum, you can easily view direct reports, providing clear insight into who reports to whom. This feature is essential for managers and leaders to manage their teams effectively, offering a straightforward view of organizational reporting lines.",
-            img: "/assets/features/organizational-chart/main-4.svg",
+            img: "/assets/features/organisational-chart/main-4.svg",
         },
         {
             title: 'Unlock Talent',
             para: "Patronum turns the Google Directory into a powerful tool to uncover the hidden talent within your organization. By searching for specific attributes such as skills, language, and qualifications, you can identify and leverage the unique capabilities of your workforce. This feature not only helps in finding the right person for the job but also in recognizing and utilizing the diverse talents within your company.",
-            img: "/assets/features/organizational-chart/main-5.svg",
+            img: "/assets/features/organisational-chart/main-5.svg",
         },
         {
             title: 'Improved Collaboration',
             para: "Enhance collaboration within your organization with Patronum's search functionality. Find a colleague and connect with them via phone, email, or Google Meet directly from within the platform. This feature simplifies communication, making it easier to collaborate on projects, share ideas, and maintain connectivity, regardless of physical location.",
-            img: "/assets/features/organizational-chart/main-6.svg",
+            img: "/assets/features/organisational-chart/main-6.svg",
         },
     ]
 
@@ -46,17 +46,17 @@ export default function FeatureDetail(){
                 pageTitle1={'Organizational'} 
                 pageTitle2={'Chart'}
                 pagePara={"Foster a Cohesive Culture by Navigating Organizational Relationships with Ease."} 
-                imgSrc={'organizational-chart.svg'}
+                imgSrc={'organisational-chart.svg'}
                 title={"Organizational Chart - Patronum"}
                 description={"Find, collaborate and better understand the hierarchy within your organization through the Patronum Organizational Chart and People Finder."}
-                url={"organizational-chart"}
-                img={"organizational-chart.jpg"}
+                url={"organisational-chart"}
+                img={"organisational-chart.jpg"}
                 date_published={"2020-12-21T12:00"}
                 date_modified={"2024-04-04T12:00"}
-                keywords={"Organizational Chart"}
+                keywords={"Organisational Chart"}
                 >
 
-                <VideoPlayer disabled={true} videoCover={"/assets/features/organizational-chart/video-cover.webp"}/> 
+                <VideoPlayer disabled={true} videoCover={"/assets/features/organisational-chart/video-cover.webp"}/> 
 
                 <FeatureDetailTitle
                     sectionTitle1="Organizational Chart"    
