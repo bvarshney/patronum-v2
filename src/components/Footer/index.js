@@ -53,8 +53,8 @@ const Footer = () => {
                                             </Link>
                                         </li>
                                         <li className="py-2">
-                                            <Link href="https://community.patronum.io" target="_blank" className="text-xl">
-                                                Community
+                                            <Link href="/security-and-compliance" className="text-xl">
+                                                Compliance
                                             </Link>
                                         </li>
                                         <li className="py-2">
@@ -96,6 +96,11 @@ const Footer = () => {
                                         <li className="py-2">
                                             <Link href="/contact-us" className="text-xl">
                                                 Contact
+                                            </Link>
+                                        </li>
+                                        <li className="py-2">
+                                            <Link href="https://community.patronum.io" target="_blank" className="text-xl">
+                                                Community
                                             </Link>
                                         </li>
                                     </ul>
