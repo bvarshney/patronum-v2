@@ -272,7 +272,7 @@ const MobileNavigation = ({ isOpen, setSideNavOpen }) => {
                                 </span>
                             </button>
                         </div>
-                        <ul id="dropdown-resources" className={`px-4 space-y-4 bg-gray-100 transition-all duration-500 overflow-hidden flex flex-col justify-center ${isResourcesDropdownOpen ? "h-[590px]" : "h-0" }`}>
+                        <ul id="dropdown-resources" className={`px-4 space-y-4 bg-gray-100 transition-all duration-500 overflow-hidden flex flex-col justify-center ${isResourcesDropdownOpen ? "h-[500px]" : "h-0" }`}>
                             <li className=''>
                                 <Link href='/blog' className='py-2 px-4 rounded flex gap-4 items-center' aria-label='Resources - Blog' >
                                     <div className='w-[4rem] h-[4rem] p-4 bg-head flex justify-center items-center rounded-full overflow-hidden'>
@@ -350,7 +350,7 @@ const MobileNavigation = ({ isOpen, setSideNavOpen }) => {
                                     </div>
                                 </Link>
                             </li>
-                            <li className=''>
+                            {/* <li className=''>
                                 <Link href='/security-and-compliance' className='py-2 px-4 rounded flex gap-4 items-center' aria-label='Resources - Compliance' >
                                     <div className='w-[4rem] h-[4rem] p-4 bg-head flex justify-center items-center rounded-full overflow-hidden'>
                                         <img loading='lazy' src='/assets/menu/resource-compliance.svg' alt='resource icon'/>
@@ -360,7 +360,7 @@ const MobileNavigation = ({ isOpen, setSideNavOpen }) => {
                                         <p className='text-base'>Security and Compliances</p>
                                     </div>
                                 </Link>
-                            </li>
+                            </li> */}
                             <li className=''>
                                 <Link href='https://help.patronum.io' target='_blank' className='py-2 px-4 rounded flex gap-4 items-center' aria-label='Resources - Help'>
                                     <div className='w-[4rem] h-[4rem] p-4 bg-head flex justify-center items-center rounded-full overflow-hidden'>

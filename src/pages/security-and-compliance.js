@@ -142,11 +142,7 @@ function security() {
                           <div className="lg:w-[6vw] lg:h-[6vw] w-[10vw] h-[10vw]">
                             <img src={`/assets/security/certifications/${item.imgSrc}`} alt="certificate image"/>
                           </div>
-<<<<<<< Updated upstream
-                          <div className="w-[78%] lg:space-y-0 space-y-[1vw]">
-=======
                           <div className="lg:w-[78%] w-[75%] lg:space-y-0 space-y-[2vw]">
->>>>>>> Stashed changes
                             <span className="lg:text-[2.5vw] text-[4.8vw] font-medium block">
                               {item.title}
                             </span>
@@ -159,11 +155,7 @@ function security() {
                             <span className="minus" />
                           </div>
                         </AccordionTrigger>
-<<<<<<< Updated upstream
-                        <AccordionContent className="content-p lg:ml-[11.5vw] ml-[14.5vw] lg:w-[75%] w-[80%] space-y-[2.5vw]">
-=======
                         <AccordionContent className="content-p lg:ml-[10.5vw] ml-[14.5vw] lg:w-[75%] w-[80%] space-y-[2.5vw]">
->>>>>>> Stashed changes
                           <span className="block">
                             {item.description}
                           </span>
@@ -200,11 +192,7 @@ function security() {
                           <div className="lg:w-[5vw] lg:h-[5vw] w-[10vw] h-[10vw]">
                             <img src={`/assets/security/compliances/${item.imgSrc}`} alt="certificate image"/>
                           </div>
-<<<<<<< Updated upstream
-                          <div className="w-[78%] lg:space-y-0 space-y-[1vw]">
-=======
                           <div className="lg:w-[78%] w-[75%] lg:space-y-0 space-y-[2vw]">
->>>>>>> Stashed changes
                             <span className="lg:text-[2.5vw] text-[4.8vw] font-medium block">
                               {item.title}
                             </span>
@@ -217,11 +205,7 @@ function security() {
                             <span className="minus" />
                           </div>
                         </AccordionTrigger>
-<<<<<<< Updated upstream
-                        <AccordionContent className="content-p lg:ml-[11.5vw] ml-[14.5vw] lg:w-[75%] w-[80%] space-y-[2.5vw]">
-=======
                         <AccordionContent className="content-p lg:ml-[9.5vw] ml-[14.5vw] lg:w-[75%] w-[80%] space-y-[2.5vw]">
->>>>>>> Stashed changes
                           <span className="block">
                             {item.description}
                           </span>

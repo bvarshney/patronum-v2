@@ -52,11 +52,11 @@ const Footer = () => {
                                                 Blog
                                             </Link>
                                         </li>
-                                        <li className="py-2">
+                                        {/* <li className="py-2">
                                             <Link href="/security-and-compliance" className="text-xl">
                                                 Compliance
                                             </Link>
-                                        </li>
+                                        </li> */}
                                         <li className="py-2">
                                             <Link href="/legal" className="text-xl">
                                                 Legal
