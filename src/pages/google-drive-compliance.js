@@ -88,7 +88,6 @@ export default function FeatureDetail(){
                 keywords={"Google Workspace"}
                 >
 
-
                 <VideoPlayer disabled={false} videoId="RIoCiNzNqW0" videoCover={"/assets/features/google-drive-compliance/video-cover.webp"} /> 
 
                 <FeatureDetailTitle
