@@ -281,6 +281,12 @@ const DesktopNavigation = () => {
                                                     </div>
                                                 </Link>
                                             </li>
+                                            <NavItem 
+                                                title={'Compliance'}
+                                                disc={'Security and Compliances'}
+                                                link={'/security-and-compliance'}
+                                                img={'resource-compliance.svg'}
+                                            />
                                             <li className='nav-drop-list-item'>
                                                 <Link href='https://help.patronum.io' target='_blank' className='nav-drop-list-hover' >
                                                     <div className='img'>

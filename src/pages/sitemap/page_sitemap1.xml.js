@@ -41,7 +41,8 @@ export const getServerSideProps = async ({ res }) => {
     "register-an-opportunity",
     "support",
     "use-cases",
-    "webinars"
+    "webinars",
+    "security-and-compliance"
   ].map(page => `${BASE_URL}/${page}`);
 
   const mainPaths = [`${BASE_URL}/`];
