@@ -240,53 +240,18 @@ const DesktopNavigation = () => {
                                                 link={'/blog'}
                                                 img={'resource-blog.svg'}
                                             />
-                                            {/* <NavItem 
-                                                title={'Guides'}
-                                                disc={'Step-by-Step User Guides'}
-                                                link={'/guides'}
-                                                img={'resource-guides.svg'}
-                                            />
-                                            <NavItem 
-                                                title={'Ebooks'}
-                                                disc={'Exclusive Patronum Content in Ebooks'}
-                                                link={'/ebooks'}
-                                                img={'resource-ebooks.svg'}
-                                            />
-                                            <NavItem 
-                                                title={'Case Studies'}
-                                                disc={"Patronum's Real-World Success Stories"}
-                                                link={'/case-studies'}
-                                                img={'resource-case-studies.svg'}
-                                            />
-                                            <NavItem 
-                                                title={'Product Videos'}
-                                                disc={'In-depth video guides'}
-                                                link={'/product-videos'}
-                                                img={'resource-product-videos.svg'}
-                                            /> */}
                                             <NavItem 
                                                 title={'Webinars'}
                                                 disc={'Engage With Experts Live'}
                                                 link={'/webinars'}
                                                 img={'resource-webinars.svg'}
                                             />
-                                            <li className='nav-drop-list-item'>
-                                                <Link href='https://community.patronum.io' target='_blank' className='nav-drop-list-hover' >
-                                                    <div className='img'>
-                                                        <img loading='lazy' src='/assets/menu/resource-community.svg' alt='menu icon'/>
-                                                    </div>
-                                                    <div className='w-[16vw]'>
-                                                        <p className='nav-drop-title'>Community</p>
-                                                        <p className='nav-drop-text'>Connect & Collaborate with Peers</p>
-                                                    </div>
-                                                </Link>
-                                            </li>
-                                            {/* <NavItem 
+                                            <NavItem 
                                                 title={'Compliance'}
-                                                disc={'Security and Compliances'}
+                                                disc={'Our Security & Compliance Practices'}
                                                 link={'/security-and-compliance'}
                                                 img={'resource-compliance.svg'}
-                                            /> */}
+                                            />
                                             <li className='nav-drop-list-item'>
                                                 <Link href='https://help.patronum.io' target='_blank' className='nav-drop-list-hover' >
                                                     <div className='img'>
@@ -298,6 +263,19 @@ const DesktopNavigation = () => {
                                                     </div>
                                                 </Link>
                                             </li>
+                                            <li className='nav-drop-list-item'>
+                                                <Link href='https://community.patronum.io' target='_blank' className='nav-drop-list-hover' >
+                                                    <div className='img'>
+                                                        <img loading='lazy' src='/assets/menu/resource-community.svg' alt='menu icon'/>
+                                                    </div>
+                                                    <div className='w-[16vw]'>
+                                                        <p className='nav-drop-title'>Community</p>
+                                                        <p className='nav-drop-text'>Connect & Collaborate with Peers</p>
+                                                    </div>
+                                                </Link>
+                                            </li>
+                                            
+                                            
                                             <NavItem 
                                                 title={'Legal'}
                                                 disc={'Legal Information & Terms of Use'}

@@ -52,19 +52,19 @@ const Footer = () => {
                                                 Blog
                                             </Link>
                                         </li>
-                                        {/* <li className="py-2">
+                                        <li className="py-2">
                                             <Link href="/security-and-compliance" className="text-xl">
                                                 Compliance
-                                            </Link>
-                                        </li> */}
-                                        <li className="py-2">
-                                            <Link href="/legal" className="text-xl">
-                                                Legal
                                             </Link>
                                         </li>
                                         <li className="py-2">
                                             <Link href="https://help.patronum.io" target="_blank" className="text-xl">
                                                 Help
+                                            </Link>
+                                        </li>
+                                        <li className="py-2">
+                                            <Link href="/legal" className="text-xl">
+                                                Legal
                                             </Link>
                                         </li>
                                     </ul>
