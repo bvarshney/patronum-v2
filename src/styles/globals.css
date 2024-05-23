@@ -2666,12 +2666,12 @@ section{
 /* Blogs Start Main */
 .cat-btn button{
   border-radius: 1000px;
-  padding: 0.5vw 1.5vw;
+  padding: 0.7vw 1.5vw;
   min-width: 5vw;
   border: 1px solid #E2E2E2;
   background-color: #FDFDFD;
-  width: 100%;
-  height: 100%;
+  width: fit-content;
+  height: fit-content;
   text-align: center;
   font-size: 1.1vw;
   color: var(--text-head);

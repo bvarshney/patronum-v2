@@ -3,6 +3,9 @@ import { useEffect, useState } from 'react';
 import PageLayout from '@/components/PageLayout';
 import PostCard from '@/components/PageComponents/BlogPage/PostCard';
 import { getAllPosts } from '@/lib/posts';
+import Fuse from 'fuse.js';
+import MetaData from '@/components/PageLayout/MetaData';
+import Layout from '@/components/Stairs';
 
 export default function SearchResults({ posts }) {
   const router = useRouter();
@@ -11,43 +14,58 @@ export default function SearchResults({ posts }) {
 
   useEffect(() => {
     if (query) {
-      const lowercasedQuery = query.toLowerCase();
-      const filtered = posts.filter(post => {
-        const title = post.title ? post.title.toLowerCase() : '';
-        const excerpt = post.excerpt ? post.excerpt.toLowerCase() : '';
-        const content = post.content ? post.content.toLowerCase() : '';
-        return title.includes(lowercasedQuery) ||
-               excerpt.includes(lowercasedQuery) ||
-               content.includes(lowercasedQuery);
+      const fuse = new Fuse(posts, {
+        keys: ['title', 'excerpt', 'content'],
+        threshold: 0.3,
       });
-      setFilteredPosts(filtered);
+      const results = fuse.search(query).map(result => result.item);
+      setFilteredPosts(results);
     }
   }, [query, posts]);
 
   return (
-    <PageLayout
-      pageTitle1="Search Results for"
-      pageTitle2={`"${query}"`}
-    >
-      <section id="search-results">
-        <div className="container">
-          <div className="content">
-            <h2>Search Results for "{query}"</h2>
-            <div className='blog-main-container mt-4'>
-              {filteredPosts.map((post) => (
-                <PostCard key={post.slug} post={post} />
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-    </PageLayout>
+
+    <>
+      <MetaData
+        title={`Search Archive - Patronum`}
+        url={`search`}
+            date_published={"2020-12-21T12:00"}
+            date_modified={"2024-05-23T12:00"}
+            keywords={"Patronum,Google Workspace Manager"}
+      />
+        <Layout>
+          <main>
+            <section id="">
+              <div className="container">
+                <div className="content-2">
+                  <div className='section-head'>
+                    <h1 className='title-4xl text-anim'>
+                      <span>
+                        Search Results for
+                      </span>
+                      <br />
+                      <span>
+                        {`"${query}"`}
+                      </span>
+                    </h1>
+                  </div>
+                  <div className='blog-main-container mt-4'>
+                    {filteredPosts.map((post) => (
+                      <PostCard key={post.slug} post={post} />
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </section>
+          </main>
+        </Layout>
+    </>
   );
 }
 
 export async function getStaticProps() {
   const { posts } = await getAllPosts({
-    queryIncludes: 'all',
+    queryIncludes: 'index',
   });
 
   return {

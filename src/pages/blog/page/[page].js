@@ -7,6 +7,7 @@ import CategoryList from '@/components/PageComponents/BlogPage/CategoryList';
 import { useEffect, useState } from 'react';
 import Layout from '@/components/Stairs';
 import MetaData from '@/components/PageLayout/MetaData';
+import Search from '@/components/Search';
 
 export default function Blog({ posts, pagination, categories }) {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -24,7 +25,7 @@ export default function Blog({ posts, pagination, categories }) {
         />
         <Layout>
           <main>
-            <section id="second-section">
+            <section id="">
               <div className="container">
                 <div className="content-2">
                   <div className='section-head'>
@@ -35,11 +36,16 @@ export default function Blog({ posts, pagination, categories }) {
                     </h1>
                   </div>
 
-                  <div className="lg:w-[105%] lg:ml-[-2.5%] ml-0 w-full">
+                  <div className="2xl:w-[112%] 2xl:ml-[-6%] gap-y-[2vw] lg:w-[105%] lg:ml-[-2.5%] ml-0 w-full flex justify-between flex-wrap">
                     <CategoryList categories={categories} activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
+                    <Search posts={posts} />
                   </div>
 
-                  <div className='blog-main-container lg:mt-[5vw] mt-[10vw]'>
+                  {/* <div className="lg:w-[105%] lg:ml-[-2.5%] ml-0 w-full">
+                    <CategoryList categories={categories} activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
+                  </div> */}
+
+                  <div className='blog-main-container'>
                     {posts.map((post) => {
                       return (
                         <PostCard key={post.slug} post={post} />

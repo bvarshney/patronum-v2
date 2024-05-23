@@ -6,6 +6,7 @@ import CategoryList from '@/components/PageComponents/BlogPage/CategoryList';
 import CategoryPosts from '@/components/PageComponents/BlogPage/CategoryPosts';
 import MetaData from '@/components/PageLayout/MetaData';
 import Layout from '@/components/Stairs';
+import Search from '@/components/Search';
 
 const Category = ({ category, posts, categories }) => {
   const [activeCategory, setActiveCategory] = useState(`${category.name}`);
@@ -23,7 +24,7 @@ const Category = ({ category, posts, categories }) => {
         />
         <Layout>
           <main>
-            <section id="second-section">
+            <section id="">
               <div className="container">
                 <div className="content-2">
                 <div className='section-head'>
@@ -36,10 +37,14 @@ const Category = ({ category, posts, categories }) => {
                       Blogs
                     </span>
                   </h1>
-
                 </div>
-                  <div className="lg:w-[105%] lg:ml-[-2.5%] ml-0 w-full">
+                  {/* <div className="lg:w-[105%] lg:ml-[-2.5%] ml-0 w-full">
                       <CategoryList categories={categories} activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
+                  </div> */}
+
+                  <div className="2xl:w-[112%] 2xl:ml-[-6%] gap-y-[2vw] lg:w-[105%] lg:ml-[-2.5%] ml-0 w-full flex justify-between flex-wrap">
+                    <CategoryList categories={categories} activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
+                    <Search posts={posts} />
                   </div>
 
                   <CategoryPosts posts={posts} />
