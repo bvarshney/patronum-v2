@@ -36,7 +36,7 @@ function security() {
       contentTop: "Our compliance with ISO 22301:2019 underlines our readiness to safeguard against, respond to, and recover from disruptive incidents.",
       description: "This business continuity management standard helps organizations prepare for, and deal with, potential threats to the business. The standard demands a documented management system for implementing and managing an effective business continuity plan. It ensures continuity and recovery during times of crisis, thus minimizing the impact on business operations. Patronum's adherence to ISO 22301:2019 reflects our commitment to resilience and our ability to operate under adverse conditions, thereby protecting our stakeholders' interests.",
       imgSrc: "iso-22301_2019.svg",
-      link: "https://drive.google.com/file/d/16KZ1rqc0JDNysxcvaaLHFqUNvD8QKxmd/view",
+      link: "https://drive.google.com/file/d/12zct82LDdKzKJdkL21Pv2gCFFaeChCa_/view",
       btnText: "View Certificate"
     },
     {
