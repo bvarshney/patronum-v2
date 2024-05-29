@@ -16,6 +16,11 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/use-utm-code-within-your-email-signature-to-track-the-success-of-your-email-marketing',
+        destination: '/use-utm-code-within-your-email-signature',
+        permanent: true,
+      },
+      {
         source: '/standard-contractual-clauses',
         destination: 'https://docs.google.com/document/d/1C3PqmGvh1jItmMvN2FrL13V8V-rOestnw0QkWkNFIvc/edit?usp=drive_link',
         permanent: true,
