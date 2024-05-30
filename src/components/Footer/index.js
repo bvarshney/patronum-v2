@@ -48,8 +48,8 @@ const Footer = () => {
                                             </Link>
                                         </li>
                                         <li className="py-2">
-                                            <Link href="/blog" className="text-xl">
-                                                Blog
+                                            <Link href="/privacy-policy" className="text-xl">
+                                                Privacy Policy
                                             </Link>
                                         </li>
                                         <li className="py-2">
@@ -94,8 +94,8 @@ const Footer = () => {
                                             </Link>
                                         </li>
                                         <li className="py-2">
-                                            <Link href="/contact-us" className="text-xl">
-                                                Contact
+                                            <Link href="/blog" className="text-xl">
+                                                Blog
                                             </Link>
                                         </li>
                                         <li className="py-2">
