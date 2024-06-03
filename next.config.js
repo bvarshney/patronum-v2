@@ -26,6 +26,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/anti-slavery-and-human-trafficking-statement',
+        destination: 'https://docs.google.com/document/d/1mb7Rh5glrBbqTv_zYSQs9eniASpQp9OLq4vAojohGY4/edit?usp=drive_link',
+        permanent: true,
+      },
+      {
         source: '/partner-agreement',
         destination: 'https://docs.google.com/document/d/1UfaCFOtQfOLWkHHmR0p0iAHWqG7xEuh4ESWj5cCvy2c/edit?usp=drive_link',
         permanent: true,

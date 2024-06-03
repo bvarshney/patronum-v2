@@ -143,7 +143,7 @@ export default function Legal() {
                                             Anti-slavery and Human Trafficking Statement
                                         </h3>
                                         <span className="hr-1p" />
-                                        <LinkButton link="/anti-slavery-and-human-trafficking-statement" btnText="Read More"/>
+                                        <LinkButton link="https://docs.google.com/document/d/1mb7Rh5glrBbqTv_zYSQs9eniASpQp9OLq4vAojohGY4/edit?usp=drive_link" target={"_blank"} btnText="Read More"/>
                                     </div>
                                 </div>
                                 <div className="legal-card fadeUp">
