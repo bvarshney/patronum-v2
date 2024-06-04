@@ -274,13 +274,17 @@ const DesktopNavigation = () => {
                                                     </div>
                                                 </Link>
                                             </li>
-                                            
-                                            
                                             <NavItem 
                                                 title={'Legal'}
                                                 disc={'Legal Information & Terms of Use'}
                                                 link={'/legal'}
                                                 img={'resource-legal.svg'}
+                                            />
+                                            <NavItem 
+                                                title={'Contact Us'}
+                                                disc={'Get in Touch with Us'}
+                                                link={'/contact-us'}
+                                                img={'resource-contact.svg'}
                                             />
                                         </ul>
                                     </motion.div>

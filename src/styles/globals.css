@@ -2609,6 +2609,16 @@ section{
   border-radius: 100px;
   height: 1.7vw;
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
 /* Install PopUp Form */
 .install-modal-overlay{

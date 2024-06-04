@@ -272,7 +272,7 @@ const MobileNavigation = ({ isOpen, setSideNavOpen }) => {
                                 </span>
                             </button>
                         </div>
-                        <ul id="dropdown-resources" className={`px-4 space-y-4 bg-gray-100 transition-all duration-500 overflow-hidden flex flex-col justify-center ${isResourcesDropdownOpen ? "h-[590px]" : "h-0" }`}>
+                        <ul id="dropdown-resources" className={`px-4 space-y-4 bg-gray-100 transition-all duration-500 overflow-hidden flex flex-col justify-center ${isResourcesDropdownOpen ? "h-[680px]" : "h-0" }`}>
                             <li className=''>
                                 <Link href='/blog' className='py-2 px-4 rounded flex gap-4 items-center' aria-label='Resources - Blog' >
                                     <div className='w-[4rem] h-[4rem] p-4 bg-head flex justify-center items-center rounded-full overflow-hidden'>
@@ -336,6 +336,17 @@ const MobileNavigation = ({ isOpen, setSideNavOpen }) => {
                                     <div>
                                         <p className='text-xl font-500'>Legal</p>
                                         <p className='text-base'>Legal Information & Terms of Use</p>
+                                    </div>
+                                </Link>
+                            </li>
+                            <li className=''>
+                                <Link href='/contact-us' className='py-2 px-4 rounded flex gap-4 items-center' aria-label='Resources - Contact' >
+                                    <div className='w-[4rem] h-[4rem] p-4 bg-head flex justify-center items-center rounded-full overflow-hidden'>
+                                        <img loading='lazy' src='/assets/menu/resource-contact.svg' alt='resource icon'/>
+                                    </div>
+                                    <div>
+                                        <p className='text-xl font-500'>Contact Us</p>
+                                        <p className='text-base'>Get in Touch with Us</p>
                                     </div>
                                 </Link>
                             </li>

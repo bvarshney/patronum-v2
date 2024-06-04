@@ -55,6 +55,12 @@ export default function ContactForm() {
         }, {message: "Please enter a valid business email."}),
         company: z.string().min(1, "Company Name is required."),
         country: z.string().min(1, "Country is required."),
+        phoneNumber: z.string().optional().refine((phone) => {
+            if (country === "IN") {
+                return phone.length >= 10;
+            }
+            return true;
+        }, {message: "Please enter a valid number."}),
         terms: z.boolean().refine(value => value === true, "You must agree to the terms."),
         pageURL: z.string(),
     });
@@ -66,6 +72,7 @@ export default function ContactForm() {
         email: "",
         company: "",
         country: "GB",
+        phoneNumber: "",
         terms: false,
         pageURL: typeof window !== 'undefined' ? window.location.href : '', // Use window only in client-side context
         },
@@ -80,6 +87,7 @@ export default function ContactForm() {
             email: data.email,
             company: data.company,
             countryName, 
+            // phoneNumber: data.phoneNumber,
             pageURL: data.pageURL,
             tag: "Patronum Interest",
         };
@@ -90,6 +98,7 @@ export default function ContactForm() {
                 <p><strong>Email:</strong> ${data.email}</p>
                 <p><strong>Company Name:</strong> ${data.company}</p>
                 <p><strong>Country:</strong> ${countryName}</p>
+                <p><strong>Phone Number:</strong> ${data.phoneNumber}</p>
                 <p><strong>Terms Agreement:</strong> ${data.terms ? 'Agreed' : 'Not Agreed'}</p>
             `;
         try {
@@ -184,6 +193,23 @@ export default function ContactForm() {
                 </FormItem>
             )}
         />
+
+        {/* Phone Number field - conditional rendering */}
+        {country === "IN" && (
+            <FormField 
+                control={form.control}
+                name="phoneNumber"
+                render= {({ field }) => (
+                    <FormItem className="required">
+                        <FormLabel>Phone Number</FormLabel>
+                        <FormControl>
+                            <Input type="number" placeholder="Enter Your Phone Number" {...field}/>
+                        </FormControl>
+                        <FormMessage />
+                    </FormItem>
+                )}
+            />
+        )}
 
         {/* Terms checkbox field */}
         <FormField

@@ -2,6 +2,9 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 import {
   Form,
   FormControl,
@@ -15,9 +18,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import CountrySelector from "../ui/country-selector";
 import { COUNTRIES } from "@/lib/countries";
-import Link from "next/link";
-import { useEffect, useState } from 'react';
-import axios from 'axios';
 
 // Update the ContactForm component
 export default function BecomePartnerForm() {
@@ -56,6 +56,12 @@ export default function BecomePartnerForm() {
         }, {message: "Please enter a valid business email."}),
         company: z.string().min(1, {message: "Company Name is required."}),
         country: z.string().min(1, "Country is required."),
+        phoneNumber: z.string().optional().refine((phone) => {
+            if (country === "IN") {
+                return phone.length >= 10;
+            }
+            return true;
+        }, {message: "Please enter a valid number."}),
         textarea: z.string().min(1, {message: "Message is required."}),
         terms: z.boolean().refine(value => value === true, {message: "You must agree to the terms."}),
         pageURL: z.string(),
@@ -69,7 +75,7 @@ export default function BecomePartnerForm() {
         company: "",
         country: "GB",
         textarea: "",
-        phone: "",
+        phoneNumber: "",
         terms: false,
         pageURL: typeof window !== 'undefined' ? window.location.href : '', // Use window only in client-side context
         },
@@ -84,6 +90,7 @@ export default function BecomePartnerForm() {
             email: data.email,
             company: data.company,
             countryName, 
+            // phoneNumber: data.phoneNumber,
             pageURL: data.pageURL,
             tag: "Partner Request",
         };
@@ -94,6 +101,7 @@ export default function BecomePartnerForm() {
             <p><strong>Email:</strong> ${data.email}</p>
             <p><strong>Organization Name:</strong> ${data.company}</p>
             <p><strong>Country:</strong> ${countryName}</p>
+            <p><strong>Phone Number:</strong> ${data.phoneNumber}</p>
             <p><strong>Message:</strong> ${data.textarea}</p>
             <p><strong>Terms Agreement:</strong> ${data.terms ? 'Agreed' : 'Not Agreed'}</p>
             `;
@@ -176,6 +184,23 @@ export default function BecomePartnerForm() {
             )}
         />
 
+        {/* Phone Number field - conditional rendering */}
+        {country === "IN" && (
+            <FormField 
+                control={form.control}
+                name="phoneNumber"
+                render= {({ field }) => (
+                    <FormItem className="required">
+                        <FormLabel>Phone Number</FormLabel>
+                        <FormControl>
+                            <Input type="number" placeholder="Enter Your Phone Number" {...field}/>
+                        </FormControl>
+                        <FormMessage />
+                    </FormItem>
+                )}
+            />
+        )}
+
         {/* Email field */}
         <FormField 
             control={form.control}
@@ -191,7 +216,7 @@ export default function BecomePartnerForm() {
             )}
         />
 
-        {/* Email field */}
+        {/* Message field */}
         <FormField 
             control={form.control}
             name="textarea"
