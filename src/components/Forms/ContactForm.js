@@ -17,6 +17,8 @@ import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import CountrySelector from "../ui/country-selector";
 import { COUNTRIES } from "@/lib/countries";
+import Router from "next/router";
+import { useModal } from '@/components/InstallModal/ModelContext'; 
 
 // Update the ContactForm component
 export default function ContactForm() {
@@ -26,6 +28,7 @@ export default function ContactForm() {
     const [submissionError, setSubmissionError] = useState(null);
     const [submissionSuccess, setSubmissionSuccess] = useState(false);
     const [blockedDomains, setBlockedDomains] = useState([]);
+    const { closeModal } = useModal();
 
     useEffect(() => {
         // Fetch the JSON file containing 4700 emails
@@ -114,6 +117,10 @@ export default function ContactForm() {
             form.reset();
             setSubmitting(false);
             setSubmissionSuccess(true);
+            setTimeout(() => {
+                closeModal();
+                Router.push("/thank-you");
+              }, 1000);
         } catch (error) {
             setSubmitting(false);
             setSubmissionError('Error sending email. Please try again later.');

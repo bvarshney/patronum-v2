@@ -39,7 +39,7 @@ export default function Page() {
                   or “<strong><span className="text-blue-600">our</span></strong>” in this Policy). Bespin Labs recognise the importance
                   of protecting your privacy and our Policy is designed to
                   assist you in understanding how we collect, use and safeguard
-                  the personal information you provide to us. .
+                  the personal information you provide to us.
                 </p>
               
                
@@ -298,7 +298,7 @@ export default function Page() {
                   your computer or device, nor will it provide us with any
                   personally identifiable information. You can also choose to
                   opt out of any third party use of cookies at -
-                  <a href=" http://www.networkadvertising.org/choices/">
+                  <a href=" http://www.networkadvertising.org/choices/" target="_blank">
                     {" "}
                     http://www.networkadvertising.org/choices/
                   </a>
@@ -318,7 +318,7 @@ export default function Page() {
                   collected will be done so in line with our own privacy policy.
                   You can opt out of this tailored experience by visiting
                   Google’s Ads Preferences Manager at -
-                  <a href="https://adssettings.google.com/authenticated">
+                  <a href="https://adssettings.google.com/authenticated" target="_blank">
                     https://adssettings.google.com/authenticated
                   </a>
                 </p>
@@ -340,7 +340,7 @@ export default function Page() {
                 <p>
                   We use Twilio SendGrid to send emails securely and reliably
                   from websites. More details at -
-                  <a href="https://www.twilio.com/en-us/legal/privacy">
+                  <a href="https://www.twilio.com/en-us/legal/privacy" target="_blank">
                     {" "}
                     https://www.twilio.com/en-us/legal/privacy
                   </a>
@@ -372,7 +372,7 @@ export default function Page() {
                   Google’s Application Programming Interfaces (APIs) will adhere
                   to Google API Services User Data Policy, including the Limited
                   Use requirements. Details at -
-                  <a href="https://developers.google.com/terms/api-services-user-data-policy">
+                  <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">
                     https://developers.google.com/terms/api-services-user-data-policy
                   </a>
                   .
@@ -394,15 +394,15 @@ export default function Page() {
                   provider. Details at:
                   <br />•{" "}
                   <a href="https://www.weareenigma.com" target="_blank">
-                    Enigma
+                    https://www.weareenigma.com
                   </a>
                   <br />•{" "}
                   <a href="https://www.cloudways.com/en" target="_blank">
-                    Cloudways
+                    https://www.cloudways.com/en
                   </a>
                   <br />•{" "}
                   <a href="https://www.digitalocean.com" target="_blank">
-                    Digital Ocean
+                    https://www.digitalocean.com
                   </a>
                 </p>
                 <p>

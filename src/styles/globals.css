@@ -281,6 +281,28 @@ section{
   color: white;
 }
 
+.btn.thankyou{
+  max-width: 17.5vw;
+}
+
+@media screen and (max-width: 1024px) {
+  .btn.thankyou{
+    max-width: 47vw !important;
+  }
+  .btn.thankyou .btn-circle{
+    clip-path: inset(1.6vw 2vw 1.6vw calc(100% - 10vw) round 4vw) !important;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .btn.thankyou{
+    max-width: 65vw !important;
+  }
+  .btn.thankyou .btn-circle{
+    clip-path: inset(2vw 2.5vw 2vw calc(100% - 14vw) round 1000px) !important;
+  }
+}
+
 /* Button Secondary */
 .btn[data-secondary]{
   background: none;
