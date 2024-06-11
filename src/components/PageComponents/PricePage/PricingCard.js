@@ -48,7 +48,7 @@ const PricingCard = ({ features, category, isAnnual, selectedCurrency, pricingIm
             <p className={styles.pricingPrice}> 
                 <span >{getCurrencySymbol(selectedCurrency)} </span>
                 <span >{isAnnual ? prices[category][selectedCurrency].annual : prices[category][selectedCurrency].monthly}</span>
-                <span className={styles.pricingType}> {isAnnual ? '/year' : '/month'}</span>
+                <span className={styles.pricingType}> /user{isAnnual ? '/year' : '/month'}</span>
             </p>
             <div>
                 <a href="/contact-us" className="link-btn">

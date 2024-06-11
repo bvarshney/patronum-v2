@@ -28,13 +28,10 @@ export default function Home( { recentPosts } ) {
     const checkScreenSize = () => {
       setShowSideMenu(window.innerWidth > 1024);
     };
-
     // Check on mount
     checkScreenSize();
-
     // Add event listener
     window.addEventListener('resize', checkScreenSize);
-
     // Cleanup event listener
     return () => window.removeEventListener('resize', checkScreenSize);
   }, []);
