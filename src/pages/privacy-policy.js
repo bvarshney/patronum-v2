@@ -389,34 +389,59 @@ export default function Page() {
                   7. ABOUT OUR WEBSITE HOSTING
                 </h3>
                 <p>
-                  The webmasters of our public websites are Enigma who use
-                  Cloudways hosting with Digital Ocean as an infrastructure
-                  provider. Details at:
-                  <br />•{" "}
-                  <a href="https://www.weareenigma.com" target="_blank">
-                    https://www.weareenigma.com
-                  </a>
-                  <br />•{" "}
-                  <a href="https://www.cloudways.com/en" target="_blank">
-                    https://www.cloudways.com/en
-                  </a>
-                  <br />•{" "}
-                  <a href="https://www.digitalocean.com" target="_blank">
-                    https://www.digitalocean.com
-                  </a>
+                  The webmasters of our public websites are Enigma who either use Cloudways or Vercel as front end hosting providers. Details of these and the infrastructure providers are as follows:
+                </p>
+                <p><strong>bespinslabs.com</strong></p>
+                <ul>
+                    <li>
+                      <a href="https://www.weareenigma.com" target="_blank">
+                      https://www.weareenigma.com
+                    </a>
+                    </li>
+                    <li>
+                      <a href="https://www.cloudways.com/en" target="_blank">
+                        https://www.cloudways.com/en
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.digitalocean.com" target="_blank">
+                        https://www.digitalocean.com (infrastructure)
+                      </a>
+                    </li>
+                  </ul>
+                  <p><strong>patronum.io</strong></p>
+                <ul>
+                    <li>
+                      <a href="https://www.weareenigma.com" target="_blank">
+                      https://www.weareenigma.com
+                    </a>
+                    </li>
+                    <li>
+                      <a href="https://vercel.com" target="_blank">
+                        https://vercel.com
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://aws.amazon.com" target="_blank">
+                        https://aws.amazon.com (infrastructure)
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://azure.microsoft.com" target="_blank">
+                        https://azure.microsoft.com (infrastructure)
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://cloud.google.com" target="_blank">
+                        https://cloud.google.com (infrastructure)
+                      </a>
+                    </li>
+                  </ul>
+                <p>
+                  Our websites are represented worldwide in many data-centers in order to provide the best performance. You access our websites through a Content Delivery Network data center nearest to your location.
                 </p>
                 <p>
-                  Our websites are represented worldwide in several data-centers
-                  in order to provide the best performance. You access our
-                  websites through a Cloudway data center nearest to your
-                  location.
-                </p>
-                <p>
-                  All traffic (transferral of files) between our websites and
-                  your browser is encrypted and delivered over HTTPS. Bespin
-                  Labs, Enigma and Cloudways are the only companies with access
-                  to the web server. None of your personal data is stored on our
-                  web servers.
+                  All traffic (transferral of files) between our websites and your browser is encrypted and delivered over HTTPS. Bespin Labs, Enigma and the infrastructure providers are the only companies with access to the web server. None of your personal data is stored on our web servers.
                 </p>
                 <h4>8. YOUR RIGHT AS A DATA SUBJECT</h4>
                 <p>

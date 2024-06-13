@@ -127,28 +127,6 @@ export default function Legal() {
                                 <div className="legal-card fadeUp">
                                     <div className="cards-num">
                                         <span className="aeonik">
-                                            07
-                                        </span>
-                                    </div>
-                                    <div className="img">
-                                        <img 
-                                            src="/assets/legal/anti-slavery-and-human-trafficking.svg" 
-                                            alt="Anti-slavery and Human Trafficking Statement"
-                                            title="Anti-slavery and Human Trafficking Statement"
-                                        />
-                                    </div>
-                                    <div className="info">
-                                        <span className="hr-1p" />
-                                        <h3 className="title-2xl aeonik">
-                                            Anti-slavery and Human Trafficking Statement
-                                        </h3>
-                                        <span className="hr-1p" />
-                                        <LinkButton link="https://docs.google.com/document/d/1mb7Rh5glrBbqTv_zYSQs9eniASpQp9OLq4vAojohGY4/edit?usp=drive_link" target={"_blank"} btnText="Read More"/>
-                                    </div>
-                                </div>
-                                <div className="legal-card fadeUp">
-                                    <div className="cards-num">
-                                        <span className="aeonik">
                                             08
                                         </span>
                                     </div>

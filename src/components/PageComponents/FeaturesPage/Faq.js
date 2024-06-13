@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import faqData from './faqData.json'; 
-import PrimaryButton from '@/components/PageLayout/Button/PrimaryButton';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import {
