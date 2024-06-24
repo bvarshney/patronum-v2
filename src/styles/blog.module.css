@@ -43,6 +43,7 @@
     font-size: 1.8vw;
     font-weight: 400;
     color: var(--text-head);
+    margin: 2% 0 0;
 }
 
 .blogContent h3 strong{
@@ -53,7 +54,7 @@
     font-size: 1.3vw;
     font-weight: 500;
     color: var(--text-head);
-    padding-top: 10px;
+    margin: 2.5% 0 -1%;
 }
 
 .blogContent h4 strong{
@@ -85,7 +86,10 @@
     font-weight: 500;
     line-height: 1.7;
     letter-spacing: 0.5px;
-    margin: 3.5% 0;
+    margin: 2.5% 0;
+}
+.blogContent.mb-0{
+    margin-bottom: 0;
 }
 
 .blogContent p:first-child{
@@ -104,7 +108,10 @@
     letter-spacing: 0.5px;
     line-height: 1.7;
     color: var(--text-body);
-    margin: 2% 0;
+    margin-bottom: 1%;
+}
+.blogContent li:last-child{
+    margin-bottom: 0;
 }
 
 .blogContent ol li{
@@ -123,7 +130,7 @@
 }
 
 .blogContent figure {
-    margin: 10% 0;
+    margin: 6% 0;
 }
 
 .blogContent img{
