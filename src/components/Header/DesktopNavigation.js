@@ -184,21 +184,21 @@ const DesktopNavigation = () => {
                                                         <img className='h-[9vw]' loading='lazy' width="170" height="140" src='/assets/pricing/education.svg' alt='price image'/>
                                                         <div>
                                                             <p className='text-head text-2xl text-center transition mb-2'>Education</p>
-                                                            <p className='text-primary text-2xl text-center group-hover:text-primary transition'>$ 2.00<span className='text-gray-400'> /year</span></p>
+                                                            <p className='text-primary text-2xl text-center group-hover:text-primary transition'>$ 2.00<span className='text-gray-400 text-xl'> user/year</span></p>
                                                         </div>
                                                     </div>
                                                     <div className='flex flex-col gap-4 items-center px-[3vw] py-4 mx-8'>
                                                         <img className='h-[9vw]' loading='lazy' width="170" height="140" src='/assets/pricing/non-profit.svg' alt='price image'/>
                                                         <div>
                                                             <p className='text-head text-2xl text-center transition mb-2'>Non-Profit</p>
-                                                            <p className='text-primary text-2xl text-center group-hover:text-primary transition'>$ 2.00<span className='text-gray-400'> /year</span></p>
+                                                            <p className='text-primary text-2xl text-center group-hover:text-primary transition'>$ 2.00<span className='text-gray-400 text-xl'> user/year</span></p>
                                                         </div>
                                                     </div>
                                                     <div className='flex flex-col gap-4 items-center px-[3vw] py-4 mx-8'>
                                                         <img className='h-[9vw]' loading='lazy' width="170" height="140" src='/assets/pricing/business.svg' alt='price image'/>
                                                         <div>
                                                             <p className='text-head text-2xl text-center transition mb-2'>Business</p>
-                                                            <p className='text-primary text-2xl text-center group-hover:text-primary transition'>$ 8.00<span className='text-gray-400'> /year</span></p>
+                                                            <p className='text-primary text-2xl text-center group-hover:text-primary transition'>$ 8.00<span className='text-gray-400 text-xl'> user/year</span></p>
                                                         </div>
                                                     </div>
                                                 </Link>

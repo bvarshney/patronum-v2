@@ -59,6 +59,15 @@ function security() {
     },
     {
       id: "6",
+      title: "CSA STAR Certification",
+      contentTop: "Patronum is a proud participant in the CSA Security, Trust & Assurance Registry (STAR), the leading global certification program for cloud security.",
+      description: "Managed by the Cloud Security Alliance (CSA), the STAR registry is designed to promote best practices for ensuring a secure cloud computing environment. By aligning with the CSA STAR principles, Patronum demonstrates its commitment to cloud security, helping customers trust that their data is protected in a cloud environment. Our inclusion in the CSA STAR registry highlights our ongoing dedication to maintaining robust cloud security standards.",
+      imgSrc: "cloud-security-alliance.svg",
+      link: "https://cloudsecurityalliance.org/star/registry/bespin-labs-limited/services/patronum-the-google-workspace-manager",
+      btnText: "View Listing"
+    },
+    {
+      id: "7",
       title: "GDPR Compliance",
       contentTop: "The General Data Protection Regulation (GDPR) represents a significant overhaul of data protection legislation in the European Union.",
       description: "Compliance with GDPR is crucial for any organization that processes the data of EU citizens, regardless of its location. At Patronum, GDPR compliance is paramount, ensuring that personal data is processed transparently, securely, and in a manner that preserves the privacy of the individuals. This regulation empowers individuals to have control over their personal data, with strict guidelines on processing personal information. Our compliance helps in building trust with our customers by enhancing our reputation as a secure and trustworthy data processor.",
