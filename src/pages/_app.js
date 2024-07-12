@@ -14,7 +14,6 @@ import DemoModal from '@/components/InstallModal/DemoModal';
 import Pixi from '@/components/Pixi';
 import Cookie from '@/components/Cookie';
 import { GoogleTagManager } from '@next/third-parties/google'
-import { GoogleAnalytics } from '@next/third-parties/google'
 
 const InstallModalWithNoSSR = dynamic(
   () => import('@/components/InstallModal'),
@@ -76,6 +75,38 @@ export default function App({ Component, pageProps, router }) {
 
   return (
     <>
+      {/* Google Analytics */}
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=G-QTG00X44EP`}
+      />
+      <Script
+        strategy="lazyOnload"
+        id="google-analytics"
+      >
+        {` window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-QTG00X44EP', {
+                page_path: window.location.pathname,
+              });
+            `}
+      </Script>
+      {/* Google Analytics */}
+      {/*Google Tag Manager */}
+      {/* <Script
+        strategy="worker"
+        id="google-tag-manager"
+      >
+        {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-NB75SD4H');
+        `}
+      </Script> */}
+      {/*Google Tag Manager */}
+
       <DefaultSeo
         title='Patronum - Best Platform for Google Workspace (GSuite) Management'
         description='Patronum provides a better way to Google Workspace (GSuite) Management. Patronum fully automates all the administrator and user tasks to ensure an efficient, effective and secure process.'
@@ -190,7 +221,6 @@ export default function App({ Component, pageProps, router }) {
           <AnimatePresence mode="wait">
             <GoogleTagManager gtmId="GTM-NB75SD4H" />
             <Component {...pageProps} key={router.route} />
-            <GoogleAnalytics gaId="G-QTG00X44EP" />
           </AnimatePresence>
           <InstallModalWithNoSSR />
           <DemoModal />
@@ -198,22 +228,8 @@ export default function App({ Component, pageProps, router }) {
       </ReactLenis>
 
       {/* Vercel Analytics */}
-      <SpeedInsights />
-      <Analytics />
-
-      {/* Google Analytics */}
-      {/* <Script
-        strategy="worker"
-        id="google-analytics"
-      >
-        {` window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-QTG00X44EP', {
-                page_path: window.location.pathname,
-              });
-            `}
-      </Script> */}
+        <SpeedInsights />
+        <Analytics />
       {/* WEBGL Background */}
       <Pixi />
     </>
