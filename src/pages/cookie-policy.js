@@ -34,7 +34,7 @@ export default function Page() {
               </div>
               <div className={styles.policy}>
                 <p>
-                    Websites <a href="https://bespinlabs.com" target="_blank">https://bespinlabs.com</a> and <a href="http://www.patronum.io">www.patronum.io</a> are operated by Bespin Labs Limited (“<span className="text-primary font-bold">we</span>”, “<sapn className="text-primary font-bold">us</sapn>”, “<span className="text-primary font-bold">our</span>”).
+                    Websites <a href="https://bespinlabs.com" target="_blank">https://bespinlabs.com</a> and <a href="https://www.patronum.io">www.patronum.io</a> are operated by Bespin Labs Limited (“<span className="text-primary font-bold">we</span>”, “<sapn className="text-primary font-bold">us</sapn>”, “<span className="text-primary font-bold">our</span>”).
                 </p>
                 <p>
                     This policy explains the way in which cookies are used on our websites. Please ensure as the user of our websites you have read and understood this policy before continuing to use them. If you have any questions about our use of cookies, you can contact us at <a href="mailto:privacy@bespinlabs.com">privacy@bespinlabs.com</a>.
@@ -125,7 +125,7 @@ export default function Page() {
                   of cookies. For more information about cookies including how
                   to set your internet browser to reject cookies please go to{" "}
                   <a
-                    href="www.allaboutcookies.org"
+                    href="https://www.allaboutcookies.org"
                     target="_blank"
                     rel="noopener"
                   >
@@ -133,11 +133,11 @@ export default function Page() {
                   </a>
                   . <br /> To opt out of Google Analytics visit{" "}
                   <a
-                    href="http://tools.google.com/dlpage/gaoptout"
+                    href="https://tools.google.com/dlpage/gaoptout"
                     target="_blank"
                     rel="noopener"
                   >
-                    http://tools.google.com/dlpage/gaoptout
+                    https://tools.google.com/dlpage/gaoptout
                   </a>
                   .
                 </p>

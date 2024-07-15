@@ -76,25 +76,33 @@ export default function App({ Component, pageProps, router }) {
   return (
     <>
 
-
       {/* Google Analytics */}
-      <Script async src={`https://www.googletagmanager.com/gtag/js?id=G-QTG00X44EP`}></Script>
+      {/* <Script async src={`https://www.googletagmanager.com/gtag/js?id=G-QTG00X44EP`}></Script>
       <Script>
-        {`window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-QTG00X44EP');
-        `}
-      </Script>
-      {/* <Script id='google-analytics' strategy='lazyOnload'>
         {`window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-QTG00X44EP', {
-          page_path: window.location.pathname,
-          });
+          gtag('config', 'G-QTG00X44EP');
         `}
       </Script> */}
+      <Script
+        // strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=G-QTG00X44EP`}
+      />
+      <Script
+        id="google-analytics"
+        // strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-QTG00X44EP', {
+              page_path: window.location.pathname,
+            });
+          `,
+        }}
+      />
       {/* Google Analytics */}
 
 
@@ -210,8 +218,8 @@ export default function App({ Component, pageProps, router }) {
       <ReactLenis root options={{ duration: 0.8 }}>
         <ModalProvider>
           <AnimatePresence mode="wait">
-            <GoogleTagManager gtmId="GTM-NB75SD4H" />
             <Component {...pageProps} key={router.route} />
+            <GoogleTagManager gtmId="GTM-MDWM3Z7J" />
           </AnimatePresence>
           <InstallModalWithNoSSR />
           <DemoModal />
