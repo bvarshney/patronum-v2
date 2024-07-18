@@ -13,7 +13,7 @@ export default function Blogs({ posts, featuredPost, pagination, categories, all
   const [activeCategory, setActiveCategory] = useState('all');
 
   return (
-    <>
+    <> 
       <PageLayout
         pageTitle1={"Expert Tips,"}
         pageTitle2={" Insights & Latest News"}

@@ -1,4 +1,4 @@
-import ContactForm from "@/components/Forms/ContactForm";
+import ContactPageForm from "@/components/Forms/ContactPageForm";
 import PageLayout from "@/components/PageLayout";
 
 export default function Contact() {
@@ -86,7 +86,8 @@ export default function Contact() {
                                             <h4 className="aeonik lg:text-[2.5vw] mb-[10%] md:text-6xl text-2xl">
                                                 Fill the Form
                                             </h4>
-                                            <ContactForm />
+                                            {/* <ContactForm /> */}
+                                            <ContactPageForm />
                                         </div>
                                     </div>
                                 </div>

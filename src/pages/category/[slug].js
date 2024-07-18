@@ -38,10 +38,6 @@ const Category = ({ category, posts, categories }) => {
                     </span>
                   </h1>
                 </div>
-                  {/* <div className="lg:w-[105%] lg:ml-[-2.5%] ml-0 w-full">
-                      <CategoryList categories={categories} activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
-                  </div> */}
-
                   <div className="2xl:w-[112%] 2xl:ml-[-6%] gap-y-[2vw] lg:w-[105%] lg:ml-[-2.5%] ml-0 w-full flex justify-between flex-wrap">
                     <CategoryList categories={categories} activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
                     <Search posts={posts} />
