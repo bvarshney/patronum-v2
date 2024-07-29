@@ -4,6 +4,7 @@ import react, { useEffect, useRef, useState } from "react"
 import SplitType from "split-type";
 import ScrollToPlugin from "gsap/dist/ScrollToPlugin";
 import dynamic from "next/dynamic";
+import useWindowSize from "@/components/Header/useWindowSize";
 
 gsap.registerPlugin(ScrollToPlugin);
 
@@ -21,7 +22,7 @@ const CalendlyDynamic = dynamic(
 )
 
 export default function Hero(){
-
+    const { width } = useWindowSize();
     const { openModal } = useModal();
     const [isOpen, setIsOpen] = useState(false);
 
@@ -95,51 +96,54 @@ export default function Hero(){
                     <div className="lg:px-[4vw] flex-all">
                         <div className="lg:w-1/2 w-full flex flex-col lg:gap-y-10 gap-y-[7vw] lg:pt-0 md:pt-[20vw] pt-[25vw]">
                             
-                            <h1 className='title-5xl lg:block hidden'>
-                                <div className='hero-anim Your'>
-                                    <span className="span">Your </span>
-                                </div>
-                                <div className="hero-anim">
-                                    <img
-                                        src="/assets/home/google-workspace.svg"
-                                        alt='Google Logo'
-                                        title='Google Logo'
-                                        className='google-logo-hero span'
-                                        width={750}
-                                        height={100}
-                                    />
-                                </div>
-                                <p className="hidden">Google Workspace </p>
-                                <div className='hero-anim'>
-                                    <span className="span">
-                                        Manager
-                                    </span>
-                                </div>
-                            </h1>
-                            
-                            <h1 className='title-5xl lg:hidden block'>
-                                <div className="flex flex-col gap-y-[2vw]">
-                                    <div className="hero-anim flex items-end gap-x-[2vw] w-full">
+                                <h1 className='title-5xl lg:block hidden'>
+                                    <div className='hero-anim Your'>
+                                        <span className="span">Your{" "}</span>
+                                    </div>
+                                    <div className="hero-anim">
+                                        <img
+                                            src="/assets/home/google-workspace.svg"
+                                            alt='Google Logo'
+                                            title='Google Logo'
+                                            className='google-logo-hero span'
+                                            width={750}
+                                            height={100}
+                                        />
+                                    </div>
+                                    <span className="hidden">Google Workspace{" "}</span>
+                                    <div className='hero-anim'>
                                         <span className="span">
-                                            Your
-                                        </span>
-                                        <p className="hidden"> Google Workspace </p>
-                                        <span className="md:w-[45%] w-[50%] mt-[1.5vw] span">
-                                            <img className="w-full google" src="/assets/home/google.svg" loading="lazy" width={307} height={100} alt="google logo image" />
-                                        </span>
-                                    </div>
-                                    <div className="hero-anim">
-                                        <span className="md:w-[70%] w-[80%] mt-[1.5vw] span">
-                                            <img className="w-full" src="/assets/home/workspace.svg" loading="lazy" width={450} height={100} alt="google workspace image"/>
-                                        </span>
-                                    </div>
-                                    <div className="hero-anim">
-                                        <span className="span manager">
                                             Manager
                                         </span>
                                     </div>
-                                </div>
-                            </h1>
+                                </h1>
+                                {width >= 1024 ? (
+                                    <></>
+                            ) : (
+                                <h1 className='title-5xl lg:hidden block'>
+                                    <div className="flex flex-col gap-y-[2vw]">
+                                        <div className="hero-anim flex items-end gap-x-[2vw] w-full">
+                                            <span className="span">
+                                                Your
+                                            </span>
+                                            <span className="hidden"> Google Workspace </span>
+                                            <span className="md:w-[45%] w-[50%] mt-[1.5vw] span">
+                                                <img className="w-full google" src="/assets/home/google.svg" loading="lazy" width={307} height={100} alt="google logo image" />
+                                            </span>
+                                        </div>
+                                        <div className="hero-anim">
+                                            <span className="md:w-[70%] w-[80%] mt-[1.5vw] span">
+                                                <img className="w-full" src="/assets/home/workspace.svg" loading="lazy" width={450} height={100} alt="google workspace image"/>
+                                            </span>
+                                        </div>
+                                        <div className="hero-anim">
+                                            <span className="span manager">
+                                                Manager
+                                            </span>
+                                        </div>
+                                    </div>
+                                </h1>
+                            )}
                             <p className="hero-para">
                                 <span>
                                     The only tool you'll ever need to streamline your Google Workspace management.
