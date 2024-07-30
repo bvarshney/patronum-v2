@@ -69,7 +69,42 @@ const nextConfig = {
         source: '/sitemap.xml',
         destination: '/sitemap_index.xml',
         permanent: true,
-      }
+      },
+      {
+        source: '/google-drive-management/',
+        destination: '/google-drive-management',
+        permanent: true,
+      },
+      {
+        source: '/support/',
+        destination: '/support',
+        permanent: true,
+      },
+      {
+        source: '/organisational-chart/',
+        destination: '/organisational-chart',
+        permanent: true,
+      },
+      {
+        source: '/patronum-google-drive-beta/',
+        destination: '/patronum-google-drive-beta',
+        permanent: true,
+      },
+      {
+        source: '/email-signature-management/',
+        destination: '/email-signature-management',
+        permanent: true,
+      },
+      {
+        source: '/on-boarding/',
+        destination: '/on-boarding',
+        permanent: true,
+      },
+      {
+        source: '/patronum-awarded-best-ease-of-use-and-best-value-by-capterra/',
+        destination: '/patronum-awarded-best-ease-of-use-and-best-value-by-capterra',
+        permanent: true,
+      },
     ]
   },
 }

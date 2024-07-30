@@ -18,7 +18,7 @@ export default function Blogs({ posts, featuredPost, pagination, categories, all
         pageTitle1={"Expert Tips,"}
         pageTitle2={" Insights & Latest News"}
         pagePara={"Dive into the latest updates, tips, and trends in Google Workspace management with Patronum."}
-        imgSrc={"/blog.svg"}
+        imgSrc={"blog.svg"}
         title={"Learn more about Google Workspace (G Suite) Management"}
         description={"Get all the information that can help you with effective & efficient management of your Google Workspace (GSuite). Download our resources and participate in webinars to know more."}
         url={"blog"}

@@ -91,7 +91,7 @@ export default function Partners() {
                             <div className="lg:flex items-start justify-between">
                                 <h2 className="title-4xl text-anim">
                                     <span>
-                                        Partner
+                                        Partner{" "}
                                     </span>
                                     <br />
                                     <span>

@@ -101,7 +101,7 @@ export default function Webinars(){
                             <div className="content-2">
                                 <h2 className="title-4xl text-anim">
                                     <span>
-                                        Explore Our
+                                        Explore Our{" "}
                                     </span>
                                     <br />
                                     <span>

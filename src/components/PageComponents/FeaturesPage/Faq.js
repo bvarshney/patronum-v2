@@ -70,7 +70,7 @@ const Faqs = ({ featureName }) => {
                           <AccordionTrigger className="title-2xl pb-2 relative px-[2vw] py-[2vw] w-[90%]">
                             <div className='faq-number'>
                               <span className='aeonik'>
-                                  {item.id}
+                                  {item.id}{" "}
                               </span>
                             </div>
                             <div className='faq-main-content'>

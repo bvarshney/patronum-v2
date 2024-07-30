@@ -51,7 +51,7 @@ export default function Legal() {
                             <div className="lg:flex items-start justify-between">
                                 <h2 className="title-4xl text-anim">
                                     <span>
-                                        Patronum 
+                                        Patronum{" "}
                                     </span>
                                     <br />
                                     <span>

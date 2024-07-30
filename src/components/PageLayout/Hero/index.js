@@ -81,7 +81,7 @@ export default function Hero( {pageTitle1, pageTitle2, pagePara, imgSrc} ){
                                         <>
                                             <br />
                                             <span className="span">
-                                                {pageTitle2}
+                                                {" "}{pageTitle2}
                                             </span>
                                         </>
                                     )}
