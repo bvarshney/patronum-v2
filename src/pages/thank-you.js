@@ -6,6 +6,7 @@ import Header from '@/components/Header';
 import PageLoader from '@/components/PageLoader';
 import dynamic from 'next/dynamic'
 import gsap from "gsap";
+import Footer from "@/components/Footer";
 
 const CrispWithNoSSR = dynamic(
     () => import('@/components/Crisp'),
@@ -193,6 +194,7 @@ export default function Thankyou() {
             </div>
           </div>
         </section>
+        <Footer />
       </div>
     </>
   );
