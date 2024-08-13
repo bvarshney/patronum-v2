@@ -18,6 +18,7 @@ export default function BlogLayout({
   postDate,
   shareLink,
   featImg,
+  readingTime,
 }) {
   useEffect(() => {
     const fadeUps = document.querySelectorAll(".fadeUp");
@@ -63,7 +64,9 @@ export default function BlogLayout({
                       <p>{postDate}</p>
                     </div>
                     <div className="flex md:items-center items-end justify-between gap-[2vw] fadeUp">
-                      <p>Share Article</p>
+                      <div>
+                        <p>Read Time: {readingTime} mins</p>
+                      </div>
                       <div className="flex items-start justify-center lg:gap-[1vw] md:gap-[2vw] gap-[3vw]">
                         <FacebookShareButton
                           url={`https://www.patronum.io/${shareLink}`}

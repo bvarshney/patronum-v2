@@ -75,16 +75,6 @@ export default function App({ Component, pageProps, router }) {
 
   return (
     <>
-
-      {/* Google Analytics */}
-      {/* <Script async src={`https://www.googletagmanager.com/gtag/js?id=G-QTG00X44EP`}></Script>
-      <Script>
-        {`window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-QTG00X44EP');
-        `}
-      </Script> */}
       <Script
         // strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=G-QTG00X44EP`}
@@ -104,7 +94,6 @@ export default function App({ Component, pageProps, router }) {
         }}
       />
       {/* Google Analytics */}
-
 
       <DefaultSeo
         title='Patronum - Best Platform for Google Workspace (GSuite) Management'
@@ -149,7 +138,6 @@ export default function App({ Component, pageProps, router }) {
           cardType: 'summary_large_image',
         }}
       />
-
       <Head>
         <meta charSet="utf-8" />
         <script
@@ -190,7 +178,6 @@ export default function App({ Component, pageProps, router }) {
                   }
                 ],
                 "inLanguage": "en-US",
-
               },
             ),
           }}

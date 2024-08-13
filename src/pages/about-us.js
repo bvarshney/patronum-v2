@@ -85,7 +85,7 @@ export default function About(){
                 keywords="Google Workspace"
                 >
                 {showSideMenu && <SideMenu sections={sections}/>}
-
+                
                 <section id="second-section">
                     <div className="container">
                         <div className="content">

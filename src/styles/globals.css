@@ -2768,7 +2768,10 @@ input[type=number] {
 .toc_ul_list li:nth-child(4),
 .toc_ul_list li:nth-child(5),
 .toc_ul_list li:nth-child(6),
-.toc_ul_list li:nth-child(7){
+.toc_ul_list li:nth-child(7),
+.toc_ul_list li:nth-child(8),
+.toc_ul_list li:nth-child(9),
+.toc_ul_list li:nth-child(10){
   display: block;
 }
 /* Blogs END Main */

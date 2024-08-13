@@ -30,7 +30,7 @@
     font-size: 2.3vw;
     font-weight: 500;
     color: var(--text-head);
-    padding-top: 10px;
+    padding-top: 2%;
     scroll-behavior: smooth;
     scroll-margin-top: 7vw;
 }
@@ -42,8 +42,9 @@
 .blogContent h3{
     font-size: 1.8vw;
     font-weight: 400;
+    line-height: 1.4;
     color: var(--text-head);
-    margin: 2% 0 0;
+    margin: 2% 0;
 }
 
 .blogContent h3 strong{
@@ -80,59 +81,53 @@
 }
 
 .blogContent p{
-    font-size: 1.15vw;
+    font-size: 1.2vw;
     font-family: 'Ageo';
     text-rendering: geometricPrecision;
     font-weight: 500;
-    line-height: 1.7;
+    line-height: 1.5;
     letter-spacing: 0.5px;
-    margin: 2.5% 0;
+    margin: 2% 0 2%;
 }
 .blogContent.mb-0{
     margin-bottom: 0;
 }
-
 .blogContent p:first-child{
     margin-top: 0;
 }
-
 .blogContent ul,.blogContent ol{
     margin-left: 1.5vw;
+    margin-top: 1%;
+    padding-bottom: 1.5%;
 }
-
 .blogContent li{
     font-family: 'Ageo';
     text-rendering: geometricPrecision;
     font-weight: 500;
-    font-size: 1.15vw;
+    font-size: 1.2vw;
     letter-spacing: 0.5px;
-    line-height: 1.7;
+    line-height: 1.5;
     color: var(--text-body);
-    margin-bottom: 1%;
+    margin-bottom: 0.4%;
 }
 .blogContent li:last-child{
     margin-bottom: 0;
 }
-
 .blogContent ol li{
     list-style: auto;
 }
-
 .blogContent ul li{
     list-style: disc;
 }
-
 .blogContent li strong{
     font-family: 'Ageo' !important;
     text-rendering: geometricPrecision !important;
     font-weight: 600 !important;
     color: var(--text-head) !important;
 }
-
 .blogContent figure {
     margin: 6% 0;
 }
-
 .blogContent img{
     width: auto;
     object-fit: cover;
@@ -288,10 +283,10 @@
         font-size: 4.2vw;
     }
     .blogContent p{
-        font-size: 4.2vw;
+        font-size: 4.5vw;
     }
     .blogContent li{
-        font-size: 4.2vw;
+        font-size: 4.5vw;
     }
     .blogContent th{
         font-size: 4vw;
