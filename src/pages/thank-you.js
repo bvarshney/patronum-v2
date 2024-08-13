@@ -14,7 +14,7 @@ const CrispWithNoSSR = dynamic(
   )
 
 export default function Thankyou() {
-  const [countdown, setCountdown] = useState(6);
+  const [countdown, setCountdown] = useState(10);
 
   useEffect(() => {
     let ctx = gsap.context(() => {

@@ -313,8 +313,8 @@ function PostDetail({ post, recentPosts }) {
                 {/* Update TOC rendering to indicate the active section */}
                 <ul className="toc_ul_list">
                   {toc.map(({ id, title }) => (
-                    <li key={id} className={`mb-[1vw] leading-[1.2] ${id === activeSection ? 'toc-active' : ''}`}>
-                      <a href={`#${id}`} onClick={(e) => handleSmoothScroll(e, id)} className="text-head aeonik text-[0.9vw] hover:text-primary transition-all">
+                    <li key={id} className={`mb-[1vw] leading-[1.2] transition-all ${id === activeSection ? 'toc-active' : ''}`}>
+                      <a href={`#${id}`} onClick={(e) => handleSmoothScroll(e, id)} className="text-head/60 aeonik text-[0.9vw] transition-all hover:text-primary">
                         {title}
                       </a>
                     </li>

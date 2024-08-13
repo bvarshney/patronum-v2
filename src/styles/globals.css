@@ -2757,7 +2757,6 @@ input[type=number] {
 }
 .toc-active a{
   color: var(--primary);
-  transition: all 0.3s ease-in;
 }
 .toc_ul_list li{
   display: none;
