@@ -87,13 +87,12 @@ export default function ContactPageForm() {
             email: data.email,
             company: data.company,
             countryName, 
-            // phoneNumber: data.phoneNumber,
             pageURL: data.pageURL,
             tag: "Patronum Interest",
         };
         
         const message = `
-                <h1>New Contact Form Submission</h1>
+                <h1>New Contact Page Form Submission</h1>
                 <p><strong>Name:</strong> ${data.name}</p>
                 <p><strong>Email:</strong> ${data.email}</p>
                 <p><strong>Company Name:</strong> ${data.company}</p>
@@ -108,7 +107,7 @@ export default function ContactPageForm() {
             // Send email
             await axios.post('/api/mail', {
                 message: message,
-                subject: "Contact Form Submission",
+                subject: "Contact Page Form Submission",
             });
             
             form.reset();
@@ -122,8 +121,7 @@ export default function ContactPageForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 contact-form">
-        
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 contact-form contact-page-form">
         {/* Form fields */}
         {/* Name field */}
         <FormField

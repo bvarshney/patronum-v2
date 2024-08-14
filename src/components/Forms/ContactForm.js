@@ -90,13 +90,12 @@ export default function ContactForm() {
             email: data.email,
             company: data.company,
             countryName, 
-            // phoneNumber: data.phoneNumber,
             pageURL: data.pageURL,
             tag: "Patronum Interest",
         };
         
         const message = `
-                <h1>New Contact Form Submission</h1>
+                <h1>New Install Patronum Form Submission</h1>
                 <p><strong>Name:</strong> ${data.name}</p>
                 <p><strong>Email:</strong> ${data.email}</p>
                 <p><strong>Company Name:</strong> ${data.company}</p>
@@ -111,7 +110,7 @@ export default function ContactForm() {
             // Send email
             await axios.post('/api/mail', {
                 message: message,
-                subject: "Contact Form Submission",
+                subject: "Install Patronum Form Submission",
             });
             
             form.reset();
@@ -129,7 +128,7 @@ export default function ContactForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 contact-form">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 contact-form install-patronum-form">
         
         {/* Form fields */}
         {/* Name field */}
@@ -242,7 +241,7 @@ export default function ContactForm() {
         />
 
         {/* Submit button */}
-        <Button type="submit" disabled={submitting}>
+        <Button id="submit_install" type="submit" disabled={submitting}>
             {submitting ? 'Submitting...' : 'Submit'}
         </Button>
         {submissionError && <p className="text-red-500">{submissionError}</p>}
