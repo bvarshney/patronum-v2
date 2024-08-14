@@ -101,6 +101,7 @@ export default function ContactForm() {
                 <p><strong>Company Name:</strong> ${data.company}</p>
                 <p><strong>Country:</strong> ${countryName}</p>
                 <p><strong>Phone Number:</strong> ${data.phoneNumber}</p>
+                <p><strong>Page URL:</strong> ${data.pageURL}</p>
                 <p><strong>Terms Agreement:</strong> ${data.terms ? 'Agreed' : 'Not Agreed'}</p>
             `;
         try {
