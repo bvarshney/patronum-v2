@@ -11,7 +11,12 @@ const nextConfig = {
     nextScriptWorkers: true,
   },
   images: {
-    domains: ['wordpress-213572-4463644.cloudwaysapps.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'wordpress-213572-4463644.cloudwaysapps.com',
+      },
+    ],
   },
   async redirects() {
     return [
