@@ -101,8 +101,8 @@ export default function FeatureDetail(){
                 pageTitle2={'Sharing'}
                 pagePara={"Unified Contact Sharing for Powerful & efficient collaboration"} 
                 imgSrc={'contact-sharing.svg'}
-                title={"Google and Gmail Contacts Sharing & Manager with Patronum App"}
-                description={"Patronum's app seamless integration with Google Workspace, Gmail, and Google Contacts revolutionizes contact management by embedding directly into your daily tools. Lets the users use Google / Gmail Contact with Patronum."}
+                title={"Google Contact Sharing & Contacts Management with Patronum"}
+                description={"Patronum streamlines Google contact sharing and management with seamless daily syncs, ensuring users always have access to the most current and relevant contact information."}
                 url={"google-contact-sharing"}
                 img={"contact-sharing.jpg"}
                 date_published={"2020-12-21T13:41"}
