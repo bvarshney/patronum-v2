@@ -3,13 +3,13 @@ import LinkButton from "@/components/PageLayout/Button/LinkButton";
 
 const LegalCard = ({link, img, title, id}) => {
     return (
-        <div className="legal-card fadeUp">
+        <div className="legal-card fadeUp group">
             <div className="cards-num">
                 <span className="aeonik">
                     {id}
                 </span>
             </div>
-            <div className="img">
+            <div className="img group-hover:scale-[1.05] duration-300">
                 <img 
                     src={`/assets/legal/${img}.svg`} 
                     alt={title} 
@@ -72,7 +72,7 @@ export default function Legal() {
                     <div className="container">
                         <div className="content">
                             <div className="legal-cards-wrapper">
-                                <LegalCard 
+                                <LegalCard
                                     id={"01"}
                                     title={"Master Subscription Agreement"}
                                     img={"master-subscription-agreement"}
@@ -127,7 +127,7 @@ export default function Legal() {
                                 <div className="legal-card fadeUp">
                                     <div className="cards-num">
                                         <span className="aeonik">
-                                            08
+                                            07
                                         </span>
                                     </div>
                                     <div className="img">
@@ -146,6 +146,12 @@ export default function Legal() {
                                         <LinkButton link="/privacy-policy" btnText="Read More"/>
                                     </div>
                                 </div>
+                                <LegalCard 
+                                    id={"08"}
+                                    title={"Environmental Policy"}
+                                    img={"environmental-policy"}
+                                    link="https://docs.google.com/document/d/1_Y44ANiFqW9XI4GhFxNBpoOCoDM2s-beZeVKPS1cooU/edit"
+                                />
                             </div>
                         </div>
                     </div>
