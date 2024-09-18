@@ -26,11 +26,11 @@ export default function FeatureDetail(){
             para: "Elevate your contact management with sophisticated user-level permissions for your Google Address Book. This feature allows you to define exactly how contacts are shared and managed within your organization, offering options like 'Can Edit,' 'Can Delete,' and 'Read Only.' Inspired by the intuitive permissions model used in Google Docs, Patronum makes it incredibly easy to customize access according to each team member's needs, ensuring that your contact information is handled securely and efficiently.",
             img: "/assets/features/contact-sharing/main-3.svg",
         },
-        {
-            title: 'Boundless Sharing Across Domains',
-            para: "Expand the boundaries of your organization's collaboration with Patronum's feature for boundless sharing across domains. This capability enables your company to seamlessly share Google Contacts not only within your own Google Workspace domain and sub-domains but also with external customers and partners. Patronum fosters stronger relationships and smoother interactions with key stakeholders by facilitating secure and efficient contact sharing beyond your immediate organization.",
-            img: "/assets/features/contact-sharing/main-4.svg",
-        },
+        // {
+        //     title: 'Boundless Sharing Across Domains',
+        //     para: "Expand the boundaries of your organization's collaboration with Patronum's feature for boundless sharing across domains. This capability enables your company to seamlessly share Google Contacts not only within your own Google Workspace domain and sub-domains but also with external customers and partners. Patronum fosters stronger relationships and smoother interactions with key stakeholders by facilitating secure and efficient contact sharing beyond your immediate organization.",
+        //     img: "/assets/features/contact-sharing/main-4.svg",
+        // },
         {
             title: 'Uncompromised Security',
             para: "Patronum leverages a robust global technical infrastructure designed to protect your data at every level. With a dedicated team of engineers focused on maintaining and advancing security measures, Patronum ensures that your contacts and shared information remain private and secure. This commitment to security means you can trust Patronum to handle your most sensitive contact information, providing you with the confidence to manage and share data without risking privacy breaches or unauthorized access.",
@@ -74,20 +74,20 @@ export default function FeatureDetail(){
             para: "Easily share contacts with specific Google Groups.",
             img: "/assets/features/contact-sharing/detail-5.svg",
         },
+        // {
+        //     id: '06',
+        //     title: 'Share with External Domains',
+        //     para: "Facilitate contact sharing with users outside your domain.",
+        //     img: "/assets/features/contact-sharing/detail-6.svg",
+        // },
+        // {
+        //     id: '07',
+        //     title: 'Instant Sync',
+        //     para: "Contacts are updated in real-time across all devices and platforms.",
+        //     img: "/assets/features/contact-sharing/detail-7.svg",
+        // },
         {
             id: '06',
-            title: 'Share with External Domains',
-            para: "Facilitate contact sharing with users outside your domain.",
-            img: "/assets/features/contact-sharing/detail-6.svg",
-        },
-        {
-            id: '07',
-            title: 'Instant Sync',
-            para: "Contacts are updated in real-time across all devices and platforms.",
-            img: "/assets/features/contact-sharing/detail-7.svg",
-        },
-        {
-            id: '08',
             title: 'Advanced Logging and Security Features',
             para: "Offers detailed activity logs and enhanced security measures for contact sharing.",
             img: "/assets/features/contact-sharing/detail-8.svg",
