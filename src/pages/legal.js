@@ -146,12 +146,7 @@ export default function Legal() {
                                         <LinkButton link="/privacy-policy" btnText="Read More"/>
                                     </div>
                                 </div>
-                                <LegalCard 
-                                    id={"08"}
-                                    title={"Environmental Policy"}
-                                    img={"environmental-policy"}
-                                    link="https://docs.google.com/document/d/1_Y44ANiFqW9XI4GhFxNBpoOCoDM2s-beZeVKPS1cooU/edit"
-                                />
+                                
                             </div>
                         </div>
                     </div>
