@@ -161,5 +161,3 @@ export default function Legal() {
         </>
     )
 }
-
-//updated - 18-09-2024
