@@ -102,13 +102,13 @@ export default function Legal() {
                                     img={"partner-agreement"}
                                     link="https://docs.google.com/document/d/1UfaCFOtQfOLWkHHmR0p0iAHWqG7xEuh4ESWj5cCvy2c/edit#heading=h.30j0zll"
                                 />
-                                <div className="legal-card fadeUp">
+                                <div className="legal-card fadeUp group">
                                     <div className="cards-num">
                                         <span className="aeonik">
                                             06
                                         </span>
                                     </div>
-                                    <div className="img">
+                                    <div className="img group-hover:scale-[1.05] duration-300">
                                         <img 
                                             src="/assets/legal/cookie-policy.svg" 
                                             alt="Cookie Policy"
@@ -124,13 +124,13 @@ export default function Legal() {
                                         <LinkButton link="/cookie-policy" btnText="Read More"/>
                                     </div>
                                 </div>
-                                <div className="legal-card fadeUp">
+                                <div className="legal-card fadeUp group">
                                     <div className="cards-num">
                                         <span className="aeonik">
                                             07
                                         </span>
                                     </div>
-                                    <div className="img">
+                                    <div className="img group-hover:scale-[1.05] duration-300">
                                         <img 
                                             src="/assets/legal/privacy-policy.svg" 
                                             alt="Privacy Policy"
@@ -146,7 +146,28 @@ export default function Legal() {
                                         <LinkButton link="/privacy-policy" btnText="Read More"/>
                                     </div>
                                 </div>
-                                
+                                <div className="legal-card fadeUp group">
+                                    <div className="cards-num">
+                                        <span className="aeonik">
+                                            08
+                                        </span>
+                                    </div>
+                                    <div className="img group-hover:scale-[1.05] duration-300">
+                                        <img 
+                                            src="/assets/legal/environmental-policy.svg" 
+                                            alt="Environmental Policy Image"
+                                            title="Environmental Policy"
+                                        />
+                                    </div>
+                                    <div className="info">
+                                        <span className="hr-1p" />
+                                        <h3 className="title-2xl aeonik">
+                                            Environmental Policy
+                                        </h3>
+                                        <span className="hr-1p" />
+                                        <LinkButton link="/environmental-policy" btnText="Read More"/>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
