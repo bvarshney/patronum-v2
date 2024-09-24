@@ -114,7 +114,7 @@ const Pricing = () => {
               </div>
             </div>
 
-            {/* <div className='pricing-head pt-[2vw]'>
+            <div className='pricing-head pt-[2vw]'>
               <h2 className='title-4xl text-anim'>
                 <span>
                   Add-Ons
@@ -131,12 +131,12 @@ const Pricing = () => {
                 <div className="lg:w-[60%] w-full">
                   <h3 className="lg:text-[2vw] text-primary text-left text-[7vw] lg:mb-0 mb-[4vw]">Backup</h3>
                   <span className="h-[1px] w-full block bg-[#c5c5c5] my-[1.8vw]"/>
-                  <div className="text-head lg:text-[1.25vw] text-[4.5vw] grid lg:grid-cols-2 grid-col-1 lg:gap-y-[1.5vw] gap-[3.5vw] gap-x-[4vw] lg:py-0 py-[1.5vw]">
-                      <h4 className='flex lg:gap-[1vw] gap-[2vw]'><span>✓</span><span>Cloud-native Google Workspace backup</span></h4>
-                      <h4 className='flex lg:gap-[1vw] gap-[2vw]'><span>✓</span><span>Full support of Google Workspace</span></h4>
-                      <h4 className='flex lg:gap-[1vw] gap-[2vw]'><span>✓</span><span>Gmail backup with 1-24x daily</span></h4>
-                      <h4 className='flex lg:gap-[1vw] gap-[2vw]'><span>✓</span><span>Instant backup preview</span></h4>
-                      <h4 className='flex lg:gap-[1vw] gap-[2vw]'><span>✓</span><span>Full fidelity backup</span></h4>
+                  <div className="text-head lg:text-[1.25vw] text-[4.5vw] grid lg:grid-cols-2 grid-col-1 lg:gap-y-[1.5vw] gap-[3.5vw] gap-x-[2vw] lg:py-0 py-[1.5vw]">
+                      <h4 className='flex lg:gap-[1vw] gap-[2vw]'><span>✓</span><span>Best-in-Class Full Fidelity backups</span></h4>
+                      <h4 className='flex lg:gap-[1vw] gap-[2vw]'><span>✓</span><span>Advanced Intelligent Ransomware Protection</span></h4>
+                      <h4 className='flex lg:gap-[1vw] gap-[2vw]'><span>✓</span><span>Automated backup runs, resilient to Google API errors</span></h4>
+                      <h4 className='flex lg:gap-[1vw] gap-[2vw]'><span>✓</span><span>Restore data to the same/other accounts</span></h4>
+                      <h4 className='flex lg:gap-[1vw] gap-[2vw]'><span>✓</span><span>Google Workspace apps & metadata support</span></h4>
                   </div>
                   <span className="h-[1px] w-full block bg-[#c5c5c5] my-[1.8vw]"/>
                   <div className='flex lg:justify-start justify-between gap-[3vw] items-baseline w-full lg:mt-0 mt-[5vw]'>
@@ -163,7 +163,7 @@ const Pricing = () => {
                 </div>
 
               </div>
-            </div> */}
+            </div>
 
           </div>
         </div>
