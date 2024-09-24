@@ -114,7 +114,7 @@ const Pricing = () => {
               </div>
             </div>
 
-            <div className='pricing-head pt-[2vw]'>
+            {/* <div className='pricing-head pt-[2vw]'>
               <h2 className='title-4xl text-anim'>
                 <span>
                   Add-Ons
@@ -163,7 +163,7 @@ const Pricing = () => {
                 </div>
 
               </div>
-            </div>
+            </div> */}
 
           </div>
         </div>
