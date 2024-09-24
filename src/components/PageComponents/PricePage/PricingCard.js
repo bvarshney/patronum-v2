@@ -66,7 +66,6 @@ const PricingCard = ({ features, category, isAnnual, selectedCurrency, pricingIm
                 </a>
             </div>
       </div>
-
     </div>
   );
 };

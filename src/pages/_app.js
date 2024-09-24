@@ -14,6 +14,7 @@ import DemoModal from '@/components/InstallModal/DemoModal';
 import Pixi from '@/components/Pixi';
 import Cookie from '@/components/Cookie';
 import { GoogleTagManager } from '@next/third-parties/google'
+import useWindowSize from "@/components/Header/useWindowSize";
 
 const InstallModalWithNoSSR = dynamic(
   () => import('@/components/InstallModal'),
@@ -22,6 +23,7 @@ const InstallModalWithNoSSR = dynamic(
 
 export default function App({ Component, pageProps, router }) {
   const [showPreloader, setShowPreloader] = useState(true);
+  const { width } = useWindowSize();
 
   useEffect(() => {
     const hasVisited = sessionStorage.getItem('hasVisited');
@@ -217,7 +219,11 @@ export default function App({ Component, pageProps, router }) {
         <SpeedInsights />
         <Analytics />
       {/* WEBGL Background */}
-      <Pixi />
+      {width >= 1024 ? (
+        <Pixi />
+      ) : (
+        <></>
+      )}
     </>
   );
 }

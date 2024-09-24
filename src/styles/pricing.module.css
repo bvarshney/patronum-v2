@@ -147,6 +147,9 @@
   .pricingPrice{
     font-size: 5vw;
   }
+  .pricingType{
+    font-size: 3.5vw;
+  }
 
   /* Features */
   .featureItem{
