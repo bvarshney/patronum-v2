@@ -6,8 +6,7 @@ import { ReactLenis } from '@studio-freight/react-lenis';
 import { useEffect, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import Head from 'next/head';
-import Script from 'next/script';
-import dynamic from 'next/dynamic'
+// import dynamic from 'next/dynamic'
 import { ModalProvider } from '@/components/InstallModal/ModelContext';
 import PreLoader from '@/components/PreLoader';
 import DemoModal from '@/components/InstallModal/DemoModal';
@@ -15,11 +14,13 @@ import Pixi from '@/components/Pixi';
 import Cookie from '@/components/Cookie';
 import { GoogleTagManager } from '@next/third-parties/google'
 import useWindowSize from "@/components/Header/useWindowSize";
+import { Suspense } from 'react';
+import InstallModal from '@/components/InstallModal';
 
-const InstallModalWithNoSSR = dynamic(
-  () => import('@/components/InstallModal'),
-  { ssr: false }
-)
+// const InstallModalWithNoSSR = dynamic(
+//   () => import('@/components/InstallModal'),
+//   { ssr: false }
+// )
 
 export default function App({ Component, pageProps, router }) {
   const [showPreloader, setShowPreloader] = useState(true);
@@ -77,26 +78,6 @@ export default function App({ Component, pageProps, router }) {
 
   return (
     <>
-      <Script
-        // strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=G-QTG00X44EP`}
-      />
-      <Script
-        id="google-analytics"
-        // strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-QTG00X44EP', {
-              page_path: window.location.pathname,
-            });
-          `,
-        }}
-      />
-      {/* Google Analytics */}
-
       <DefaultSeo
         title='Patronum - Best Platform for Google Workspace (GSuite) Management'
         description='Patronum provides a better way to Google Workspace (GSuite) Management. Patronum fully automates all the administrator and user tasks to ensure an efficient, effective and secure process.'
@@ -210,8 +191,12 @@ export default function App({ Component, pageProps, router }) {
             <Component {...pageProps} key={router.route} />
             <GoogleTagManager gtmId="GTM-MDWM3Z7J" />
           </AnimatePresence>
-          <InstallModalWithNoSSR />
-          <DemoModal />
+          {/* <InstallModalWithNoSSR /> */}
+          <Suspense fallback={null}>
+            <InstallModal />
+            <DemoModal />
+          </Suspense>
+          {/* <DemoModal /> */}
         </ModalProvider>
       </ReactLenis>
 

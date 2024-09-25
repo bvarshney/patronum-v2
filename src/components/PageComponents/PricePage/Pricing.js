@@ -3,7 +3,6 @@ import PricingCard from './PricingCard';
 import PriceDropDown from '../HomePage/PriceDropDown';
 import { Switch } from "@/components/ui/switch"
 import Image from 'next/image';
-import styles from '@/styles/pricing.module.css'
 
 const Pricing = () => {
   const [isAnnual, setIsAnnual] = useState(true);
