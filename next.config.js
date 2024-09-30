@@ -7,7 +7,7 @@ const nextConfig = {
   reactStrictMode: true,
   productionBrowserSourceMaps: true,
   experimental: {
-    optimizeCss: true,
+    // optimizeCss: true,
     nextScriptWorkers: true,
   },
   images: {

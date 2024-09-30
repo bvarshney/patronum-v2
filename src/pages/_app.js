@@ -11,10 +11,10 @@ import PreLoader from '@/components/PreLoader';
 import DemoModal from '@/components/InstallModal/DemoModal';
 import Pixi from '@/components/Pixi';
 import Cookie from '@/components/Cookie';
-import { GoogleTagManager } from '@next/third-parties/google'
 import useWindowSize from "@/components/Header/useWindowSize";
 import { Suspense } from 'react';
 import InstallModal from '@/components/InstallModal';
+import Script from 'next/script';
 
 export default function App({ Component, pageProps, router }) {
   const [showPreloader, setShowPreloader] = useState(true);
@@ -190,14 +190,22 @@ export default function App({ Component, pageProps, router }) {
           </Suspense>
         </ModalProvider>
       </ReactLenis>
-      
+
       {/* Google Tag Manager */}
-      <GoogleTagManager gtmId="GTM-MDWM3Z7J" />
+      <Script
+        src="https://www.googletagmanager.com/gtm.js?id=GTM-MDWM3Z7J"
+        strategy="afterInteractive"
+        onLoad={() => console.log('GTM script loaded successfully')}
+        onError={(e) => console.error('Error loading GTM script', e)}
+      />
 
       {/* Vercel Analytics */}
-        <SpeedInsights />
-        <Analytics />
-
+      <SpeedInsights
+        strategy="afterInteractive"
+      />
+      <Analytics
+        strategy="afterInteractive"
+      />
       {/* WEBGL Background */}
       {width >= 1024 ? (
         <Pixi />

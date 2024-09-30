@@ -12,7 +12,6 @@ export default function PageLayout( {pageTitle1, pageTitle2, pagePara, imgSrc, c
 
   useEffect(() => {
     const headings = document.querySelectorAll('.text-anim');
-
     headings.forEach((heading) => {
       let ctx = gsap.context(() => {
         const textAnim = new SplitType(heading, {types: 'words'});

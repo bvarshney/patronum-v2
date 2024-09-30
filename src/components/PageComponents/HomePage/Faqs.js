@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 export default function Faqs(){
 
@@ -59,25 +59,25 @@ export default function Faqs(){
                         <div className='faq-wrapper'>
                             <span className='h-[1px] bg-[#1a1a1a] w-full lineDraw block'/>
                             {faqData.map((item, index) => (
-                                <>
-                                <div onClick={() => toggleAccordion(index)} className={`faq-item scaleAnim ${index === accordionOpen ? 'open' : ''}`} key={index}>
-                                    <div className="faq-item-content">
-                                        <h6 className="title-2xl pb-2">
-                                            {item.title}
-                                        </h6>
-                                        <div className="faq-content">
-                                            <p className="content-p md:my-6 my-3">
-                                                <span>{item.content}</span>
-                                            </p>
+                                <React.Fragment key={index}>
+                                    <div onClick={() => toggleAccordion(index)} className={`faq-item scaleAnim ${index === accordionOpen ? 'open' : ''}`}>
+                                        <div className="faq-item-content">
+                                            <h6 className="title-2xl pb-2">
+                                                {item.title}
+                                            </h6>
+                                            <div className="faq-content">
+                                                <p className="content-p md:my-6 my-3">
+                                                    <span>{item.content}</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div className="feat-accordion-btn">
+                                            <span className="plus"/>
+                                            <span className="minus"/>
                                         </div>
                                     </div>
-                                    <div className="feat-accordion-btn">
-                                        <span className="plus"/>
-                                        <span className="minus"/>
-                                    </div>
-                                </div>
-                                <span className='h-[1px] bg-[#1a1a1a] w-full lineDraw block'/>
-                                </>
+                                    <span className='h-[1px] bg-[#1a1a1a] w-full lineDraw block'/>
+                                </React.Fragment>
                             ))}
                         </div>
                     </div>
