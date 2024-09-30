@@ -1,4 +1,3 @@
-import PrimaryButton from '@/components/PageLayout/Button/PrimaryButton';
 import { useState } from 'react';
 
 export default function Faqs(){

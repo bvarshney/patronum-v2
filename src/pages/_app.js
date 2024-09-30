@@ -6,7 +6,6 @@ import { ReactLenis } from '@studio-freight/react-lenis';
 import { useEffect, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import Head from 'next/head';
-// import dynamic from 'next/dynamic'
 import { ModalProvider } from '@/components/InstallModal/ModelContext';
 import PreLoader from '@/components/PreLoader';
 import DemoModal from '@/components/InstallModal/DemoModal';
@@ -16,11 +15,6 @@ import { GoogleTagManager } from '@next/third-parties/google'
 import useWindowSize from "@/components/Header/useWindowSize";
 import { Suspense } from 'react';
 import InstallModal from '@/components/InstallModal';
-
-// const InstallModalWithNoSSR = dynamic(
-//   () => import('@/components/InstallModal'),
-//   { ssr: false }
-// )
 
 export default function App({ Component, pageProps, router }) {
   const [showPreloader, setShowPreloader] = useState(true);
@@ -189,20 +183,21 @@ export default function App({ Component, pageProps, router }) {
         <ModalProvider>
           <AnimatePresence mode="wait">
             <Component {...pageProps} key={router.route} />
-            <GoogleTagManager gtmId="GTM-MDWM3Z7J" />
           </AnimatePresence>
-          {/* <InstallModalWithNoSSR /> */}
           <Suspense fallback={null}>
             <InstallModal />
             <DemoModal />
           </Suspense>
-          {/* <DemoModal /> */}
         </ModalProvider>
       </ReactLenis>
+      
+      {/* Google Tag Manager */}
+      <GoogleTagManager gtmId="GTM-MDWM3Z7J" />
 
       {/* Vercel Analytics */}
         <SpeedInsights />
         <Analytics />
+
       {/* WEBGL Background */}
       {width >= 1024 ? (
         <Pixi />

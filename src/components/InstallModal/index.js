@@ -1,6 +1,5 @@
 'use client'
-
-import React from "react";
+import React, { Suspense } from "react";
 import { useModal } from './ModelContext'
 import ContactForm from "../Forms/ContactForm";
 
@@ -27,7 +26,9 @@ export default function InstallModal() {
                             </div>
                         </div>
                         <div className="install-right">
-                            <ContactForm />
+                            <Suspense fallback={null}>
+                                <ContactForm />
+                            </Suspense>
                         </div>
                     </div>
                     <img className="install-backdrop absolute right-0 bottom-0 w-1/2" loading="lazy" src="/assets/contact/backdrop.png"/>
