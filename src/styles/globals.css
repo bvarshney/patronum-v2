@@ -3750,7 +3750,7 @@ input[type=number] {
     margin-bottom: 5vw;
   }
   .scroll-down-btn{
-  bottom: 7%;
+  bottom: 0%;
   left: 0;
   }
   .scroll-down-btn .scroll-down-a>svg{

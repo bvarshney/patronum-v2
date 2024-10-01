@@ -1,5 +1,5 @@
 import React from "react";
-import { useModal } from "../InstallModal/ModelContext";
+import { useModal } from "../Modals/ModalContext";
 import Image from "next/image";
 
 export default function FooterContact() {

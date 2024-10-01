@@ -5,6 +5,7 @@ import { FreeMode, Scrollbar } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/scrollbar';
+import Image from 'next/image';
 
 export default function Slider() {
 
@@ -120,7 +121,7 @@ export default function Slider() {
                 </div>
                 <div className='testi-details'>
                     <div className='testi-client-image'>
-                        <img width="100" height="100" src={clientImage} alt='client image'/>
+                        <Image width={100} height={100} src={clientImage} priority={false} alt={`${clientName} Image`}/>
                     </div>
                     <div className='testi-client-details'>
                         <h5  className='testi-client-name'>

@@ -1,5 +1,5 @@
 'use client'
-import { useModal } from "./ModelContext";
+import { useModal } from "./ModalContext";
 
 export default function DemoModal() {
 

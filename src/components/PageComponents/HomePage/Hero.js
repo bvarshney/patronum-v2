@@ -1,10 +1,11 @@
-import { useModal } from "@/components/InstallModal/ModelContext";
+import { useModal } from "@/components/Modals/ModalContext";
 import gsap from "gsap";
 import react, { useEffect, useRef, useState } from "react"
 import SplitType from "split-type";
 import ScrollToPlugin from "gsap/dist/ScrollToPlugin";
 import dynamic from "next/dynamic";
 import useWindowSize from "@/components/Header/useWindowSize";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollToPlugin);
 
@@ -101,7 +102,8 @@ export default function Hero(){
                                         <span className="span">Your{" "}</span>
                                     </div>
                                     <div className="hero-anim">
-                                        <img
+                                        <Image
+                                            priority={false}
                                             src="/assets/home/google-workspace.svg"
                                             alt='Google Logo'
                                             title='Google Logo'
@@ -128,12 +130,12 @@ export default function Hero(){
                                             </span>
                                             <span className="hidden"> Google Workspace </span>
                                             <span className="md:w-[45%] w-[50%] mt-[1.5vw] span">
-                                                <img className="w-full google" src="/assets/home/google.svg" loading="lazy" width={307} height={100} alt="google logo image" />
+                                                <Image className="w-full google" src="/assets/home/google.svg" priority={false} width={307} height={100} alt="google logo image" />
                                             </span>
                                         </div>
                                         <div className="hero-anim">
                                             <span className="md:w-[70%] w-[80%] mt-[1.5vw] span">
-                                                <img className="w-full" src="/assets/home/workspace.svg" loading="lazy" width={450} height={100} alt="google workspace image"/>
+                                                <Image className="w-full" src="/assets/home/workspace.svg" priority={false} width={450} height={100} alt="google workspace image"/>
                                             </span>
                                         </div>
                                         <div className="hero-anim">

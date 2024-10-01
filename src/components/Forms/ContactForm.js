@@ -18,7 +18,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import CountrySelector from "../ui/country-selector";
 import { COUNTRIES } from "@/lib/countries";
 import Router from "next/router";
-import { useModal } from '@/components/InstallModal/ModelContext'; 
+import { useModal } from '@/components/Modals/ModalContext'; 
 
 // Update the ContactForm component
 export default function ContactForm() {

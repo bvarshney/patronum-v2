@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { useModal } from '../InstallModal/ModelContext';
+import { useModal } from '../Modals/ModalContext';
 import { motion } from 'framer-motion';
 import PrimaryButton from '../PageLayout/Button/PrimaryButton';
 
