@@ -9,6 +9,7 @@ const nextConfig = {
   experimental: {
     // optimizeCss: true,
     nextScriptWorkers: true,
+    largePageDataBytes: 128 * 10000,
   },
   images: {
     remotePatterns: [
