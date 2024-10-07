@@ -7,9 +7,7 @@ const nextConfig = {
   reactStrictMode: true,
   productionBrowserSourceMaps: true,
   experimental: {
-    // optimizeCss: true,
     nextScriptWorkers: true,
-    largePageDataBytes: 128 * 10000,
   },
   images: {
     remotePatterns: [
