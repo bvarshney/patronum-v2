@@ -170,7 +170,7 @@
             {
                 "id": "10",
                 "title": "How immediate is the contact sync with Patronum?",
-                "content": "Patronum offers instant synchronization, ensuring that any updates or changes to contacts are immediately reflected across all users’ devices, maintaining up-to-date contact information organization-wide."
+                "content": "Patronum offers daily synchronization, ensuring that any updates or changes to contacts are reflected across all users’ devices, maintaining up-to-date contact information organization-wide."
             },
             {
                 "id": "11",
@@ -200,7 +200,7 @@
             {
                 "id": "16",
                 "title": "Do you backup my contacts just in case I or someone else deletes them accidentally?",
-                "content": "Patronum prioritizes data security, including features for contact backup and recovery, protecting against accidental deletions and ensuring your contacts are safeguarded."
+                "content": "Patronum prioritizes data security, including features for contact backup and recovery (additional opt-in feature), protecting against accidental deletions and ensuring your contacts are safeguarded. You can opt-in for <a class='link-href' href='/google-workspace-backup'>Google Workspace Backup</a> as an add-on to your Patronum subscription."
             }
         ]
     },

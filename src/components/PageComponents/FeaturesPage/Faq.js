@@ -82,7 +82,7 @@ const Faqs = ({ featureName }) => {
                             </div>
                           </AccordionTrigger>
                           <AccordionContent className="content-p faq-main-content ml-[7vw] features">
-                            {item.content}
+                            <span dangerouslySetInnerHTML={{__html:item.content}} />
                           </AccordionContent>
                           <span className='h-[1px] bg-[#1a1a1a] w-full lineDraw block'/>
                         </AccordionItem>

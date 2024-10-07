@@ -3963,3 +3963,8 @@ input[type=number] {
     width: max-content;
   }
 }
+
+/* Link Class */
+.link-href{
+  color: var(--primary);
+}
