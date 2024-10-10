@@ -235,16 +235,16 @@ export default function Home({ recentPosts }) {
     <>
       <NextSeo
         title="Patronum - Best Platform for Google Workspace (GSuite) Management"
-        description="Patronum provides a better way to Google Workspace (GSuite) Management. Patronum fully automates all the administrator and user tasks to ensure an efficient, effective and secure process."
+        description="Patronum provides a better way to manage Google Workspace (GSuite). Patronum is your Google Workspace (GSuite) manager that fully automates all administrator and user tasks to ensure an efficient, effective, and secure process."
         openGraph={{
           url: "https://www.patronum.io",
           title: "Patronum - Best Platform for Google Workspace (GSuite) Management",
           "description": "Patronum provides a better way to Google Workspace (GSuite) Management. Patronum fully automates all the administrator and user tasks to ensure an efficient, effective and secure process.",
           images: [
             {
-              url: "https://www.patronum.io/assets/seo/Google-Workspace.png",
-              width: 1290,
-              height: 594,
+              url: "https://www.patronum.io/assets/seo/homepage.jpg",
+              width: 1200,
+              height: 630,
               alt: "Patronum",
               type: "image/png",
             },
@@ -263,7 +263,7 @@ export default function Home({ recentPosts }) {
           },
           {
             name: "twitter:image",
-            content: "https://www.patronum.io/assets/seo/Google-Workspace.png"
+            content: "https://www.patronum.io/assets/seo/homepage.jpg"
           },
         ]}
       />
@@ -328,7 +328,7 @@ export default function Home({ recentPosts }) {
                   "@id": "https://www.patronum.io/#webpage"
                 },
                 "image": {
-                  "@id": "https://www.patronum.io/assets/seo/Google-Workspace.png",
+                  "@id": "https://www.patronum.io/assets/seo/homepage.jpg",
                 },
                 "isPartOf": {
                   "@id": "https://www.patronum.io/#website"

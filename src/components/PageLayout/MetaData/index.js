@@ -14,10 +14,10 @@ export default function MetaData({ title, description, url, img, date_published,
                     images: [
                         {
                             url: `https://www.patronum.io/assets/seo/${img}`,
-                            width: 1290,
-                            height: 594,
+                            width: 1200,
+                            height: 630,
                             alt: "Patronum",
-                            type: "image/png",
+                            type: "image/jpg",
                         },
                     ],
                     siteName: "Patronum",

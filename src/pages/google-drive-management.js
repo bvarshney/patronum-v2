@@ -178,7 +178,7 @@ export default function FeatureDetail() {
                 pagePara={"Get Better Control Over Users Google Drive Files & Folders."}
                 imgSrc={'google-drive-management.svg'}
                 title={"Google Drive File Management with Patronum"}
-                description={"Patronum's Google Drive Management allows for detailed oversight of user files and folders, enabling administrators to review and adjust permissions or add files from other users effortlessly."}
+                description={"Google Drive management empowers IT administrators to view Google Drive in a revolutionary manner. Patronum streamlines file and system management, offering unparalleled control and efficiency."}
                 url={"google-drive-management"}
                 img={"google-drive-management.jpg"}
                 date_published={"2020-12-21T07:03"}

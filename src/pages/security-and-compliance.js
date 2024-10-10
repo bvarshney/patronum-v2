@@ -115,7 +115,6 @@ function security() {
     },
   ] 
 
-
   return (
     <>
       <PageLayout
@@ -126,7 +125,7 @@ function security() {
         title={"Data Security & Compliance at Patronum"}
         description={"Patronum ensures top-notch data security for its customers with industry-leading certifications and secure practices. Learn about our compliance measures and commitment to protecting your data."}
         url={"security-and-compliance"}
-        img={"home.png"}
+        img={"homepage.jpg"}
         date_published={"2024-05-22T12:00"}
         date_modified={"2024-05-22T12:00"}
         keywords={"Google Workspace, Google Compliance, ISO Certificates"}

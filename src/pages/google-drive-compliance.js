@@ -176,8 +176,8 @@ export default function FeatureDetail() {
                 pageTitle2={'Google Drive Compliance'}
                 pagePara={"Transform Collaboration into Controlled Innovation"}
                 imgSrc={'google-drive-compliance.svg'}
-                title={"Google Drive Compliance and Automatic File Unsharing with Patronum"}
-                description={"Stay compliant with data protection & security laws with Patronum's Google Drive Compliance & Automatic File Unsharing feature."}
+                title={"Manage and Unshare Google Drive Files, Folders and Docs with Patronum"}
+                description={"Patronum simplifies Google Workspace by unifying user lifecycle management and reducing IT costs. Easily unshare Google Drive and Docs, manage compliance, and streamline user access."}
                 url={"google-drive-compliance"}
                 img={"google-drive-compliance.jpg"}
                 date_published={"2022-11-29T18:00"}

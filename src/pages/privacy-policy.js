@@ -14,7 +14,7 @@ export default function Page() {
         date_published={"2024-04-04T07:07"}
         date_modified={"2024-04-04T07:08"}
         url={"privacy-policy"}
-        img={"Google-Workspace.png"}
+        img={"homepage.jpg"}
       />
       <Layout>
         <Hero

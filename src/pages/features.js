@@ -68,7 +68,7 @@ export default function Features(){
                 title={"Patronum - Most Feature Rich Google Workspace Manager"}
                 description="With features like an organizational chart, contact sharing, email signature management and complete on & offboarding solutions Patronum is the Swiss Army knife for Google Workspace management."
                 url="features"
-                img="features-page.png"
+                img="features-page.jpg"
                 date_published="2020-12-21T12:22"
                 date_modified="2024-04-04T00:00"
                 keywords="Google Workspace"

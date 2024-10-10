@@ -14,7 +14,7 @@ import Cookie from '@/components/Cookie';
 import useWindowSize from "@/components/Header/useWindowSize";
 import { Suspense } from 'react';
 import InstallModal from '@/components/Modals/InstallModal';
-import Script from 'next/script';
+import { GoogleTagManager } from '@next/third-parties/google'
 
 export default function App({ Component, pageProps, router }) {
   const [showPreloader, setShowPreloader] = useState(true);
@@ -74,7 +74,7 @@ export default function App({ Component, pageProps, router }) {
     <>
       <DefaultSeo
         title='Patronum - Best Platform for Google Workspace (GSuite) Management'
-        description='Patronum provides a better way to Google Workspace (GSuite) Management. Patronum fully automates all the administrator and user tasks to ensure an efficient, effective and secure process.'
+        description='Patronum provides a better way to manage Google Workspace (GSuite). Patronum is your Google Workspace (GSuite) manager that fully automates all administrator and user tasks to ensure an efficient, effective, and secure process.'
         additionalMetaTags={[
           {
             name: 'viewport',
@@ -101,9 +101,9 @@ export default function App({ Component, pageProps, router }) {
           "description": "Patronum provides a better way to Google Workspace (GSuite) Management. Patronum fully automates all the administrator and user tasks to ensure an efficient, effective and secure process.",
           images: [
             {
-              url: "https://www.patronum.io/assets/seo/Google-Workspace.png",
-              width: 1290,
-              height: 594,
+              url: "https://www.patronum.io/assets/seo/homepage.png",
+              width: 1200,
+              height: 630,
               alt: "Patronum",
               type: "image/png",
             },
@@ -166,8 +166,8 @@ export default function App({ Component, pageProps, router }) {
               {
                 "@context": "https://schema.org",
                 "@type": "ImageObject",
-                "@id": "https://www.patronum.io/assets/seo/Google-Workspace.png",
-                "url": "https://www.patronum.io/assets/seo/Google-Workspace.png",
+                "@id": "https://www.patronum.io/assets/seo/homepage.jpg",
+                "url": "https://www.patronum.io/assets/seo/homepage.jpg",
                 "width": "1295",
                 "height": "594",
                 "inLanguage": "en-US"
@@ -192,12 +192,7 @@ export default function App({ Component, pageProps, router }) {
       </ReactLenis>
 
       {/* Google Tag Manager */}
-      <Script
-        src="https://www.googletagmanager.com/gtm.js?id=GTM-MDWM3Z7J"
-        strategy="afterInteractive"
-        onLoad={() => console.log('GTM script loaded successfully')}
-        onError={(e) => console.error('Error loading GTM script', e)}
-      />
+      <GoogleTagManager gtmId="GTM-MDWM3Z7J" />
 
       {/* Vercel Analytics */}
       <SpeedInsights

@@ -188,10 +188,10 @@ export default function FeatureDetail() {
                 pageTitle2={'Backup'}
                 pagePara={"Best-in-Class Full Fidelity Backups"}
                 imgSrc={'google-workspace-backup.svg'}
-                title={"Google Backup with PatronumFull Fidelity Google Workspace Backup: Emails, Contacts, and More"}
-                description={"With advanced automation and preemptive backup strategies, Patronum offers the fastest and most reliable full-fidelity, high frequency Google Workspace backup solution."}
+                title={"Google Workspace Backup: Contacts, Drive Files, Emails and More"}
+                description={"Google Workspace contact sharing and Google Backup and Sync allow users to backup contacts and files to Google Drive, manage external contacts, and perform automatic backups."}
                 url={"google-workspace-backup"}
-                img={"Google-Workspace.png"}
+                img={"homepage.jpg"}
                 date_published={"2023-10-16T10:45"}
                 date_modified={"2024-04-04T12:00"}
                 keywords={"Google Workspace"}

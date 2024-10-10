@@ -119,8 +119,8 @@ export default function FeatureDetail() {
                 pageTitle2={'Chart'}
                 pagePara={"Foster a Cohesive Culture by Navigating Organizational Relationships with Ease."}
                 imgSrc={'organisational-chart.svg'}
-                title={"Organization Hierarchy Chart and People Finder for Google Workspace by Patronum"}
-                description={"Find and manage your organization's hierarchy with  Patronum's Org Chart and People Finder. Use Patronum Org Chart and People Finder to collaborate and understand team structures."}
+                title={"Google Workspace Organization Hierarchy Chart: Find Your Team Structure With Patronum"}
+                description={"Find and manage your organization's hierarchy with the Patronum Org Chart and People Finder. Use Patronum Org Chart and Org Chart Finder to collaborate and understand team structures."}
                 url={"organisational-chart"}
                 img={"organisational-chart.jpg"}
                 date_published={"2020-12-21T12:00"}

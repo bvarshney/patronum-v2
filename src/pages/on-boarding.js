@@ -251,7 +251,7 @@ export default function FeatureDetail() {
                 pagePara={"Seamless & Automated User Lifecycle Management for Google Workspace."}
                 imgSrc={'feature-onboarding.svg'}
                 title={"Automate User Onboarding and Offboarding in Google Workspace with Patronum"}
-                description={"Patronum redefines user lifecycle management by automating user onboarding and offboarding in Google Workspce, providing users a consistent and unified experience while significantly reducing IT expenditure."}
+                description={"Achieve a unified experience with Google Workspace by using automated onboarding and offboarding platform. Manage users in bulk, cut costs, and streamline operations with **Google Workspace automation."}
                 url={"on-boarding"}
                 img={"onboarding.jpg"}
                 date_published={"2020-12-21T06:37"}
