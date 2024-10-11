@@ -32,13 +32,13 @@ export default function Contact() {
                                         <div className="contact-information">
                                             <p className="lg:text-[1.25vw] md:text-[3vw] text-[4.5vw] md:w-[70%] w-full text-head flex items-start lg:mb-[2vw] mb-6 fadeUp">
                                                 <span className="lg:mt-[0.45vw] mt-[1vw] mr-[10px] lg:w-[1vw] md:w-[2.5vw] w-[3.5vw]">
-                                                    <img className="w-full h-full" src="/assets/contact/location.svg" loading="lazy"/>
+                                                    <img className="w-full h-full" src="/assets/contact/location.svg" alt="location image" loading="lazy"/>
                                                 </span>
                                                 <span>Mill B, Colne Road, Huddersfield, HD1 3AG United Kingdom</span>
                                             </p>
                                             <p className="lg:text-[1.25vw] md:text-[3vw] text-[4.5vw] md:w-[70%] w-full text-head flex items-start lg:mb-[2vw] mb-6 fadeUp">
                                                 <span className="lg:mt-[0.45vw] mt-[1vw] mr-[10px] lg:w-[1vw] md:w-[2.5vw] w-[3.5vw]">
-                                                    <img className="w-full h-full" src="/assets/contact/phone.svg" loading="lazy"/>
+                                                    <img className="w-full h-full" src="/assets/contact/phone.svg" alt="phone image" loading="lazy"/>
                                                 </span>
                                                 <a href="tel:+441617682192">
                                                     <span>+44 161 768 2192</span>
