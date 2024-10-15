@@ -10,7 +10,7 @@ export default function Contact() {
                 pagePara={"Say Hello! We Promise Good Vibes and Great Coffee! ☕"} 
                 imgSrc={'contact.svg'}
                 title={"Contact Us - Patronum"}
-                description={"Patronum provides a better way to Google Workspace (GSuite) Management. Patronum fully automates all the administrator and user tasks to ensure an efficient, effective and secure process."}
+                description={"Contact Us - Patronum: Say Hello! We promise good vibes and great coffee."}
                 url={"contact-us"}
                 img={"homepage.jpg"}
                 date_published={"2021-02-05T12:00"}

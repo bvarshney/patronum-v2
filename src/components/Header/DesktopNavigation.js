@@ -253,7 +253,7 @@ const DesktopNavigation = () => {
                                                 img={'resource-compliance.svg'}
                                             />
                                             <li className='nav-drop-list-item'>
-                                                <Link href='https://help.patronum.io' target='_blank' className='nav-drop-list-hover' >
+                                                <Link href='https://help.patronum.io' target='_blank' rel="nofollow" className='nav-drop-list-hover' >
                                                     <div className='img'>
                                                         <img loading='lazy' src='/assets/menu/resource-help.svg' alt='menu icon'/>
                                                     </div>
@@ -264,7 +264,7 @@ const DesktopNavigation = () => {
                                                 </Link>
                                             </li>
                                             <li className='nav-drop-list-item'>
-                                                <Link href='https://community.patronum.io' target='_blank' className='nav-drop-list-hover' >
+                                                <Link href='https://community.patronum.io' target='_blank' rel="nofollow" className='nav-drop-list-hover' >
                                                     <div className='img'>
                                                         <img loading='lazy' src='/assets/menu/resource-community.svg' alt='menu icon'/>
                                                     </div>

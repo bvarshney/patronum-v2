@@ -2,7 +2,7 @@
   "name": "patronum",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://patronum.io",
+  "homepage": "https://www.patronum.io",
   "scripts": {
     "analyze": "cross-env ANALYZE=true next build",
     "dev": "next dev",
