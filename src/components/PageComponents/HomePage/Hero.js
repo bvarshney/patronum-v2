@@ -148,7 +148,7 @@ export default function Hero(){
                             </p>
 
                             <div className="flex md:gap-[2vw] flex-col md:flex-row gap-[5vw]">
-                                <DemoButton onClick={openVideoModal} />
+                                <DemoButton className="hero-button-anim" onClick={openVideoModal} />
                                 <CallButton />
                             </div>
                         </div>

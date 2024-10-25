@@ -12,7 +12,7 @@ const CallButton = () => {
 
     return (
         <>
-            <button data-secondary onClick={() => setIsOpen(true)} className={`${styles.btn} hero-btn-anim`}>
+            <button data-secondary onClick={() => setIsOpen(true)} className={`${styles.btn} hero-button-anim`}>
                 <span data-primary className={styles.btnText}>
                     Schedule a Call
                 </span>

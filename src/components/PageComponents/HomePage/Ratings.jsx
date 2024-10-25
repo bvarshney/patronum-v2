@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Ratings = () => {
     return (
-        <div className="ratings xl:mt-[5vw] mt-[15vw]">
+        <div className="ratings xl:mt-[5vw] mt-[15vw] fadeUp">
             <div className="container-lg bg-[#fdfdfd] border border-[#e2e2e2] rounded-2xl">
                 <div className="w-[90%] mx-auto flex flex-col items-center xl:py-[3vw] md:py-[6vw] py-[10vw]">
                     <div className="md:flex items-center xl:flex-row xl:gap-8 xl:mb-2 md:mb-[5vw] flex-col flex gap-2 mb-[10vw]">

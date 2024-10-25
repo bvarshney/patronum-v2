@@ -1,9 +1,9 @@
 import styles from "./primary.module.css";
 
-const DemoButton = ({ onClick }) => {
+const DemoButton = ({ onClick, className="" }) => {
     
     return (
-        <button onClick={onClick} className={styles.btn}>
+        <button onClick={onClick} className={`${styles.btn} ${className}`}>
             <span data-primary className={styles.btnText}>
                 Watch Demo
             </span>
