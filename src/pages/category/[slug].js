@@ -1,13 +1,13 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { getAllCategories, getCategoryBySlug } from '@/lib/categories';
 import { getPostsByCategoryId } from '@/lib/posts';
 
 import CategoryList from '@/components/PageComponents/BlogPage/CategoryList';
 import CategoryPosts from '@/components/PageComponents/BlogPage/CategoryPosts';
 import MetaData from '@/components/PageLayout/MetaData';
-import Layout from '@/components/Stairs';
 import Search from '@/components/Search';
 import BreadcrumbComponent from '@/components/PageLayout/BreadCrumb';
+import Layout from '@/components/Layout';
 
 const Category = ({ category, posts, categories }) => {
   const [activeCategory, setActiveCategory] = useState(`${category.name}`);

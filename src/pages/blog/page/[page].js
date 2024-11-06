@@ -5,10 +5,10 @@ import PostCard from '@/components/PageComponents/BlogPage/PostCard';
 import { getCategories } from '@/lib/categories';
 import CategoryList from '@/components/PageComponents/BlogPage/CategoryList';
 import { useState } from 'react';
-import Layout from '@/components/Stairs';
 import MetaData from '@/components/PageLayout/MetaData';
 import Search from '@/components/Search';
 import BreadcrumbComponent from '@/components/PageLayout/BreadCrumb';
+import Layout from '@/components/Layout';
 
 export default function Blog({ posts, pagination, categories }) {
   const [activeCategory, setActiveCategory] = useState('all');

@@ -2,85 +2,39 @@ import '@/styles/globals.css'
 import { DefaultSeo } from 'next-seo';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from "@vercel/analytics/react"
-import { ReactLenis } from '@studio-freight/react-lenis';
-import { useEffect, useState } from 'react';
+import { ReactLenis } from 'lenis/react';
+import { useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import Head from 'next/head';
-import { ModalProvider } from '@/components/Modals/ModalContext';
-import PreLoader from '@/components/PreLoader';
-import DemoModal from '@/components/Modals/DemoModal';
-import Pixi from '@/components/Pixi';
-import Cookie from '@/components/Cookie';
-import useWindowSize from "@/components/Header/useWindowSize";
-import { Suspense } from 'react';
-import InstallModal from '@/components/Modals/InstallModal';
 import { GoogleTagManager } from '@next/third-parties/google'
+import dynamic from 'next/dynamic';
+import nextSeoConfig from '../../next-seo.config';
+
+const Crispchat = dynamic(() => import("@/components/Crispchat"), { ssr: false });
+const Cookie = dynamic(() => import("@/components/Cookie"), { ssr: false });
 
 export default function App({ Component, pageProps, router }) {
-  const [showPreloader, setShowPreloader] = useState(true);
-  const { width } = useWindowSize();
-
-  useEffect(() => {
-    const hasVisited = sessionStorage.getItem('hasVisited');
-
-    if (!hasVisited) {
-      setShowPreloader(true);
-
-      const preloaderTimeout = setTimeout(() => {
-        setShowPreloader(false);
-        sessionStorage.setItem('hasVisited', 'true');
-      }, 4000);
-
-      return () => clearTimeout(preloaderTimeout);
-    }
-    else {
-      setShowPreloader(false);
-    }
-  }, []);
 
   useEffect(() => {
     const handleRouteChange = () => {
-      // Disable pointer events on route change
+      window.scrollTo(0, 0);
       document.body.style.pointerEvents = 'none';
-
-      // Enable pointer events when mouse moves
       const enablePointerEvents = () => {
         document.body.style.pointerEvents = 'auto';
         document.removeEventListener('mousemove', enablePointerEvents);
       };
       document.addEventListener('mousemove', enablePointerEvents);
     };
-
     router.events.on('routeChangeStart', handleRouteChange);
-
     return () => {
       router.events.off('routeChangeStart', handleRouteChange);
+      document.removeEventListener('mousemove', handleRouteChange);
     };
   }, [router]);
 
-  useEffect(() => {
-    const handleRouteChange = () => {
-      window.scrollTo(0, 0)
-    };
-
-    window.addEventListener("beforeunload", handleRouteChange);
-
-    return () => {
-      window.removeEventListener("beforeunload", handleRouteChange);
-    };
-  }, []);
-
   return (
     <>
-      <DefaultSeo
-        title='Patronum - Best Platform for Google Workspace (GSuite) Management'
-        description='Patronum provides a better way to manage Google Workspace (GSuite). Patronum is your Google Workspace (GSuite) manager that fully automates all administrator and user tasks to ensure an efficient, effective, and secure process.'
-        additionalMetaTags={[
-          {
-            name: 'viewport',
-            content: 'width=device-width, initial-scale=1.0, maximum-scale=5.0'
-          },
-        ]}
+      <DefaultSeo {...nextSeoConfig}
         additionalLinkTags={[
           {
             rel: 'icon',
@@ -94,29 +48,8 @@ export default function App({ Component, pageProps, router }) {
             crossOrigin: 'anonymous'
           }
         ]}
-        openGraph={{
-          type: 'website',
-          locale: 'en_US',
-          title: "Patronum - Best Platform for Google Workspace (GSuite) Management",
-          "description": "Patronum provides a better way to Google Workspace (GSuite) Management. Patronum fully automates all the administrator and user tasks to ensure an efficient, effective and secure process.",
-          images: [
-            {
-              url: "https://www.patronum.io/assets/seo/homepage.png",
-              width: 1200,
-              height: 630,
-              alt: "Patronum",
-              type: "image/png",
-            },
-          ],
-          siteName: "Patronum",
-        }}
-        twitter={{
-          site: 'Patronum',
-          cardType: 'summary_large_image',
-        }}
       />
       <Head>
-        <meta charSet="utf-8" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -177,18 +110,12 @@ export default function App({ Component, pageProps, router }) {
         />
       </Head>
 
-      {showPreloader && <PreLoader />}
       <Cookie />
-      <ReactLenis root options={{ duration: 0.8 }}>
-        <ModalProvider>
-          <AnimatePresence mode="wait">
-            <Component {...pageProps} key={router.route} />
-          </AnimatePresence>
-          <Suspense fallback={null}>
-            <InstallModal />
-            <DemoModal />
-          </Suspense>
-        </ModalProvider>
+      <Crispchat />
+      <ReactLenis root options={{ lerp: 0.08 }}>
+        <AnimatePresence mode="wait">
+          <Component {...pageProps} key={router.route} />
+        </AnimatePresence>
       </ReactLenis>
 
       {/* Google Tag Manager */}
@@ -198,17 +125,10 @@ export default function App({ Component, pageProps, router }) {
       <SpeedInsights
         strategy="afterInteractive"
       />
+
       <Analytics
         strategy="afterInteractive"
       />
-      {/* WEBGL Background */}
-      {width >= 1024 ? (
-        <Suspense fallback={null}>
-          <Pixi />
-        </Suspense>
-      ) : (
-        <></>
-      )}
     </>
   );
 }

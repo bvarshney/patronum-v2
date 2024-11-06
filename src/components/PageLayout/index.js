@@ -4,7 +4,7 @@ import SplitType from "split-type";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Hero from "./Hero";
 import MetaData from "./MetaData";
-import Layout from "@/components/Stairs";
+import Layout from "../Layout";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -189,7 +189,7 @@ export default function PageLayout( {pageTitle1, pageTitle2, pagePara, imgSrc, c
       }, []);
 
     return(
-        <>  
+        <>
           <MetaData 
             title={title}
             description={description}

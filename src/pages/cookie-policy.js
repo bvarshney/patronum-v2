@@ -1,6 +1,6 @@
+import Layout from "@/components/Layout";
 import Hero from "@/components/PageLayout/Hero";
 import MetaData from "@/components/PageLayout/MetaData";
-import Layout from "@/components/Stairs";
 import styles from "@/styles/cookie-policy.module.css";
 
 export default function Page() {

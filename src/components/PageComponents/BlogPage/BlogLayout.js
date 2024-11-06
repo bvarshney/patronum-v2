@@ -7,8 +7,8 @@ import {
 import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import Layout from "@/components/Stairs";
 import BreadcrumbComponent from "@/components/PageLayout/BreadCrumb";
+import Layout from "@/components/Layout";
 
 gsap.registerPlugin(ScrollTrigger);
 

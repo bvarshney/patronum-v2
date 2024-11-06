@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import Layout from "@/components/Layout";
 import { NextSeo } from "next-seo";
 
 export default function Page404() {
@@ -22,7 +23,7 @@ export default function Page404() {
                     ]
                 }
             />
-            <Header />
+            <Layout>
                 <div className="w-screen h-screen flex justify-center items-center">
                     <div className="text-center -mt-20">
                         <h1 className="text-[10vw] font-medium leading-[1.2] text-primary">404</h1>
@@ -35,7 +36,7 @@ export default function Page404() {
                         </p>
                     </div>
                 </div>
-            <Footer />
+            </Layout>
         </>
     )
 }
