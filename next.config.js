@@ -109,6 +109,16 @@ const nextConfig = {
         destination: '/patronum-awarded-best-ease-of-use-and-best-value-by-capterra',
         permanent: true,
       },
+      {
+        source: '/category',
+        destination: '/blog',
+        permanent: true,
+      },
+      {
+        source: '/page',
+        destination: '/blog',
+        permanent: true,
+      },
     ]
   },
 }

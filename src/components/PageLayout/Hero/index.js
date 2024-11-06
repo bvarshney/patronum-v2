@@ -3,10 +3,11 @@ import gsap from "gsap";
 import SplitType from "split-type";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
+import BreadcrumbComponent from "../BreadCrumb";
 
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
-export default function Hero({ pageTitle1, pageTitle2, pagePara, imgSrc }) {
+export default function Hero({ pageTitle1, pageTitle2, pagePara, imgSrc, breadcrumbTitle, breadcrumbLink  }) {
 
     const handleSmoothScroll = () => {
         gsap.to(window, {
@@ -48,6 +49,11 @@ export default function Hero({ pageTitle1, pageTitle2, pagePara, imgSrc }) {
                     duration: 2,
                     ease: "expo.out"
                 }, "-=0.8")
+                .from(".breadanim", {
+                    y: 20,
+                    opacity: 0,
+                    duration: 0.5,
+                }, "-=1.5")
                 .to(".hero-svg-circle", {
                     strokeDasharray: "310% 300%",
                     duration: 1.2,
@@ -93,6 +99,13 @@ export default function Hero({ pageTitle1, pageTitle2, pagePara, imgSrc }) {
                                 <img width={400} height={500} src={`/assets/heroSections/${imgSrc}`} alt={`${pageTitle1} Image`} title={`${pageTitle1} Image`} />
                             </div>
                         </div>
+                    </div>
+
+                    <div className="mb-[4%] breadanim">
+                        <BreadcrumbComponent 
+                            middleLinkName={breadcrumbTitle}
+                            middleLink={breadcrumbLink}
+                        />
                     </div>
 
                     <span className="hero-hr" />

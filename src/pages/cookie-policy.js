@@ -23,6 +23,8 @@ export default function Page() {
             "This policy explains the way in which cookies are used on our website."
           }
           imgSrc={"cookie-policy.svg"}
+          breadcrumbTitle={"Legal"}
+          breadcrumbLink={"legal"}
         />
         <section className="" id="second-section">
           <div className="container">

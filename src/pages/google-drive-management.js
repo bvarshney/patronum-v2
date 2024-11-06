@@ -184,6 +184,8 @@ export default function FeatureDetail() {
                 date_published={"2020-12-21T07:03"}
                 date_modified={"2024-04-04T12:00"}
                 keywords={"Google Drive"}
+                breadcrumbTitle={"Features"}
+                breadcrumbLink={"features"}
             >
 
                 <VideoPlayer disabled={false} videoId="C5_kwNp10Zo" videoCover={"/assets/features/google-drive-management/video-cover.webp"} />

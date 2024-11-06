@@ -15,6 +15,8 @@ export default function Page() {
         date_modified={"2024-04-04T07:08"}
         url={"privacy-policy"}
         img={"homepage.jpg"}
+        breadcrumbTitle={"Legal"}
+        breadcrumbLink={"legal"}
       />
       <Layout>
         <Hero

@@ -183,6 +183,8 @@ export default function FeatureDetail() {
                 date_published={"2022-11-29T18:00"}
                 date_modified={"2024-04-04T00:00"}
                 keywords={"Google Workspace"}
+                breadcrumbTitle={"Features"}
+                breadcrumbLink={"features"}
             >
 
                 <VideoPlayer disabled={false} videoId="RIoCiNzNqW0" videoCover={"/assets/features/google-drive-compliance/video-cover.webp"} />

@@ -236,6 +236,8 @@ export default function FeatureDetail() {
                 date_published={"2020-12-21T13:41"}
                 date_modified={"2024-04-04T12:00"}
                 keywords={"google contact sharing,Google Workspace contact sharing"}
+                breadcrumbTitle={"Features"}
+                breadcrumbLink={"features"}
             >
 
                 <VideoPlayer disabled={false} videoId="ibhxOj9-qGQ" videoCover={"/assets/features/contact-sharing/video-cover.webp"} />

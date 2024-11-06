@@ -195,6 +195,8 @@ export default function FeatureDetail() {
                 date_published={"2023-10-16T10:45"}
                 date_modified={"2024-04-04T12:00"}
                 keywords={"Google Workspace"}
+                breadcrumbTitle={"Features"}
+                breadcrumbLink={"features"}
             >
 
                 <VideoPlayer disabled={true} videoCover={"/assets/features/google-workspace-backup/video-cover.webp"} />

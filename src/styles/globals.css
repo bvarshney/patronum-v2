@@ -1516,13 +1516,13 @@ section{
 
 /*===================== About Page CSS Main START===================*/
 #pageHero{
-  height: 75vh;
+  height: 76vh;
   width: 100%;
   position: relative;
 }
 .page-hero-flex{
   padding-top: 10%;
-  margin-bottom: 8%;
+  margin-bottom: 4%;
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -8,7 +8,7 @@ import Layout from "@/components/Stairs";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function PageLayout( {pageTitle1, pageTitle2, pagePara, imgSrc, children, title, description, url, img, date_published, date_modified, keywords} ){
+export default function PageLayout( {pageTitle1, pageTitle2, pagePara, imgSrc, children, title, description, url, img, date_published, date_modified, keywords, breadcrumbTitle, breadcrumbLink} ){
 
   useEffect(() => {
     const headings = document.querySelectorAll('.text-anim');
@@ -206,6 +206,8 @@ export default function PageLayout( {pageTitle1, pageTitle2, pagePara, imgSrc, c
                 pageTitle2={pageTitle2} 
                 pagePara={pagePara} 
                 imgSrc={imgSrc}
+                breadcrumbLink={breadcrumbLink}
+                breadcrumbTitle={breadcrumbTitle}
               />
               {children}
             </main>
