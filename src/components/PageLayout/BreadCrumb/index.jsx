@@ -40,9 +40,9 @@ const BreadcrumbComponent = ({ capitalizeLinks = true, middleLink, middleLinkNam
                     let itemLink = capitalizeLinks ? capitalizeAndFormat(link) : link;
                     return (
                         <React.Fragment key={index}>
-                            <BreadcrumbItem>
+                            <BreadcrumbItem className="last-of-type:text-primary">
                             <BreadcrumbLink
-                                    className={`truncate lg:max-w-[400px] md:max-w-[300px] max-w-[120px] ${pathNames.length !== index + 2 ? "text-head" : ""}`}
+                                    className={`truncate lg:max-w-[400px] md:max-w-[300px] max-w-[120px]`}
                                     href={href}
                                     title={itemLink}
                                 >

@@ -56,12 +56,12 @@ export default function BlogLayout({
             <div className="w-[88%] mx-auto">
               <div className="content blog-content-1">
                 <div className="lg:w-[88%] w-full mx-auto lg:mt-[6.5vw] md:mt-[3vw] mt-[6vw] lg:mb-[0vw] mb-[6vw]">
-                  <h1 className="lg:text-[3.4vw] md:text-[5vw] text-[7vw] text-left lg:leading-[1.4] leading-[1.2] text-head lg:mb-[2vw] mb-[4vw] fadeUp">
+                  <h1 className="lg:text-[3.4vw] md:text-[5vw] text-[7vw] text-left lg:leading-[1.4] leading-[1.2] text-head lg:mb-[2vw] mb-[6vw] fadeUp">
                     <span>{postTitle}</span>
                   </h1>
-                  <div className="lg:text-[1.15vw] md:text-[2.5vw] md:flex flex-col-reverse gap-[2vw] items-start justify-between w-full mx-auto md:mb-0">
-                    <div className="md:flex justify-between items-center w-full md:mb-[4vw] mb-[5vw]">
-                      <div className="flex items-center justify-between gap-[5vw] md:mb-0 mb-[4vw] fadeUp">
+                  <div className="lg:text-[1.15vw] md:text-[2.5vw] flex flex-col-reverse md:gap-[2vw] gap-[6vw] items-start justify-between w-full mx-auto md:mb-0">
+                    <div className="md:flex justify-between items-center w-full md:mb-[4vw] mb-[2vw]">
+                      <div className="flex items-center justify-between gap-[5vw] md:mb-0 mb-[3vw] fadeUp">
                         <p>By {postAuthor}</p>
                         <p>{postDate}</p>
                       </div>
@@ -71,6 +71,7 @@ export default function BlogLayout({
                         </div>
                         <div className="flex items-start justify-center lg:gap-[1vw] md:gap-[2vw] gap-[3vw]">
                           <FacebookShareButton
+                            className="group"
                             url={`https://www.patronum.io/${shareLink}`}
                             quote={
                               "Read more articles like this on our website - https://www.patronum.io"
