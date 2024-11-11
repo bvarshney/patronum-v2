@@ -126,6 +126,11 @@ const nextConfig = {
         destination: '/blog',
         permanent: true,
       },
+      {
+        source: '/category/all/google-drive',
+        destination: '/category/google-drive',
+        permanent: true,
+      },
     ]
   },
 }

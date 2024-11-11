@@ -36,27 +36,27 @@ const Footer = () => {
                                 <div className={`${styles.socialLinks} fadeUp`}>
                                     <ul className=''>
                                         <li>
-                                            <Link href='https://www.facebook.com/patronum.io' target="_blank" rel="nofollow">
+                                            <Link href='https://www.facebook.com/patronum.io' target="_blank" rel="noopener">
                                                 <img width="25" height="25" src='/assets/footer/facebook.svg' alt='social icons' />
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href='https://www.linkedin.com/company/wearepatronum/' target="_blank" rel="nofollow">
+                                            <Link href='https://www.linkedin.com/company/wearepatronum/' target="_blank" rel="noopener">
                                                 <img width="25" height="25" src='/assets/footer/linkedin.svg' alt='social icons' />
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href='https://twitter.com/Patronum_io' target="_blank" rel="nofollow">
+                                            <Link href='https://twitter.com/Patronum_io' target="_blank" rel="noopener">
                                                 <img width="25" height="25" src='/assets/footer/twitter.svg' alt='social icons' />
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href='https://www.instagram.com/patronum.io/' target="_blank" rel="nofollow">
+                                            <Link href='https://www.instagram.com/patronum.io/' target="_blank" rel="noopener">
                                                 <img width="25" height="25" src='/assets/footer/instagram.svg' alt='social icons' />
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href='https://www.youtube.com/@wearepatronum' target="_blank" rel="nofollow">
+                                            <Link href='https://www.youtube.com/@wearepatronum' target="_blank" rel="noopener">
                                                 <img width="25" height="25" src='/assets/footer/youtube.svg' alt='social icons' />
                                             </Link>
                                         </li>
