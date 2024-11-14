@@ -81,7 +81,7 @@ function security() {
       contentTop: "Bespin Labs Awarded UK G-Cloud 14 Framework Supplier Status.",
       description: "Bespin Labs has been appointed as a supplier on the UK Crown Commercial Service’s (CCS) G-Cloud 14 framework agreement. As an approved supplier under the UK Government’s latest G-Cloud framework, Bespin Labs now offers Patronum, its Google Workspace Manager, to public sector organisations via the Digital Marketplace.",
       imgSrc: "uk.gov.png",
-      link: "#",
+      link: "https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/160164702246842",
       btnText: "View Profile"
     },
   ]
