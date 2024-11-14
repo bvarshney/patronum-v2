@@ -29,8 +29,12 @@ const Footer = () => {
                                 <div className={`flex gap-6 lg:w-[90%] md:flex-nowrap flex-wrap md:w-[70%] w-full items-center md:justify-normal justify-center ${styles.footerAward}`}>
                                     <img className="lg:w-[15%] md:w-[16%] w-[20%] object-contain h-auto" loading='lazy' src="/assets/footer/award-2.png" alt="Award for best ease of use image" title="Award for best ease of use image" />
                                     <img className="lg:w-[15%] md:w-[16%] w-[20%] object-contain h-auto" loading='lazy' src="/assets/footer/award-1.png" alt="Award for best value image" title="Award for best value image" />
-                                    <img className="lg:w-[27%] md:w-[30%] w-[30%] object-contain h-auto" loading='lazy' src="/assets/footer/google-partner-white.svg" alt="Patronum Google Patrner" title="Patronum Google Patrner" />
-                                    <img className="lg:w-[27%] md:w-[28%] w-[35%] object-contain h-auto" loading="lazy" src="/assets/footer/GOV.UK-2.png" alt="UK GOV digital marketplace logo" title="UK GOV digital marketplace logo" />
+                                    <a className="lg:w-[27%] md:w-[30%] w-[30%]" href="https://cloud.google.com/find-a-partner/partner/bespin-labs-ltd" target="_blank">
+                                        <img className="w-full h-full object-contain" loading='lazy' src="/assets/footer/google-partner-white.svg" alt="Patronum Google Patrner" title="Patronum Google Patrner" />
+                                    </a>
+                                    <a className="lg:w-[27%] md:w-[28%] w-[35%]" href="https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/160164702246842" target="_blank">
+                                        <img className="object-contain h-full w-full" loading="lazy" src="/assets/footer/GOV.UK-2.png" alt="UK GOV digital marketplace logo" title="UK GOV digital marketplace logo" />
+                                    </a>
                                 </div>
 
                                 <div className={`${styles.socialLinks} fadeUp`}>
@@ -62,7 +66,6 @@ const Footer = () => {
                                         </li>
                                     </ul>
                                 </div>
-
 
                             </div>
 
