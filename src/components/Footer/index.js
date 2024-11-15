@@ -2,7 +2,6 @@ import Link from "next/link";
 import FooterContact from "./FooterContact";
 import styles from "./styles.module.css";
 import Newsletter from "./Newsletter";
-// import Newsletter from "./Newsletter";
 
 const Footer = () => {
 
