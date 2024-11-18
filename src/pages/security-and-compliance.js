@@ -1,7 +1,6 @@
+import LinkButton from "@/components/Buttons/LinkButton";
 import PageLayout from "@/components/PageLayout";
-import LinkButton from "@/components/PageLayout/Button/LinkButton";
 import SectionTitle from "@/components/PageLayout/SectionTitle";
-import React, { useState } from "react";
 import {
   Accordion,
   AccordionContent,
@@ -181,7 +180,7 @@ function security() {
                           <span className="block">
                             {item.description}
                           </span>
-                          <LinkButton link={item.link} btnText={item.btnText} target={"_blank"}/>
+                          <LinkButton href={item.link} btnText={item.btnText} target="_blank" />
                         </AccordionContent>
                         <span className="h-[1px] bg-[#1a1a1a] w-full lineDraw block" />
                       </AccordionItem>
