@@ -17,7 +17,7 @@ const DesktopNavigation = () => {
                 <nav className='lg:block'>
                     <ul className='flex center gap-[3vw] font-head font-medium'>
                         <li className={styles.navListItem}>
-                            <Link href='/about-us' className={styles.pageLink} shallow={false}>
+                            <Link href='/about-us' className={styles.pageLink} prefetch={false}>
                                 <div>
                                     <span>
                                         About
@@ -29,7 +29,7 @@ const DesktopNavigation = () => {
                             onMouseEnter={() => setFeaturesDropdownOpen(true)}
                             onMouseLeave={() => setFeaturesDropdownOpen(false)}
                         >
-                            <Link href='/features' className={`${styles.pageLink} ${styles.dropdown}`} shallow={false}>
+                            <Link href='/features' className={`${styles.pageLink} ${styles.dropdown}`} prefetch={false}>
                                 <div >
                                     <span>
                                         Features
@@ -97,7 +97,7 @@ const DesktopNavigation = () => {
                             onMouseEnter={() => setUsecasesDropdownOpen(true)}
                             onMouseLeave={() => setUsecasesDropdownOpen(false)}
                         >
-                            <Link href='/use-cases' className={`${styles.pageLink} ${styles.dropdown}`} shallow={false}>
+                            <Link href='/use-cases' className={`${styles.pageLink} ${styles.dropdown}`} prefetch={false}>
                                 <div >
                                     <span>
                                         Use Cases
@@ -158,7 +158,7 @@ const DesktopNavigation = () => {
                             onMouseEnter={() => setPriceDropdownOpen(true)}
                             onMouseLeave={() => setPriceDropdownOpen(false)}
                         >
-                            <Link href='/pricing' className={`${styles.pageLink} ${styles.dropdown}`} shallow={false}>
+                            <Link href='/pricing' className={`${styles.pageLink} ${styles.dropdown}`} prefetch={false}>
                                 <div >
                                     <span>
                                         Pricing
@@ -176,7 +176,7 @@ const DesktopNavigation = () => {
                                     className={styles.navDropdown}>
                                     <ul className={`${styles.navDropdownList} justify-center`}>
                                         <div className='border border-gray-100 rounded-xl py-10 hover:bg-[#fbfbfb] transition duration-300'>
-                                            <Link href="/pricing" className='flex justify-center items-center mb-10' shallow={false}>
+                                            <Link href="/pricing" className='flex justify-center items-center mb-10' prefetch={false}>
                                                 <div className='flex flex-col gap-4 items-center px-[3vw] py-4 mx-8'>
                                                     <img className='h-[9vw]' loading='lazy' width="170" height="140" src='/assets/pricing/education.svg' alt='price image' />
                                                     <div>
@@ -250,7 +250,7 @@ const DesktopNavigation = () => {
                                             img={'resource-compliance.svg'}
                                         />
                                         <li className={styles.navDropListItem}>
-                                            <Link href='https://help.patronum.io' target='_blank' rel="nofollow" className={styles.navDropListHover} shallow={false}>
+                                            <Link href='https://help.patronum.io' target='_blank' rel="nofollow" className={styles.navDropListHover} prefetch={false}>
                                                 <div className={styles.img}>
                                                     <img loading='lazy' src='/assets/menu/resource-help.svg' alt='menu icon' />
                                                 </div>
@@ -261,7 +261,7 @@ const DesktopNavigation = () => {
                                             </Link>
                                         </li>
                                         <li className={styles.navDropListItem}>
-                                            <Link href='https://community.patronum.io' target='_blank' rel="nofollow" className={styles.navDropListHover} shallow={false}>
+                                            <Link href='https://community.patronum.io' target='_blank' rel="nofollow" className={styles.navDropListHover} prefetch={false}>
                                                 <div className={styles.img}>
                                                     <img loading='lazy' src='/assets/menu/resource-community.svg' alt='menu icon' />
                                                 </div>
@@ -288,7 +288,7 @@ const DesktopNavigation = () => {
                             )}
                         </li>
                         <li className={styles.navListItem}>
-                            <Link className={styles.pageLink} href='/partner-with-us' shallow={false}>
+                            <Link className={styles.pageLink} href='/partner-with-us' prefetch={false}>
                                 <div >
                                     <span>
                                         Partners
@@ -297,7 +297,7 @@ const DesktopNavigation = () => {
                             </Link>
                         </li>
                         <li className={styles.navListItem}>
-                            <Link className={styles.pageLink} href='/support' shallow={false}>
+                            <Link className={styles.pageLink} href='/support' prefetch={false}>
                                 <div >
                                     <span>
                                         Support
@@ -318,7 +318,7 @@ const DesktopNavigation = () => {
 const NavItem = ({ link, img, title, disc }) => {
     return (
         <li className={styles.navDropListItem}>
-            <Link href={link} className={styles.navDropListHover} shallow={false}>
+            <Link href={link} className={styles.navDropListHover} prefetch={false}>
                 <div className={styles.img}>
                     <img loading='lazy' src={`/assets/menu/${img}`} alt='menu icon' />
                 </div>
