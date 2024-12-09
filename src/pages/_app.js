@@ -1,3 +1,4 @@
+import '@/styles/fonts.css';
 import '@/styles/globals.css'
 import { DefaultSeo } from 'next-seo';
 import { SpeedInsights } from '@vercel/speed-insights/next';
