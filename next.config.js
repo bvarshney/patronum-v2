@@ -129,6 +129,16 @@ const nextConfig = {
         destination: '/category/google-drive',
         permanent: true,
       },
+      {
+        source: '/the-4-quadrant-approach-for-google-drive-file-management-ensure-compliance-protect-sensitive-data-amp-supercharge-efficiency',
+        destination: '/four-quadrant-approach-for-google-drive-file-management',
+        permanent: true,
+      },
+      {
+        source: '/term-conditions',
+        destination: 'https://docs.google.com/document/d/19ie2gkbs2fv2kQ6gwyPwaEYpU2mg4t0eyvSKNgDF-bE/edit?usp=drive_link',
+        permanent: true,
+      }
     ]
   },
   env: {
