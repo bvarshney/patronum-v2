@@ -20,6 +20,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'wordpress-213572-4463644.cloudwaysapps.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'i0.wp.com',
+      }
     ],
   },
   async redirects() {
