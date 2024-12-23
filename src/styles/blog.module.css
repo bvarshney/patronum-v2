@@ -201,15 +201,17 @@
 /* Blockquote */
 .blogContent blockquote{
     position: relative;
-    padding-left: 15px;
-    margin-left: 15px;
+    padding-left: 30px;
+    margin-left: 25px;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
 }
 .blogContent blockquote::before{
     content: '';
     position: absolute;
     display: block;
     height: 100%;
-    width: 4px;
+    width: 3px;
     top: 0;
     left: 0;
     background: var(--text-head);
@@ -217,6 +219,10 @@
 
 .blogContent blockquote p{
     font-weight: 400;
+    margin: 1% 0 1%;
+}
+.blogContent :global(.big-para){
+    font-size: 1.5vw;
 }
 
 /* Media 1024px */
