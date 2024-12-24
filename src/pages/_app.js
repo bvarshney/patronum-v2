@@ -86,6 +86,7 @@ export default function App({ Component, pageProps, router }) {
             ),
           }}
         />
+        
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
