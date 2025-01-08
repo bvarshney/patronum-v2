@@ -20,7 +20,6 @@ export default async (req, res) => {
         POPUPREQ: pageURL,
       },
     };
-
     const response = await fetch(
       `https://${DATACENTER}.api.mailchimp.com/3.0/lists/${AUDIENCE_ID}/members`,
       {
