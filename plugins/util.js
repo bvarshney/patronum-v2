@@ -211,55 +211,12 @@ function generateIndexSearch({ posts }) {
 }
 
 /**
- * getSiteMetadata
- */
-
-async function getSiteMetadata(apolloClient, process, verbose = false) {
-  const query = gql`
-    {
-      generalSettings {
-        description
-        language
-        title
-      }
-    }
-  `;
-
-  let metadata = {};
-
-  try {
-    const data = await apolloClient.query({ query });
-    metadata = { ...data.data.generalSettings };
-
-    if (!metadata.language || metadata.language === "") {
-      metadata.language = "en";
-    } else {
-      metadata.language = metadata.language.split("_")[0];
-    }
-
-    verbose &&
-      console.log(
-        `[${process}] Successfully fetched metadata from ${apolloClient.link.options.uri}`
-      );
-    return {
-      metadata,
-    };
-  } catch (e) {
-    throw new Error(
-      `[${process}] Failed to fetch metadata from ${apolloClient.link.options.uri}: ${e.message}`
-    );
-  }
-}
-
-/**
  * getFeedData
  */
 
 async function getFeedData(apolloClient, process, verbose = false) {
-  const metadata = await getSiteMetadata(apolloClient, process, verbose);
   const posts = await getAllPosts(apolloClient, process, verbose);
   return {
-    ...metadata,
     ...posts,
   };
 }
@@ -272,11 +229,11 @@ function generateFeed({ posts = [], metadata = {} }) {
   const { homepage = '' } = config;
 
   const feed = new RSS({
-    title: metadata.title || '',
-    description: metadata.description,
+    title: 'Patronum - Best Platform for Google Workspace (GSuite) Management',
+    description: 'Patronum provides a better way to manage Google Workspace (GSuite). Patronum is your Google Workspace (GSuite) manager that fully automates all administrator and user tasks to ensure an efficient, effective, and secure process.',
     site_url: homepage,
     feed_url: `${homepage}/feed.xml`,
-    copyright: `${new Date().getFullYear()} ${metadata.title}`,
+    copyright: `${new Date().getFullYear()} Patronum`,
     language: metadata.language,
     pubDate: new Date(),
   });
@@ -348,7 +305,6 @@ module.exports = {
   promiseToWriteFile,
   mkdirp,
   createApolloClient,
-  getSiteMetadata,
   getAllPosts,
   getAllSearchPosts,
   generateIndexSearch,

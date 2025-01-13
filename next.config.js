@@ -150,15 +150,190 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/google-group-data-exposure-due-to-misconfiguration-at-weather-company-and-spotx/',
-        destination: '/google-group-data-exposure-due-to-misconfiguration',
+        source: '/15-tips-to-boost-your-brand-with-email-signature-branding/',
+        destination: '/15-tips-to-boost-your-brand-with-email-signature',
         permanent: true,
       },
       {
-        source: '/:slug/feed',
+        source: '/have-you-added-she-her-hers-to-your-email-signature/',
+        destination: '/have-you-added-she-her-hers-to-your-email-signatures',
+        permanent: true,
+      },
+      {
+        source: '/have-you-added-she-her-hers-to-your-email-signature/',
+        destination: '/have-you-added-she-her-hers-to-your-email-signatures',
+        permanent: true,
+      },
+      {
+        source: '/:slug/feed/',
         destination: '/feed.xml',
         permanent: true,
-      }
+      },
+      {
+        source: '/faqs/:slug*',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/faqpage/:slug*',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/author/:slug',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/testimonial/:slug',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/category/all/page/:slug',
+        destination: '/category/page/:slug',
+        permanent: true,
+      },
+      {
+        source: '/case-studies',
+        destination: '/category/case-study',
+        permanent: true,
+      },
+      {
+        source: '/category/all/:slug/',
+        destination: '/category/:slug',
+        permanent: true,
+      },
+      {
+        source: '/webinar/',
+        destination: '/webinars',
+        permanent: true,
+      },
+      {
+        source: '/environment-policy',
+        destination: '/environmental-policy',
+        permanent: true,
+      },
+      {
+        source: '/category/all/:slug/feed/',
+        destination: '/feed.xml',
+        permanent: true,
+      },
+      {
+        source: '/employment-date-within-',
+        destination: '/employment-date-within-patronum-google-workspace-account',
+        permanent: true,
+      },
+      {
+        source: '/automate-user-archiving-',
+        destination: '/automate-user-archiving-with-patronum',
+        permanent: true,
+      },
+      {
+        source: '/a-deep-dive-into-google-contacts-best-practices-for-organizing-and-sharing-contacts/',
+        destination: '/best-practices-google-contact-sharing-organising',
+        permanent: true,
+      },
+      {
+        source: '/gmail-gets-a-massive-redesign-to-become-your-work-hub/',
+        destination: '/gmail-gets-a-massive-redesign',
+        permanent: true,
+      },
+      {
+        source: '/how-patronum-helps-save-',
+        destination: '/how-patronum-helps-save-costs-on-saas-management-spend',
+        permanent: true,
+      },
+      {
+        source: '/remote-working-guide',
+        destination: '/the-full-switch-to-remote-work-5-best-practices-for-an-effective-and-safe-remote-workplace',
+        permanent: true,
+      },
+      {
+        source: '/web-stories/',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/gmail-email-signature',
+        destination: '/email-signature-management',
+        permanent: true,
+      },
+      {
+        source: '/contact-sharing/',
+        destination: '/google-contact-sharing',
+        permanent: true,
+      },
+      {
+        source: '/bespin-labs-supports-pennine-distribution-and-training-with-patronum-the-google-workspace-manager-2/',
+        destination: '/bespin-labs-supports-pennine-distribution-and-training-with-patronum-the-google-workspace-manager',
+        permanent: true,
+      },
+      {
+        source: '/guide-to-email-signatures/',
+        destination: '/a-quick-guide-to-email-signatures-and-best-practices-for-2022',
+        permanent: true,
+      },
+      {
+        source: '/faq/',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/how-important-are-backups-in-the-cloud',
+        destination: '/how-important-are-backups-in-google-workspace',
+        permanent: true,
+      },
+      {
+        source: '/patronum-partners',
+        destination: '/partner-with-us',
+        permanent: true,
+      },
+      {
+        source: '/patronum-backup/',
+        destination: '/google-workspace-backup',
+        permanent: true,
+      },
+      {
+        source: '/the-ultimate-guide-to-using-google-workspace-',
+        destination: '/the-ultimate-guide-to-using-google-workspace-marketplace',
+        permanent: true,
+      },
+      {
+        source: '/the-ultimate-guide-to-using-google-workspace-',
+        destination: '/the-ultimate-guide-to-using-google-workspace-marketplace',
+        permanent: true,
+      },
+      {
+        source: '/category/all/email-signature/:slug*',
+        destination: '/category/email-signature',
+        permanent: true,
+      },
+      {
+        source: '/patronum-partners-with-email-signature',
+        destination: '/patronum-partners-with-email-signature-experts',
+        permanent: true,
+      },
+      {
+        source: '/amazing-things-you-didnt-',
+        destination: '/amazing-things-you-didnt-know-about-patronum',
+        permanent: true,
+      },
+      {
+        source: '/dynamic-creation-of-',
+        destination: '/dynamic-creation-of-dynamic-google-groups',
+        permanent: true,
+      },
+      {
+        source: '/set-up-a-google-contacts-',
+        destination: '/set-up-a-google-contacts-policy',
+        permanent: true,
+      },
+      {
+        source: '/avenue-live-gain-control-and-consistency-over-emails-branding-with-patronum/',
+        destination: '/avenue-live-gain-control-and-consistency',
+        permanent: true,
+      },
     ]
   },
   env: {
