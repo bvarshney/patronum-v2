@@ -181,7 +181,7 @@ const nextConfig = {
       },
       {
         source: '/category/all/page/:slug',
-        destination: '/category/page/:slug',
+        destination: '/blog/page/:slug',
         permanent: true,
       },
       {
@@ -322,6 +322,11 @@ const nextConfig = {
       {
         source: '/avenue-live-gain-control-and-consistency-over-emails-branding-with-patronum/',
         destination: '/avenue-live-gain-control-and-consistency',
+        permanent: true,
+      },
+      {
+        source: '/unravelling-the-mysteries-of-google-workspace-google-admin-console-gam-the-ultimate-productivity-trio-🚀',
+        destination: '/unravelling-the-mysteries-of-google-workspace-google-admin-console-gam-the-ultimate-productivity-trio',
         permanent: true,
       },
     ]
