@@ -130,11 +130,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/category/all/google-drive',
-        destination: '/category/google-drive',
-        permanent: true,
-      },
-      {
         source: '/the-4-quadrant-approach-for-google-drive-file-management-ensure-compliance-protect-sensitive-data-amp-supercharge-efficiency',
         destination: '/four-quadrant-approach-for-google-drive-file-management',
         permanent: true,
@@ -145,27 +140,22 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/google-group-data-exposure-due-to-misconfiguration-at-weather-company-and-spotx/',
+        source: '/google-group-data-exposure-due-to-misconfiguration-at-weather-company-and-spotx',
         destination: '/google-group-data-exposure-due-to-misconfiguration',
         permanent: true,
       },
       {
-        source: '/15-tips-to-boost-your-brand-with-email-signature-branding/',
+        source: '/15-tips-to-boost-your-brand-with-email-signature-branding',
         destination: '/15-tips-to-boost-your-brand-with-email-signature',
         permanent: true,
       },
       {
-        source: '/have-you-added-she-her-hers-to-your-email-signature/',
+        source: '/have-you-added-she-her-hers-to-your-email-signature',
         destination: '/have-you-added-she-her-hers-to-your-email-signatures',
         permanent: true,
       },
       {
-        source: '/have-you-added-she-her-hers-to-your-email-signature/',
-        destination: '/have-you-added-she-her-hers-to-your-email-signatures',
-        permanent: true,
-      },
-      {
-        source: '/:slug/feed/',
+        source: '/:slug/feed',
         destination: '/feed.xml',
         permanent: true,
       },
@@ -200,12 +190,12 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/category/all/:slug/',
+        source: '/category/all/:slug',
         destination: '/category/:slug',
         permanent: true,
       },
       {
-        source: '/webinar/',
+        source: '/webinar',
         destination: '/webinars',
         permanent: true,
       },
@@ -215,7 +205,7 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/category/all/:slug/feed/',
+        source: '/category/all/:slug/feed',
         destination: '/feed.xml',
         permanent: true,
       },
@@ -230,12 +220,12 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/a-deep-dive-into-google-contacts-best-practices-for-organizing-and-sharing-contacts/',
+        source: '/a-deep-dive-into-google-contacts-best-practices-for-organizing-and-sharing-contacts',
         destination: '/best-practices-google-contact-sharing-organising',
         permanent: true,
       },
       {
-        source: '/gmail-gets-a-massive-redesign-to-become-your-work-hub/',
+        source: '/gmail-gets-a-massive-redesign-to-become-your-work-hub',
         destination: '/gmail-gets-a-massive-redesign',
         permanent: true,
       },
@@ -250,7 +240,7 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/web-stories/',
+        source: '/web-stories',
         destination: '/',
         permanent: true,
       },
@@ -260,22 +250,22 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/contact-sharing/',
+        source: '/contact-sharing',
         destination: '/google-contact-sharing',
         permanent: true,
       },
       {
-        source: '/bespin-labs-supports-pennine-distribution-and-training-with-patronum-the-google-workspace-manager-2/',
+        source: '/bespin-labs-supports-pennine-distribution-and-training-with-patronum-the-google-workspace-manager-2',
         destination: '/bespin-labs-supports-pennine-distribution-and-training-with-patronum-the-google-workspace-manager',
         permanent: true,
       },
       {
-        source: '/guide-to-email-signatures/',
+        source: '/guide-to-email-signatures',
         destination: '/a-quick-guide-to-email-signatures-and-best-practices-for-2022',
         permanent: true,
       },
       {
-        source: '/faq/',
+        source: '/faq',
         destination: '/',
         permanent: true,
       },
@@ -290,7 +280,7 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/patronum-backup/',
+        source: '/patronum-backup',
         destination: '/google-workspace-backup',
         permanent: true,
       },
