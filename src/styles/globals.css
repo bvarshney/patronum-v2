@@ -2366,25 +2366,6 @@ input[type=number] {
 
 
 /* New CSS for Blog and Classes which can be grabbed by module css files.*/
-.blog_blogContent__Tf9Rv .wp-block-table{
-  border: 1px solid #CACACA;
-  border-radius: 20px;
-  overflow: hidden;
-  margin: 5% 0 !important;
-}
-
-@media screen and (max-width: 640px) {
-  .blog_blogContent__Tf9Rv .wp-block-table{
-    border-radius: 10px;
-    overflow-y: hidden;
-    overflow-x: auto;
-  }
-
-  .blog_blogContent__Tf9Rv .wp-block-table table{
-    width: max-content;
-  }
-}
-
 /* Link Class */
 .link-href{
   color: var(--primary);

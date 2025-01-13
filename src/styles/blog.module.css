@@ -166,6 +166,19 @@
 }
 
 /* Blog Table */
+.blogContent :global(.wp-block-table) {
+  overflow-x: auto;
+}
+.blogContent table {
+  table-layout: fixed;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 5% 0 !important;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #cacaca;
+}
 .blogContent tbody tr:nth-child(odd) {
   background-color: #f6faff;
 }
@@ -324,5 +337,8 @@
     font-size: 1rem;
     padding: 0.5rem 1rem;
     margin: 5% 0 8%;
+  }
+  .blogContent table {
+    border-radius: 10px;
   }
 }
