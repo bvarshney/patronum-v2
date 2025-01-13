@@ -3,7 +3,7 @@ import styles from "@/components/Buttons/link.module.css";
 import Link from 'next/link';
 
 const PostCard = ({ post = {} }) => {
-    const { title, featuredImage, author, date, excerpt, slug } = post;
+    const { title, featuredImage, date, excerpt, slug } = post;
 
     const formattedDate = format(new Date(date), 'MMMM dd, yyyy');
 
@@ -24,7 +24,7 @@ const PostCard = ({ post = {} }) => {
                     </div>
                     <div className='px-[2.5vw] md:py-[1.2vw] py-[3vw] lg:h-auto md:h-[35vw] h-auto'>
                         <div className='flex justify-between align-center lg:text-[1.15vw] lg:mb-[1vw] md:text-[2vw] text-[4vw] mb-[5vw]'>
-                            <p>By {author.name}</p>
+                            <p>By Patronum</p>
                             <p>{formattedDate}</p>
                         </div>
                         <div className='lg:border-b lg:border-[#C5C5C5]'>

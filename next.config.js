@@ -1,4 +1,5 @@
 const feed = require('./plugins/feed');
+const indexSearch = require('./plugins/search-index');
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
@@ -142,8 +143,27 @@ const nextConfig = {
         source: '/term-conditions',
         destination: 'https://docs.google.com/document/d/19ie2gkbs2fv2kQ6gwyPwaEYpU2mg4t0eyvSKNgDF-bE/edit?usp=drive_link',
         permanent: true,
+      },
+      {
+        source: '/google-group-data-exposure-due-to-misconfiguration-at-weather-company-and-spotx/',
+        destination: '/google-group-data-exposure-due-to-misconfiguration',
+        permanent: true,
+      },
+      {
+        source: '/google-group-data-exposure-due-to-misconfiguration-at-weather-company-and-spotx/',
+        destination: '/google-group-data-exposure-due-to-misconfiguration',
+        permanent: true,
+      },
+      {
+        source: '/:slug/feed',
+        destination: '/feed.xml',
+        permanent: true,
       }
     ]
+  },
+  env: {
+    POSTS_PRERENDER_COUNT: "10",
+    WORDPRESS_GRAPHQL_ENDPOINT: process.env.WORDPRESS_GRAPHQL_ENDPOINT,
   },
   env: {
     WORDPRESS_GRAPHQL_ENDPOINT: process.env.WORDPRESS_GRAPHQL_ENDPOINT,
@@ -152,6 +172,18 @@ const nextConfig = {
 
 // export default nextConfig;
 module.exports = () => {
-  const plugins = [feed, withBundleAnalyzer];
+  const plugins = [indexSearch, feed, withBundleAnalyzer];
   return plugins.reduce((acc, plugin) => plugin(acc), nextConfig);
 };
+
+/**
+ * parseEnv
+ * @description Helper function to check if a variable is defined and parse booelans
+ */
+
+function parseEnvValue(value, defaultValue) {
+  if (typeof value === 'undefined') return defaultValue;
+  if (value === true || value === 'true') return true;
+  if (value === false || value === 'false') return false;
+  return value;
+}

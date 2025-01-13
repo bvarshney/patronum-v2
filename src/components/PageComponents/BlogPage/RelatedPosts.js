@@ -46,7 +46,7 @@ function RelatedPosts({ recentPosts, currentSlug, sectionTitle, sectionPara }) {
                                             )}
                                             <div className="blog-card-details">
                                                 <div className="blog-card-author">
-                                                    <p className="head">By {post.author.node.name}</p>
+                                                    <p className="head">By Patronum</p>
                                                     <p className="date">{formattedDates[index]}</p>
                                                 </div>
                                                 <h5 className="blog-card-title aeonik">

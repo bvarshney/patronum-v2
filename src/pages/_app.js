@@ -10,36 +10,20 @@ import Head from 'next/head';
 import { GoogleTagManager } from '@next/third-parties/google'
 import dynamic from 'next/dynamic';
 import nextSeoConfig from '../../next-seo.config';
+import { SearchProvider } from '@/hooks/use-search';
 
 const Crispchat = dynamic(() => import("@/components/Crispchat"), { ssr: false });
 const Cookie = dynamic(() => import("@/components/Cookie"), { ssr: false });
 
 export default function App({ Component, pageProps, router }) {
 
-  // useEffect(() => {
-  //   const handleRouteChange = () => {
-  //     window.scrollTo(0, 0);
-  //     document.body.style.pointerEvents = 'none';
-  //     const enablePointerEvents = () => {
-  //       document.body.style.pointerEvents = 'auto';
-  //       document.removeEventListener('mousemove', enablePointerEvents);
-  //     };
-  //     document.addEventListener('mousemove', enablePointerEvents);
-  //   };
-  //   router.events.on('routeChangeStart', handleRouteChange);
-  //   return () => {
-  //     router.events.off('routeChangeStart', handleRouteChange);
-  //     document.removeEventListener('mousemove', handleRouteChange);
-  //   };
-  // }, [router]);
-
   useEffect(() => {
     const handleRouteChange = () => {
       window.scrollTo(0, 0);
     };
-    
+
     router.events.on('routeChangeStart', handleRouteChange);
-    
+
     return () => {
       router.events.off('routeChangeStart', handleRouteChange);
     };
@@ -47,22 +31,8 @@ export default function App({ Component, pageProps, router }) {
 
   return (
     <>
-      <DefaultSeo {...nextSeoConfig}
-        additionalLinkTags={[
-          {
-            rel: 'icon',
-            href: '/favicon.png',
-          },
-          {
-            rel: 'preload',
-            href: '/assets/fonts/Aeonik/Aeonik-Regular.woff2',
-            as: 'font',
-            type: 'font/woff2',
-            crossOrigin: 'anonymous'
-          }
-        ]}
-      />
-      
+      <DefaultSeo {...nextSeoConfig} />
+
       <Head>
         <script
           type="application/ld+json"
@@ -86,7 +56,7 @@ export default function App({ Component, pageProps, router }) {
             ),
           }}
         />
-        
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -107,6 +77,7 @@ export default function App({ Component, pageProps, router }) {
             ),
           }}
         />
+        
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -127,11 +98,13 @@ export default function App({ Component, pageProps, router }) {
 
       <Cookie />
       <Crispchat />
-      <ReactLenis root options={{ lerp: 0.08 }}>
-        <AnimatePresence mode="wait">
-          <Component {...pageProps} key={router.route} />
-        </AnimatePresence>
-      </ReactLenis>
+      <SearchProvider>
+        <ReactLenis root options={{ lerp: 0.08 }}>
+          <AnimatePresence mode="wait">
+            <Component {...pageProps} key={router.route} />
+          </AnimatePresence>
+        </ReactLenis>
+      </SearchProvider>
 
       {/* Google Tag Manager */}
       <GoogleTagManager gtmId="GTM-MDWM3Z7J" />

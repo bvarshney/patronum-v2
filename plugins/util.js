@@ -151,18 +151,6 @@ async function getAllSearchPosts(apolloClient, process, verbose = false) {
             title
             slug
             date
-            categories {
-              edges {
-                node {
-                  name
-                }
-              }
-            }
-            contentType {
-              node {
-                label
-              }
-            }
           }
         }
       }
@@ -181,13 +169,6 @@ async function getAllSearchPosts(apolloClient, process, verbose = false) {
 
     posts = allNodes.map((post) => {
       const data = { ...post };
-
-      if (data.excerpt) {
-        // Sanitize the excerpt by removing all HTML tags
-        const regExHtmlTags = /(<([^>]+)>)/g;
-        data.excerpt = data.excerpt.replace(regExHtmlTags, '');
-      }
-
       return data;
     });
 
@@ -218,8 +199,6 @@ function generateIndexSearch({ posts }) {
       title,
       slug: post.slug,
       date: post.date,
-      excerpt: post.excerpt,
-      contentType: post.contentType.node.label,
     };
   });
 
@@ -229,6 +208,47 @@ function generateIndexSearch({ posts }) {
   });
 
   return indexJson;
+}
+
+/**
+ * getSiteMetadata
+ */
+
+async function getSiteMetadata(apolloClient, process, verbose = false) {
+  const query = gql`
+    {
+      generalSettings {
+        description
+        language
+        title
+      }
+    }
+  `;
+
+  let metadata = {};
+
+  try {
+    const data = await apolloClient.query({ query });
+    metadata = { ...data.data.generalSettings };
+
+    if (!metadata.language || metadata.language === "") {
+      metadata.language = "en";
+    } else {
+      metadata.language = metadata.language.split("_")[0];
+    }
+
+    verbose &&
+      console.log(
+        `[${process}] Successfully fetched metadata from ${apolloClient.link.options.uri}`
+      );
+    return {
+      metadata,
+    };
+  } catch (e) {
+    throw new Error(
+      `[${process}] Failed to fetch metadata from ${apolloClient.link.options.uri}: ${e.message}`
+    );
+  }
 }
 
 /**
@@ -328,6 +348,7 @@ module.exports = {
   promiseToWriteFile,
   mkdirp,
   createApolloClient,
+  getSiteMetadata,
   getAllPosts,
   getAllSearchPosts,
   generateIndexSearch,

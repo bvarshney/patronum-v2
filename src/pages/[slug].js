@@ -180,7 +180,7 @@ function PostDetail({ post, recentPosts }) {
 
       <BlogLayout
         postTitle={post.title}
-        postAuthor={post.author.name}
+        postAuthor="Patronum"
         postDate={formattedDate}
         shareLink={post.slug}
         featImg={post.featuredImage.sourceUrl}
