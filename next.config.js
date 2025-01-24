@@ -290,11 +290,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/the-ultimate-guide-to-using-google-workspace-',
-        destination: '/the-ultimate-guide-to-using-google-workspace-marketplace',
-        permanent: true,
-      },
-      {
         source: '/category/all/email-signature/:slug*',
         destination: '/category/email-signature',
         permanent: true,
@@ -327,6 +322,11 @@ const nextConfig = {
       {
         source: '/unravelling-the-mysteries-of-google-workspace-google-admin-console-gam-the-ultimate-productivity-trio-🚀',
         destination: '/unravelling-the-mysteries-of-google-workspace-google-admin-console-gam-the-ultimate-productivity-trio',
+        permanent: true,
+      },
+      {
+        source: 'how-to-use-multiple-email-signatures-in-gmail-2',
+        destination: '/how-to-use-multiple-email-signatures-in-gmail',
         permanent: true,
       },
     ]
