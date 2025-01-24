@@ -325,7 +325,7 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: 'how-to-use-multiple-email-signatures-in-gmail-2',
+        source: '/how-to-use-multiple-email-signatures-in-gmail-2',
         destination: '/how-to-use-multiple-email-signatures-in-gmail',
         permanent: true,
       },
