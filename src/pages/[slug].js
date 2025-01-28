@@ -212,6 +212,7 @@ export async function getStaticPaths() {
 
   const { data } = await apolloClient.query({
     query: QUERY_ALL_POST_SLUGS,
+    fetchPolicy: 'no-cache',
   });
 
   const paths = data.posts.edges.map(({ node }) => ({
