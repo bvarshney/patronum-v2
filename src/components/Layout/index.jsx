@@ -1,7 +1,6 @@
 import { useDevice } from "@/utils/useDevice";
 import Transition from "../Transition";
 import dynamic from "next/dynamic";
-import { ModalProvider } from "../Modals/ModalContext";
 import Header from "../Header";
 import PreLoader from "../PreLoader";
 import { useEffect, useState } from "react";
@@ -32,13 +31,11 @@ const Layout = ({ children }) => {
     return (
         <>
             {showPreloader && <PreLoader />}
-            <ModalProvider>
                 <Header />
                 {children}
                 <Footer />
                 <DemoModal />
                 <InstallModal />
-            </ModalProvider>
             <Transition />
             {/* {isDesktop && <Background />} */}
             {isDesktop && <BgVideo />}

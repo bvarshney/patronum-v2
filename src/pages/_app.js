@@ -11,6 +11,7 @@ import { GoogleTagManager } from '@next/third-parties/google'
 import dynamic from 'next/dynamic';
 import nextSeoConfig from '../../next-seo.config';
 import { SearchProvider } from '@/hooks/use-search';
+import { ModalProvider } from '@/components/Modals/ModalContext';
 
 const Crispchat = dynamic(() => import("@/components/Crispchat"), { ssr: false });
 const Cookie = dynamic(() => import("@/components/Cookie"), { ssr: false });
@@ -77,7 +78,7 @@ export default function App({ Component, pageProps, router }) {
             ),
           }}
         />
-        
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -99,11 +100,15 @@ export default function App({ Component, pageProps, router }) {
       <Cookie />
       <Crispchat />
       <SearchProvider>
-        <ReactLenis root options={{ lerp: 0.08 }}>
-          <AnimatePresence mode="wait">
-            <Component {...pageProps} key={router.route} />
-          </AnimatePresence>
-        </ReactLenis>
+        <ModalProvider>
+
+          <ReactLenis root options={{ lerp: 0.08 }}>
+            <AnimatePresence mode="wait">
+              <Component {...pageProps} key={router.route} />
+            </AnimatePresence>
+          </ReactLenis>
+        </ModalProvider>
+
       </SearchProvider>
 
       {/* Google Tag Manager */}

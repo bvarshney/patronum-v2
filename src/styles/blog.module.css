@@ -133,6 +133,7 @@
   object-fit: cover;
   border-radius: 20px;
   margin: auto;
+  border: 1px solid #e5e7eb;
 }
 .blogContent figcaption {
   text-align: center;
