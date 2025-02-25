@@ -265,7 +265,7 @@ export async function getStaticProps({ params }) {
         post,
         recentPosts,
       },
-      revalidate: 10,
+      revalidate: 60,
     };
   } catch (error) {
     console.error('Error fetching data:', error);
