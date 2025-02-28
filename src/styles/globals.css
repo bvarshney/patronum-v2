@@ -2370,7 +2370,6 @@ input[type=number] {
 .link-href{
   color: var(--primary);
 }
-
 [data-news]:-webkit-autofill {
   -webkit-box-shadow:0 0 0 50px #1069df inset;
   box-shadow: 0 0 0 50px #1069df inset;
