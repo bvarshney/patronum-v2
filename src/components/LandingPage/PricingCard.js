@@ -7,7 +7,6 @@ import gsap from 'gsap';
 const PricingCard = ({ features, category, isAnnual, selectedCurrency, pricingImage, title }) => {
 
   const [isVisible, setIsVisible] = useState(true);
-  const { openModal } = useModal();
   const handleSmoothScroll = () => {
     gsap.to(window, {
         duration: 1.5,

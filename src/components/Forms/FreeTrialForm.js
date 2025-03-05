@@ -242,7 +242,7 @@ export default function FreeTrialForm() {
                 {/* Submit button */}
                 <div className="w-full flex justify-center ">
 
-                <Button id="submit_install" type="submit" disabled={submitting} className="md:!text-[3vw] w-fit mx-auto lg:!text-[1.5vw]">
+                <Button id="submit_install" type="submit" disabled={submitting} className="md:!text-[3vw] w-fit mx-auto lg:!text-[1.5vw] hover:bg-primary duration-300">
                     {submitting ? 'Submitting...' : 'Submit'}
                 </Button>
 

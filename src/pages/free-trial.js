@@ -183,7 +183,7 @@ export default function Home() {
                     href: 'https://www.patronum.io'
                 }]}
             />
-            <Layout>
+                <Layout>
                 <main>
                     <Hero />
                     <Ratings />
@@ -191,7 +191,7 @@ export default function Home() {
                     <Pricing />
                     <Testimonial />
                 </main>
-            </Layout>
+                </Layout>
         </>
     );
 }
