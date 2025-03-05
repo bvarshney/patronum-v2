@@ -50,11 +50,15 @@ const PricingCard = ({ features, category, isAnnual, selectedCurrency, pricingIm
 
   return (
     <div className={`${styles.pricingCard} fadeUp`}>
-      <div className={styles.pricingImage}>
-        <img src={pricingImage} alt='Price Category Image' loading='lazy' title='Patronum Pricing' />
+      <div className='w-full flex justify-center'>
+
+      <div className="lg:w-[12vw] lg:h-[12vw] md:w-[35vw] md:h-[35vw] flex justify-center items-center">
+        <img src={pricingImage} alt='Price Category Image' loading='lazy' title='Patronum Pricing' className='object-contain' />
+      </div>
+
       </div>
       <h3
-        className={`${styles.pricingCategory} !text-center w-full h-[5vw]`}
+        className={`${styles.pricingCategory} !text-center w-full lg:h-[5vw] md:h-fit`}
         dangerouslySetInnerHTML={{ __html: title }}
       />
       <span className={styles.hr} />
@@ -68,7 +72,7 @@ const PricingCard = ({ features, category, isAnnual, selectedCurrency, pricingIm
         <p className={styles.pricingPrice}>
           <span >{getCurrencySymbol(selectedCurrency)} </span>
           <span >{isAnnual ? prices[category][selectedCurrency].annual : prices[category][selectedCurrency].monthly}</span>
-          <span className={`${styles.pricingType} !text-[1.45vw]`}>{isAnnual ? '/Year' : '/Month'}</span>
+          <span className={`${styles.pricingType} lg:!text-[1.45vw] md:!text-[2.8vw]`}>{isAnnual ? '/Year' : '/Month'}</span>
         </p>
         <div>
           <LinkButton 

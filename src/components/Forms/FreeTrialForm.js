@@ -129,7 +129,7 @@ export default function FreeTrialForm() {
 
     return (
         <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-[1.5vw] install-patronum-form">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="lg:space-y-[2vw]  install-patronum-form md:space-y-[5.5vw] space-y-[5vw] ">
 
                 {/* Form fields */}
                 {/* Name field */}
@@ -138,12 +138,11 @@ export default function FreeTrialForm() {
                     control={form.control}
                     name="name"
                     render={({ field }) => (
-                        <FormItem className="required">
-                            <FormLabel>Full Name</FormLabel>
+                        <FormItem className="required ">
                             <FormControl>
-                                <Input placeholder="Enter Your Name" {...field} />
+                                <Input placeholder="Full Name*" className="lg:placeholder:text-[1.2vw]  md:placeholder:text-[3.5vw] md:text-[3.5vw] lg:text-[1.2vw] md:pb-[3vw] lg:pb-[1vw] placeholder:text-[4.5vw] text-[4.5vw]  placeholder:text-black" {...field} />
                             </FormControl>
-                            <FormMessage />
+                            <FormMessage className="text-[3vw] lg:text-[1vw] md:text-[2vw]"/>
                         </FormItem>
                     )}
                 />
@@ -154,11 +153,10 @@ export default function FreeTrialForm() {
                     name="email"
                     render={({ field }) => (
                         <FormItem className="required">
-                            <FormLabel>Business Email</FormLabel>
                             <FormControl>
-                                <Input placeholder="Enter Your Email" {...field} />
+                                <Input placeholder="Business Email*" className="lg:placeholder:text-[1.2vw]  md:placeholder:text-[3.5vw] md:text-[3.5vw] lg:text-[1.2vw] md:pb-[3vw] lg:pb-[1vw] placeholder:text-[4.5vw] text-[4.5vw]  placeholder:text-black" {...field} />
                             </FormControl>
-                            <FormMessage />
+                            <FormMessage className="text-[3vw] lg:text-[1vw] md:text-[2vw]"/>
                         </FormItem>
                     )}
                 />
@@ -169,11 +167,10 @@ export default function FreeTrialForm() {
                     name="company"
                     render={({ field }) => (
                         <FormItem className="required">
-                            <FormLabel>Company Name</FormLabel>
                             <FormControl>
-                                <Input placeholder="Enter Company Name" {...field} />
+                                <Input placeholder="Company Name*" className="lg:placeholder:text-[1.2vw]  md:placeholder:text-[3.5vw] md:text-[3.5vw] lg:text-[1.2vw] md:pb-[3vw] lg:pb-[1vw] placeholder:text-[4.5vw] text-[4.5vw]  placeholder:text-black" {...field} />
                             </FormControl>
-                            <FormMessage />
+                            <FormMessage  className="text-[3vw] lg:text-[1vw] md:text-[2vw]"/>
                         </FormItem>
                     )}
                 />
@@ -184,7 +181,6 @@ export default function FreeTrialForm() {
                     name="country"
                     render={({ field }) => (
                         <FormItem className="required">
-                            <FormLabel>Country</FormLabel>
                             <FormControl>
                                 <CountrySelector
                                     id={"country-selector"}
@@ -194,10 +190,11 @@ export default function FreeTrialForm() {
                                         setCountry(value);
                                         field.onChange(value);
                                     }}
+
                                     selectedValue={COUNTRIES.find((option) => option.value === country)}
                                 />
                             </FormControl>
-                            <FormMessage />
+                            <FormMessage className="text-[3vw] lg:text-[1vw] md:text-[2vw]" />
                         </FormItem>
                     )}
                 />
@@ -209,11 +206,10 @@ export default function FreeTrialForm() {
                         name="phoneNumber"
                         render={({ field }) => (
                             <FormItem className="required">
-                                <FormLabel>Phone Number</FormLabel>
                                 <FormControl>
-                                    <Input type="number" placeholder="Enter Your Phone Number" {...field} />
+                                    <Input type="number" placeholder="Phone Number*" className="lg:placeholder:text-[1.2vw] md:placeholder:text-[3.5vw] md:text-[3.5vw] lg:text-[1.2vw] md:pb-[3vw] lg:pb-[1vw] placeholder:text-[4.5vw] text-[4.5vw] placeholder:text-black" {...field} />
                                 </FormControl>
-                                <FormMessage />
+                                <FormMessage className="text-[3vw] lg:text-[1vw] md:text-[2vw]" />
                             </FormItem>
                         )}
                     />
@@ -228,26 +224,31 @@ export default function FreeTrialForm() {
                             <div className="flex items-center gap-2">
                                 <FormControl>
                                     <Checkbox
+                                      className="w-[4vw] h-[4vw] lg:h-[1vw] lg:w-[1vw] md:w-[3vw] md:h-[3vw]"
                                         checked={field.value}
                                         onCheckedChange={field.onChange}
                                     />
                                 </FormControl>
-                                <FormLabel>
+                                <FormLabel className="md:text-[3vw] lg:text-[1.2vw] text-[3.5vw]">
                                     <span>I agree to the</span>
                                     <Link href="/privacy-policy" target="_blank" className="text-primary relative after:absolute after:bg-primary after:h-[1px] after:left-0 after:bottom-[-2px] after:scale-0 hover:after:scale-100 after:duration-300 after:w-full"> Privacy Policy</Link>
                                 </FormLabel>
                             </div>
-                            <FormMessage />
+                            <FormMessage className="text-[3vw] lg:text-[1vw] md:text-[2vw]" />
                         </FormItem>
                     )}
                 />
 
                 {/* Submit button */}
-                <Button id="submit_install" type="submit" disabled={submitting}>
+                <div className="w-full flex justify-center ">
+
+                <Button id="submit_install" type="submit" disabled={submitting} className="md:!text-[3vw] w-fit mx-auto lg:!text-[1.5vw]">
                     {submitting ? 'Submitting...' : 'Submit'}
                 </Button>
-                {submissionError && <p className="text-red-500">{submissionError}</p>}
-                {submissionSuccess && <p className="text-green-500">Email sent successfully!</p>}
+
+                </div>
+                {submissionError && <p className="text-red-500 text-[3vw] lg:text-[1vw] md:text-[2vw]">{submissionError}</p>}
+                {submissionSuccess && <p className="text-green-500 text-[3vw] lg:text-[1vw] md:text-[2vw]">Email sent successfully!</p>}
             </form>
         </Form>
     );

@@ -121,7 +121,7 @@ export default function Features() {
                                 </p>
                                 {accordionData.map((item, index) => (
                                     <div className={`accordion-img ${index === accordionOpen ? 'featImgAnim' : ''}`} key={index}>
-                                        <img width="200px" height="200px" src={item.img} alt={`Feature ${index + 1}`} loading='lazy' />
+                                        <img width="200px" height="200px" src={item.img} alt={`Feature ${index + 1}`} loading='lazy' className='' />
                                     </div>
                                 ))}
                             </div>
@@ -134,11 +134,11 @@ export default function Features() {
                                         <React.Fragment key={index}>
                                             <div className={`feat-accordion-item scaleAnim ${index === accordionOpen ? 'open' : ''}`} onClick={() => toggleAccordion(index)}>
                                                 <div className="lg:w-[95%] w-[90%]">
-                                                    <h3 className="title-3xl pb-2 flex items-center">
-                                                        <Image src={item.icon} alt='icon' width={60} height={60} className='inline-block mr-4 w-[3.2vw] h-auto' loading='lazy'/>
+                                                    <h3 className="lg:text-[2vw] pb-2 flex items-center md:text-[5vw] text-[5vw]">
+                                                        <Image src={item.icon} alt='icon' width={60} height={60} className='inline-block mr-4 lg:w-[3.2vw] md:w-[5.5vw] w-[9vw] h-auto ' loading='lazy'/>
                                                         <span>{item.title}</span>
                                                     </h3>
-                                                    <div className="accordion-content pl-[4vw]">
+                                                    <div className={`accordion-content pl-[4vw] ${index === accordionOpen ? 'lg:!h-[22vw] !h-[160vw]' : ''}`}>
                                                         <p className="content-p lg:my-6 my-[3vw]">
                                                             <span className='w-full flex justify-center mb-[10vw] mt-[5vw] lg:hidden'>
                                                                 <img width="200px" height="200px" className='w-[70%]' src={item.img} loading='lazy' alt="feature image" />

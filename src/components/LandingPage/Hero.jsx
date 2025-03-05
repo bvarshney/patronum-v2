@@ -113,12 +113,12 @@ export default function Hero() {
                             <ScrollButton className="!static w-fit mt-[2vw]" />
                         </div>
 
-                        <div className="lg:w-[40%] lg:block text-left relative mt-[2%] hero-img">
-                            <div className="relative z-[2] w-full h-full bg-[#FDFDFD] py-[2vw] px-[3vw] border border-[#d7d7d7] rounded-5xl shadow-xl">
-                                <h2 className="lg:text-[2.3vw] text-center text-head lg:mb-[1.5vw]">Sign Up For a Free Trial</h2>
+                        <div className="lg:w-[40%] lg:block text-left relative lg:mt-[2%] hero-img md:mt-[15%] mt-[20%]">
+                            <div className="relative z-[2] w-full h-full bg-[#FDFDFD] lg:py-[3vw] lg:px-[3vw] border border-[#d7d7d7] md:py-[5vw] md:px-[5vw] py-[10vw] px-[7vw] rounded-5xl shadow-xl">
+                                <h2 className="lg:text-[2.3vw] text-center text-head lg:mb-[2.5vw] md:text-[5.5vw] md:mb-[7vw] text-[7vw] mb-[10vw]">Sign Up For a Free Trial</h2>
                                 <FreeTrialForm />
                             </div>
-                            <Image src={img} placeholder="blur" className="w-[30%] absolute left-[-28%] bottom-0" quality={100} alt="form icon"/>
+                            <Image src={img} placeholder="blur" className="w-[30%] absolute left-[-28%] lg:block hidden bottom-0 md:hidden" quality={100} alt="form icon"/>
                         </div>
                     </div>
                 </div>
