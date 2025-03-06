@@ -21,10 +21,10 @@ const Pricing = () => {
             category: 'Education',
             title: '<span class="text-[#2a2a2a]">Patronum</span> For Education & Non-Profits',
             features: [
+                'Onboarding & Offboarding',
                 'Email Signature Management',
                 'Google Drive Management',
                 'Contact Sharing',
-                'Automated File Unsharing',
                 'Organizations Chart',
             ],
             img: '/assets/pricing/education-plus.svg',
@@ -34,10 +34,10 @@ const Pricing = () => {
             category: 'Business',
             title: '<span class="text-[#2a2a2a]">Patronum</span> For Business',
             features: [
+                'Onboarding & Offboarding',
                 'Email Signature Management',
                 'Google Drive Management',
                 'Contact Sharing',
-                'Automated File Unsharing',
                 'Organizations Chart',
             ],
             img: '/assets/pricing/business-plus.svg',
