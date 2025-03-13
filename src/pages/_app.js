@@ -122,6 +122,7 @@ export default function App({ Component, pageProps, router }) {
       <Analytics
         strategy="afterInteractive"
       />
+      
     </>
   );
 }
