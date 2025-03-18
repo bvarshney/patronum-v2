@@ -55,6 +55,7 @@ const MobileNavigation = ({ isOpen, setSideNavOpen }) => {
     const [isFeaturesDropdownOpen, setFeaturesDropdownOpen] = useState(false);
     const [isUsecasesDropdownOpen, setUsecasesDropdownOpen] = useState(false);
     const [isResourcesDropdownOpen, setResourcesDropdownOpen] = useState(false);
+    const [isPricesDropdownOpen, setPricesDropdownOpen] = useState(false);
 
     return (
         <LazyMotion features={domAnimation}>
@@ -256,13 +257,44 @@ const MobileNavigation = ({ isOpen, setSideNavOpen }) => {
                                 </li>
                             </ul>
                         </m.li>
-                        <m.li
-                            variants={NavChildren}
-                            className='px-4'>
-                            <Link href="/pricing" className="flex items-center py-4 border-b text-2xl font-normal text-gray-900" aria-label='Pricing' prefetch={false}>
-                                <span className="ml-3">Pricing</span>
-                            </Link>
+                        <m.li variants={NavChildren}>
+                        <div className='px-4'>
+                                <button onClick={() => setPricesDropdownOpen(!isPricesDropdownOpen)} type="button" className="flex items-center py-4 border-b w-full text-2xl font-normal text-gray-900" aria-label='Open Resources Dropdown'>
+                                    <span className="flex-1 ml-3 text-left w-4/5 whitespace-nowrap">Pricing</span>
+                                    <span className='w-1/5 flex items-center justify-center'>
+                                        <svg aria-hidden="true" className={`w-7 h-7 transition duration-500 ${isPricesDropdownOpen ? "-rotate-90" : "rotate-0"}`} fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            
+                            <ul id="dropdown-usecases" className={`px-4 flex flex-col justify-center space-y-4 bg-gray-100 transition-all duration-500 overflow-hidden ${isPricesDropdownOpen ? "h-[50vw] md:h-[25vw]" : "h-0"}`}>
+                                <li className=''>
+                                    <Link href='/pricing-for-business' className='py-2 px-4 rounded flex gap-4 items-center' aria-label='Use Cases - For Business' prefetch={false}>
+                                        <div className='w-[4rem] h-[4rem] p-4 bg-head flex justify-center items-center rounded-full overflow-hidden'>
+                                            <Image width={30} height={30} loading='lazy' src='/assets/menu/for-business.svg' alt='use case icon' />
+                                        </div>
+                                        <div>
+                                            <p className='text-xl font-500'>For Business</p>
+                                            <p className='text-base'>Scalable Business-Ready Plans</p>
+                                        </div>
+                                    </Link>
+                                </li>
+                                <li className=''>
+                                    <Link href='/pricing-for-education' className='py-2 px-4 rounded flex gap-4 items-center' aria-label='Use Cases - For HR' prefetch={false}>
+                                        <div className='w-[4rem] h-[4rem] p-4 bg-head flex justify-center items-center rounded-full overflow-hidden'>
+                                            <Image width={30} height={30} loading='lazy' src='/assets/menu/for-hr.svg' alt='use case icon' />
+                                        </div>
+                                        <div>
+                                            <p className='text-xl font-500'>For Education & Non-Profits</p>
+                                            <p className='text-base'>Affordable & Accessible Pricing</p>
+                                        </div>
+                                    </Link>
+                                </li>
+                            </ul>
                         </m.li>
+                       
                         <m.li variants={NavChildren}>
                             <div className='px-4'>
                                 <button onClick={() => setResourcesDropdownOpen(!isResourcesDropdownOpen)} type="button" className="flex items-center py-4 border-b w-full text-2xl font-normal text-gray-900" aria-label='Open Resources Dropdown'>

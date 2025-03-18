@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { m, domAnimation, LazyMotion } from 'framer-motion';
-import PrimaryButton from '../Buttons/PrimaryButton';
 import InstallButton from '../Buttons/InstallButton';
 import styles from "./desktop.module.css";
 
@@ -158,8 +157,8 @@ const DesktopNavigation = () => {
                             onMouseEnter={() => setPriceDropdownOpen(true)}
                             onMouseLeave={() => setPriceDropdownOpen(false)}
                         >
-                            <Link href='/pricing' className={`${styles.pageLink} ${styles.dropdown}`} prefetch={false}>
-                                <div >
+                            <Link href="/pricing" className={`${styles.pageLink} ${styles.dropdown}`} prefetch={false}>
+                                <div>
                                     <span>
                                         Pricing
                                     </span>
@@ -169,45 +168,26 @@ const DesktopNavigation = () => {
                                 </div>
                             </Link>
                             {isPriceDropdownOpen && (
-                                <m.div
-                                    initial={{ y: -30, opacity: 0 }}
-                                    animate={{ y: 0, opacity: 1 }}
-                                    transition={{ duration: 0.4 }}
-                                    className={styles.navDropdown}>
-                                    <ul className={`${styles.navDropdownList} justify-center`}>
-                                        <div className='border border-gray-100 rounded-xl py-10 hover:bg-[#fbfbfb] transition duration-300'>
-                                            <Link href="/pricing" className='flex justify-center items-center mb-10' prefetch={false}>
-                                                <div className='flex flex-col gap-4 items-center px-[3vw] py-4 mx-8'>
-                                                    <img className='h-[9vw]' loading='lazy' width="170" height="140" src='/assets/pricing/education.svg' alt='price image' />
-                                                    <div>
-                                                        <p className='text-head text-2xl text-center transition mb-2'>Education</p>
-                                                        <p className='text-primary text-2xl text-center group-hover:text-primary transition'>$ 2.00<span className='text-gray-400 text-xl'> user/year</span></p>
-                                                    </div>
-                                                </div>
-                                                <div className='flex flex-col gap-4 items-center px-[3vw] py-4 mx-8'>
-                                                    <img className='h-[9vw]' loading='lazy' width="170" height="140" src='/assets/pricing/non-profit.svg' alt='price image' />
-                                                    <div>
-                                                        <p className='text-head text-2xl text-center transition mb-2'>Non-Profit</p>
-                                                        <p className='text-primary text-2xl text-center group-hover:text-primary transition'>$ 2.00<span className='text-gray-400 text-xl'> user/year</span></p>
-                                                    </div>
-                                                </div>
-                                                <div className='flex flex-col gap-4 items-center px-[3vw] py-4 mx-8'>
-                                                    <img className='h-[9vw]' loading='lazy' width="170" height="140" src='/assets/pricing/business.svg' alt='price image' />
-                                                    <div>
-                                                        <p className='text-head text-2xl text-center transition mb-2'>Business</p>
-                                                        <p className='text-primary text-2xl text-center group-hover:text-primary transition'>$ 8.00<span className='text-gray-400 text-xl'> user/year</span></p>
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                            <div className='w-full text-center'>
-                                                <PrimaryButton
-                                                    href="/pricing"
-                                                    btnText="Get Started"
-                                                />
-                                            </div>
-                                        </div>
-                                    </ul>
-                                </m.div>
+                            <m.div
+                                initial={{ y: -30, opacity: 0 }}
+                                animate={{ y: 0, opacity: 1 }}
+                                transition={{ duration: 0.4 }}
+                                className={`${styles.navDropdown}`}>
+                                <ul className={`${styles.navDropdownList} !w-[60%] !grid-cols-1`}>
+                                    <NavItem
+                                        title={'For Business'}
+                                        disc={'Scalable Business-Ready Plans'}
+                                        link={'/pricing-for-business'}
+                                        img={'pricing-for-business.svg'}
+                                    />
+                                    <NavItem
+                                        title={'For Education & Non-Profits'}
+                                        disc={'Affordable & Accessible Pricing'}
+                                        link={'/pricing-for-education'}
+                                        img={'pricing-for-education.svg'}
+                                    />
+                                </ul>
+                            </m.div>
                             )}
                         </li>
                         <li className={styles.navListItem}
@@ -315,14 +295,14 @@ const DesktopNavigation = () => {
     );
 };
 
-const NavItem = ({ link, img, title, disc }) => {
+const NavItem = ({ link, img, title, disc, className = "" }) => {
     return (
-        <li className={styles.navDropListItem}>
+        <li className={`${styles.navDropListItem}`}>
             <Link href={link} className={styles.navDropListHover} prefetch={false}>
                 <div className={styles.img}>
                     <img loading='lazy' src={`/assets/menu/${img}`} alt='menu icon' />
                 </div>
-                <div className='w-[16vw]'>
+                <div className={`w-[16vw] ${className}`}>
                     <p className={styles.navDropTitle}>{title}</p>
                     <p className={styles.navDropText}>{disc}</p>
                 </div>

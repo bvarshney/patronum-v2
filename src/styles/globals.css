@@ -1664,6 +1664,7 @@ input[type=number] {
 }
 .content{
   padding: 15% 0;
+  padding-bottom: 5%;
 }
 .title-4xl {
   font-size: 7.8vw;
@@ -1841,7 +1842,7 @@ input[type=number] {
     top: 3vw;
   }
   .faq-item-content .feat-accordion-btn{
-    top: 3vw;
+    top: 5vw;
   }
 
   .content-p.features{

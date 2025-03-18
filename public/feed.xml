@@ -4,10 +4,19 @@
         <description><![CDATA[Patronum provides a better way to manage Google Workspace (GSuite). Patronum is your Google Workspace (GSuite) manager that fully automates all administrator and user tasks to ensure an efficient, effective, and secure process.]]></description>
         <link>https://www.patronum.io</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 06 Mar 2025 05:53:05 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 18 Mar 2025 15:10:43 GMT</lastBuildDate>
         <atom:link href="https://www.patronum.io/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Thu, 06 Mar 2025 05:53:05 GMT</pubDate>
+        <pubDate>Tue, 18 Mar 2025 15:10:43 GMT</pubDate>
         <copyright><![CDATA[2025 Patronum]]></copyright>
+        <item>
+            <title><![CDATA[Google improves the email signature experience for the Gmail app on Android devices]]></title>
+            <description><![CDATA[This week, Google seems to have quietly rolled out an amazing new update to the Gmail app for Android users. 🤫 Email Signature for Mobile Users You can now get your web email signature on your smartphone. If no email signature is set in the Gmail app on your Android device, your web email signature&hellip; Continue reading Google improves the email signature experience for the Gmail app on Android devices
+]]></description>
+            <link>https://www.patronum.io/google-improves-the-email-signature-experience-for-the-gmail-app-on-android-devices</link>
+            <guid isPermaLink="false">https://www.patronum.io/google-improves-the-email-signature-experience-for-the-gmail-app-on-android-devices</guid>
+            <category><![CDATA[Email Signature]]></category>
+            <pubDate>Thu, 13 Mar 2025 06:35:15 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Common File Sharing Security Risks: Data Compliance & Governance for Google Drive Files]]></title>
             <description><![CDATA[As businesses around the world embrace remote &#038; hybrid working models, file sharing has become an integral part of organizational workflows, enabling seamless collaboration and efficiency

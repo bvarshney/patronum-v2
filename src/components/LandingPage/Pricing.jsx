@@ -2,10 +2,19 @@ import React, { useState } from 'react';
 import PricingCard from './PricingCard';
 import PriceDropDown from './PriceDropDown';
 import { Switch } from "@/components/ui/switch"
+import gsap from 'gsap';
 
 const Pricing = () => {
     const [isAnnual, setIsAnnual] = useState(true);
     const [selectedCurrency, setSelectedCurrency] = useState('$ USD');
+
+      const handleSmoothScroll = () => {
+        gsap.to(window, {
+            duration: 1.5,
+            scrollTo: { y: "#hero", offsetY: 0 },
+            ease: "power3.inOut",
+        });
+    };
 
     const handleToggle = () => {
         setIsAnnual(!isAnnual);
@@ -28,6 +37,7 @@ const Pricing = () => {
                 'Organizations Chart',
             ],
             img: '/assets/pricing/education-plus.svg',
+            className: "lg:h-[5vw]"
         },
         {
             id: 2,
@@ -41,6 +51,7 @@ const Pricing = () => {
                 'Organizations Chart',
             ],
             img: '/assets/pricing/business-plus.svg',
+            className: "lg:h-[5vw]"
         },
         {
             id: 3,
@@ -54,6 +65,7 @@ const Pricing = () => {
                 'Customise File Governance policies',
             ],
             img: '/assets/pricing/education.svg',
+            className: "lg:h-[5vw]"
         },
         {
             id: 4,
@@ -67,6 +79,7 @@ const Pricing = () => {
                 'Customise File Governance policies',
             ],
             img: '/assets/pricing/business.svg',
+            className: "lg:h-[5vw]"
         },
     ]
 
@@ -123,6 +136,8 @@ const Pricing = () => {
                                         selectedCurrency={selectedCurrency} 
                                         pricingImage={pricing.img} 
                                         features={pricing.features} 
+                                        className={pricing.className}
+                                        onClick={handleSmoothScroll}
                                     />
                                 ))}
                             </div>
