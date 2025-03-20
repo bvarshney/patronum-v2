@@ -166,7 +166,7 @@ const EducationPricing = () => {
                       $ 3.00
                     </span>{" "}
                     <span className="font-[400] text-[#999] lg:text-[18px] text-[3.5vw]">
-                      /Month
+                      /month/user
                     </span>
                   </p>
                   <div>

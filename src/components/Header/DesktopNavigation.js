@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { m, domAnimation, LazyMotion } from 'framer-motion';
 import InstallButton from '../Buttons/InstallButton';
 import styles from "./desktop.module.css";
+import LinkButton from '../Buttons/LinkButton';
 
 const DesktopNavigation = () => {
     const [isFeaturesDropdownOpen, setFeaturesDropdownOpen] = useState(false);
@@ -167,8 +168,8 @@ const DesktopNavigation = () => {
                                     </svg>
                                 </div>
                             </Link>
-                            {isPriceDropdownOpen && (
-                            <m.div
+                            {/* {isPriceDropdownOpen && ( */}
+                            {/* <m.div
                                 initial={{ y: -30, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ duration: 0.4 }}
@@ -186,6 +187,40 @@ const DesktopNavigation = () => {
                                         link={'/pricing-for-education'}
                                         img={'pricing-for-education.svg'}
                                     />
+                                </ul>
+                            </m.div> */}
+                            {/* )} */}
+                            {isPriceDropdownOpen && (
+                            <m.div
+                                initial={{ y: -30, opacity: 0 }}
+                                animate={{ y: 0, opacity: 1 }}
+                                transition={{ duration: 0.4 }}
+                                className={styles.navDropdown}>
+                                <ul className={`${styles.navDropdownList} justify-center gap-10`}>
+                                    <div className='border border-gray-100 rounded-xl py-10 hover:bg-[#fbfbfb] transition duration-300 w-[24vw] mb-5'>
+                                        <Link href="/pricing-for-business" className='flex justify-center items-center' prefetch={false}>
+                                            <div className='flex flex-col gap-4 items-center'>
+                                                <img className='h-[9vw]' loading='lazy' width="170" height="140" src='/assets/pricing/business.svg' alt='price image' />
+                                                <div className='text-center'>
+                                                    <p className='text-head text-2xl transition mb-2'>For Business</p>
+                                                    <p className={styles.navDropText}>Scalable Business-Ready Plans</p>
+                                                </div>
+                                                <LinkButton href="/pricing-for-business" btnText="Know More" />
+                                            </div>
+                                        </Link>
+                                    </div>
+                                    <div className='border border-gray-100 rounded-xl py-10 hover:bg-[#fbfbfb] transition duration-300 w-[24vw] mb-5'>
+                                        <Link href="/pricing-for-education" className='flex justify-center items-center' prefetch={false}>
+                                            <div className='flex flex-col gap-4 items-center'>
+                                                <img className='h-[8vw] mb-[1vw]' loading='lazy' width="170" height="140" src='/assets/pricing/education.svg' alt='price image' />
+                                                <div className='text-center'>
+                                                    <p className='text-head text-2xl transition mb-2 '>For Education & Non-Profit</p>
+                                                    <p className={styles.navDropText}>Affordable & Accessible Pricing</p>
+                                                </div>
+                                                <LinkButton href="/pricing-for-education" btnText="Know More" />
+                                            </div>
+                                        </Link>
+                                    </div>
                                 </ul>
                             </m.div>
                             )}

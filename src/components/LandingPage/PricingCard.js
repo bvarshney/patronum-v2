@@ -48,7 +48,7 @@ const PricingCard = ({ features, category, isAnnual, selectedCurrency, pricingIm
 
       </div>
       <h3
-        className={`${styles.pricingCategory} ${className} !text-center w-full md:h-fit`}
+        className={`${styles.pricingCategory} ${className} !text-center w-full md:h-fit leading-[1.2]`}
         dangerouslySetInnerHTML={{ __html: title }}
       />
       <span className={styles.hr} />
@@ -62,12 +62,11 @@ const PricingCard = ({ features, category, isAnnual, selectedCurrency, pricingIm
         <p className={styles.pricingPrice}>
           <span >{getCurrencySymbol(selectedCurrency)} </span>
           <span >{isAnnual ? prices[category][selectedCurrency].annual : prices[category][selectedCurrency].monthly}</span>
-          <span className={`${styles.pricingType} lg:!text-[1.45vw] md:!text-[2.8vw]`}>{isAnnual ? '/Year' : '/Month'}</span>
+          <span className={`${styles.pricingType} lg:!text-[1.45vw] md:!text-[2.8vw]`}>{isAnnual ? '/year' : '/month'}/user</span>
         </p>
         <div>
           <LinkButton 
             onClick={onClick}
-            // onClick={() => openModal('contact')}
             href={"javascript:void(0)"} 
             btnText="Get Started"
           />
