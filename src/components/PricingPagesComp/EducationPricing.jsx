@@ -56,7 +56,7 @@ const EducationPricing = () => {
           <div className="content">
             <div className="lg:pb-[5vw] pb-[6vw] lg:w-[55%]">
               <h2 className="title-4xl fadeUp">
-                <span>Find the Plan is Right for You & Your Business</span>
+                <span>Find the Plan is Right for You & Your Organization</span>
               </h2>
             </div>
 

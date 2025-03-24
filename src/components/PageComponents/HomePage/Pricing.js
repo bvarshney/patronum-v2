@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import PricingCard from './PricingCard';
 import PriceDropDown from './PriceDropDown';
 import { Switch } from "@/components/ui/switch"
-import PrimaryButton from '@/components/Buttons/PrimaryButton';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 const Pricing = () => {
