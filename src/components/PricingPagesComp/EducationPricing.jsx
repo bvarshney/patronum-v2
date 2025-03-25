@@ -59,7 +59,6 @@ const EducationPricing = () => {
                 <span>Find the Plan is Right for You & Your Organization</span>
               </h2>
             </div>
-
             <div className="pricing-head">
               <h2 className="title-4xl text-anim">
                 <span>Patronum</span>
