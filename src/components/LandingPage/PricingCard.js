@@ -54,7 +54,7 @@ const PricingCard = ({ features, category, isAnnual, selectedCurrency, pricingIm
       <span className={styles.hr} />
       <div className={styles.featureList}>
         {features.map((feature, index) => (
-          <h4 key={index}><span>✓</span><span>{feature}</span></h4>
+          <h4 key={index}><span>✓</span><span className='ml-[1vw]'>{feature}</span></h4>
         ))}
       </div>
       <span className={styles.hr} />

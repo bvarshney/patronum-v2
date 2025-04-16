@@ -5,6 +5,7 @@ import SectionBreak from "@/components/PageLayout/SectionBreak";
 import VideoPlayer from "@/components/PageLayout/VideoPlayer";
 import dynamic from "next/dynamic";
 import FeatureDetailCards from "@/components/PageComponents/FeaturesPage/FeatureDetailCards";
+import Transform from "@/components/PageComponents/FeaturesPage/Transform";
 
 const Faqs = dynamic(() => import("@/components/PageComponents/FeaturesPage/Faq"), { ssr: false });
 
@@ -133,12 +134,13 @@ export default function FeatureDetail() {
                 />
 
                 <FeatureDetailInfo content={featuresDetail} />
+                <Transform text={"Stay on Brand & Manage Email Signatures Effortlessly!"} content={"Centralised, consistent, and on-brand - Ensure your team always looks professional with Patronum's centralized email signature management"} />
 
                 <SectionBreak
                     sectionBreakText="Transform how your organization presents itself with Patronum&#39;s cutting-edge email signature management. It isn’t just about how you create email signatures; it&#39;s about embodying your brand&#39;s professionalism, presenting a unified brand image and transforming every email into a brand-building opportunity."
                 />
 
-                <FeatureDetailCards content={featuresDetailCard} />
+                <FeatureDetailCards title1={'Additional Email Signature'} title2={'Management Features'} content={featuresDetailCard} />
 
                 <Faqs featureName="email_signature_management" />
 

@@ -8,7 +8,7 @@
   width: 14vw;
   max-width: 14vw;
   border-radius: 1000px;
-  background: var(--text-head);
+  background: var(--primary);
   color: white;
   font-size: 1.05vw;
   font-weight: 500;
@@ -24,8 +24,13 @@
   padding: 0 1.85vw;
   z-index: 2;
   background-color: white;
-  color: var(--text-head);
+  color: var(--primary);
   transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.btn .btnCircle[data-pink] {
+  clip-path: inset(0.8vw 0.9vw 0.8vw calc(100% - 3.4vw) round 4vw);
+  color: #ff00aa;
+  padding: 0 1.65vw 0 2vw;
 }
 .btn .btnCircle[data-demo] {
   padding: 0 1.75vw;
@@ -58,7 +63,7 @@
 }
 .btn:hover .btnCircle {
   clip-path: inset(0 round 4vw);
-  background-color: var(--primary);
+  background-color: var(--text-head);
   color: white;
 }
 

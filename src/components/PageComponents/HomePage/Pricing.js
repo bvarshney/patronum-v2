@@ -6,7 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 const Pricing = () => {
     const [isAnnual, setIsAnnual] = useState(true);
-    const [selectedCurrency, setSelectedCurrency] = useState('$ USD');
+    const [selectedCurrency, setSelectedCurrency] = useState('USD $');
 
     const handleToggle = () => {
         setIsAnnual(!isAnnual);
@@ -64,7 +64,7 @@ const Pricing = () => {
 
                                     <div className='relative z-10 lg:w-[20%] flex justify-end order-3'>
                                         <PriceDropDown
-                                            options={['$ USD', '£ GBP', '€ EUR', 'A$ AUD']}
+                                            options={['USD $', 'GBP £', 'EUR €', 'AUD A$']}
                                             value={selectedCurrency}
                                             onChange={handleCurrencyChange}
                                         />

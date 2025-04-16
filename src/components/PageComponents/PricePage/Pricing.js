@@ -13,22 +13,16 @@ const Pricing = () => {
       'Email Signature Management',
       'Google Drive Management',
       'Contact Sharing',
+      'Automated File Unsharing',
       'Organizations Chart',
-      'And Much More...'
     ],
-    'Non-Profit': [
-      'Email Signature Management',
-      'Google Drive Management',
-      'Contact Sharing',
-      'Organizations Chart',
-      'And Much More...'
-    ],
+  
     Business: [
       'Email Signature Management',
       'Google Drive Management',
       'Contact Sharing',
+      'Automated File Unsharing',
       'Organizations Chart',
-      'And Much More...'
     ]
   };
 
@@ -51,23 +45,20 @@ const Pricing = () => {
             </div>
 
             <div className='pricing-main'>
-              <div className='pricing-card-wrapper fadeUp'>
+              <div className='grid lg:w-[90%] lg:mx-auto lg:grid-cols-2 lg:gap-x-[4vw] lg:gap-y-[4vw]'>
                 <PricingCard
-                  category="Education"
-                  pricingImage='/assets/pricing/education.svg'
+                  category="Education & Non-Profit"
+                  pricingImage='/assets/pricing/pricing-illustration-1.svg'
                   features={features.Education}
+                  price={"$ 2.00"}
                   href="/pricing-for-education"
                 />
-                <PricingCard
-                  category="Non-Profit"
-                  pricingImage='/assets/pricing/non-profit.svg'
-                  features={features['Non-Profit']}
-                  href="/pricing-for-education"
-                />
+               
                 <PricingCard
                   category="Business"
                   pricingImage='/assets/pricing/business.svg'
                   features={features.Business}
+                  price={"$ 8.00"}
                   href="/pricing-for-business"
                 />
               </div>

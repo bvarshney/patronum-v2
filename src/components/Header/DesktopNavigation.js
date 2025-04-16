@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { m, domAnimation, LazyMotion } from 'framer-motion';
-import InstallButton from '../Buttons/InstallButton';
 import styles from "./desktop.module.css";
 import LinkButton from '../Buttons/LinkButton';
+import PinkButton from '../Buttons/PinkButton';
 
 const DesktopNavigation = () => {
     const [isFeaturesDropdownOpen, setFeaturesDropdownOpen] = useState(false);
@@ -71,8 +71,8 @@ const DesktopNavigation = () => {
                                             img={'drive-management.svg'}
                                         />
                                         <NavItem
-                                            title={'File Unsharing'}
-                                            disc={'Automatically Unshare file & Stay Compliant'}
+                                            title={'File Governance'}
+                                            disc={'Automated & Secure File Sharing for Seamless Collaboration'}
                                             link={'/google-drive-compliance'}
                                             img={'file-sharing.svg'}
                                         />
@@ -324,7 +324,7 @@ const DesktopNavigation = () => {
                 </nav>
             </LazyMotion>
             <div className='header-anim lg:block md:hidden'>
-                <InstallButton />
+                <PinkButton btnText={"Try for free"} />
             </div>
         </>
     );
