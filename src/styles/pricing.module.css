@@ -38,8 +38,8 @@
   font-size: 1.25vw;
   line-height: 2.5;
   display: flex;
-  gap: 1vw;
 }
+
 .pricingPrice{
     color: #1a1a1a;
     font-size: 1.45vw;
