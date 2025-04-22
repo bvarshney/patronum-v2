@@ -9,7 +9,7 @@ export default function EducationPricingPage() {
     return (
         <>
             <PageLayout
-                 pageTitle1="Google Workspace "
+                pageTitle1="Google Workspace"
                 pageTitle2="Management for Education & Non-Profit"
                 pagePara="Honest, Transparent and Fair Pricing."
                 imgSrc="education-price-hero.svg"

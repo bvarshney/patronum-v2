@@ -33,6 +33,9 @@
     background-color: #C5C5C5;
     margin: 1.8vw 0;
 }
+.featureList {
+  height: -webkit-fill-available;
+}
 .featureList h4{
   color: #2A2A2A;
   font-size: 1.25vw;
