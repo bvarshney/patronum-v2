@@ -4,10 +4,49 @@
         <description><![CDATA[Patronum provides a better way to manage Google Workspace (GSuite). Patronum is your Google Workspace (GSuite) manager that fully automates all administrator and user tasks to ensure an efficient, effective, and secure process.]]></description>
         <link>https://www.patronum.io</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 04 Jul 2025 12:19:30 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 11 Aug 2025 10:51:46 GMT</lastBuildDate>
         <atom:link href="https://www.patronum.io/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 04 Jul 2025 12:19:30 GMT</pubDate>
+        <pubDate>Mon, 11 Aug 2025 10:51:46 GMT</pubDate>
         <copyright><![CDATA[2025 Patronum]]></copyright>
+        <item>
+            <title><![CDATA[DMARC for Retailers: Protect Your Brand from Email Spoofing, Phishing & Fraud]]></title>
+            <description><![CDATA[It starts subtly, with a single click on what appears to be a routine promotional email from a trusted retailer. 
+]]></description>
+            <link>https://www.patronum.io/dmarc-for-retailers</link>
+            <guid isPermaLink="false">https://www.patronum.io/dmarc-for-retailers</guid>
+            <category><![CDATA[Uncategorized]]></category>
+            <pubDate>Mon, 04 Aug 2025 06:18:07 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Implementing the Principle of Least Privilege in Google Workspace: The Key to Secure Collaboration]]></title>
+            <description><![CDATA[Early morning light streams through frosted glass-walled offices. A lone IT admin, eyes glued to the Admin Console, hears an alert chime &#8211; someone, somewhere, has inadvertently opened a vault of files meant for executives only.
+]]></description>
+            <link>https://www.patronum.io/implementing-least-privilege-google-workspace</link>
+            <guid isPermaLink="false">https://www.patronum.io/implementing-least-privilege-google-workspace</guid>
+            <category><![CDATA[Uncategorized]]></category>
+            <pubDate>Fri, 25 Jul 2025 06:11:03 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[How to Remove “Anyone with the Link” Sharing in Google Drive]]></title>
+            <description><![CDATA[It was meant to be simple. A proposal to a client. A pitch deck to a collaborator. A spreadsheet shared with a friend of a colleague.
+]]></description>
+            <link>https://www.patronum.io/remove-anyone-link-sharing-google-drive</link>
+            <guid isPermaLink="false">https://www.patronum.io/remove-anyone-link-sharing-google-drive</guid>
+            <category><![CDATA[All]]></category>
+            <category><![CDATA[Google Drive]]></category>
+            <category><![CDATA[Uncategorized]]></category>
+            <pubDate>Tue, 15 Jul 2025 05:42:59 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Understanding Google Admin Roles: A Complete Guide for Workspace IT Managers]]></title>
+            <description><![CDATA[As businesses go cloud-first, Google Workspace has become the command center of modern work. 
+]]></description>
+            <link>https://www.patronum.io/google-workspace-admin-roles-management-guide</link>
+            <guid isPermaLink="false">https://www.patronum.io/google-workspace-admin-roles-management-guide</guid>
+            <category><![CDATA[All]]></category>
+            <category><![CDATA[Tutorial]]></category>
+            <pubDate>Thu, 03 Jul 2025 04:37:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Navigating the Future of Email Security: What Google, Microsoft, and Yahoo’s New DMARC Enforcement Requirements Mean for You]]></title>
             <description><![CDATA[Email continues to be the leading vector for phishing, impersonation, and business email compromise (BEC).
