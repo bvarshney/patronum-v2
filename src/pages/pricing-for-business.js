@@ -3,7 +3,7 @@ import BusinessPricing from '@/components/PricingPagesComp/BusinessPricing';
 import ProductFeatures from '@/components/PageComponents/PricePage/ProductFeature';
 import PageLayout from '@/components/PageLayout';
 import dynamic from "next/dynamic";
-const Faqs = dynamic(() => import("@/components/PageComponents/FeaturesPage/Faq"), { ssr: false });
+const Faqs = dynamic(() => import("@/components/PageComponents/FeaturesPage/Faq"), { ssr: true });
 
 export default function BusinessPricingPage() {
 

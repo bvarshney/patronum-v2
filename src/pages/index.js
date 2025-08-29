@@ -27,8 +27,6 @@ import dynamic from "next/dynamic";
 const SideMenu = dynamic(() => import("@/components/SideMenu"));
 
 export default function Home({ recentPosts }) {
-  const { isDesktop } = useDevice();
-  const [isClient, setIsClient] = useState(false);
 
   const sections = [
     { id: '#hero', name: 'Introduction' },
@@ -41,7 +39,6 @@ export default function Home({ recentPosts }) {
   ];
 
   useEffect(() => {
-    setIsClient(true);
     const headings = document.querySelectorAll('.text-anim');
 
     headings.forEach((heading) => {
@@ -347,21 +344,14 @@ export default function Home({ recentPosts }) {
         />
 
       </Head>
-      {isClient && isDesktop && <SideMenu sections={sections} />}
+      <SideMenu sections={sections} />
       <Layout>
         <main>
           <Hero />
           <Ratings />
           <Features />
-          {isClient && (
-            <>
-              {isDesktop ? (
-                <UseCases />
-              ) : (
-                <UseCasesMobile />
-              )}
-            </>
-          )}
+          <UseCases />
+          <UseCasesMobile />
           <Pricing />
           <About />
           <Testimonial />

@@ -2,7 +2,7 @@ import ProductFeatures from '@/components/PageComponents/PricePage/ProductFeatur
 import PageLayout from '@/components/PageLayout';
 import dynamic from "next/dynamic";
 import EducationPricing from '@/components/PricingPagesComp/EducationPricing';
-const Faqs = dynamic(() => import("@/components/PageComponents/FeaturesPage/Faq"), { ssr: false });
+const Faqs = dynamic(() => import("@/components/PageComponents/FeaturesPage/Faq"), { ssr: true });
 
 export default function EducationPricingPage() {
 
