@@ -13,10 +13,12 @@ import Head from 'next/head';
 import { NextSeo } from 'next-seo';
 import dynamic from 'next/dynamic';
 import { useModal } from "@/components/Modals/ModalContext";
+import { sanitizeRankMathGraph } from '@/lib/util';
 
 const ProgressBar = dynamic(() => import('@/components/PageComponents/BlogPage/ProgressBar'), { ssr: false });
-const RelatedPosts = dynamic(() => import('@/components/PageComponents/BlogPage/RelatedPosts'), { ssr: false });
-const TableOfContents = dynamic(() => import('@/components/PageComponents/BlogPage/TableOfContents'), { ssr: false });
+const RelatedPosts = dynamic(() => import('@/components/PageComponents/BlogPage/RelatedPosts'), { ssr: true });
+const TableOfContents = dynamic(() => import('@/components/PageComponents/BlogPage/TableOfContents'), { ssr: true });
+
 
 function PostDetail({ post, recentPosts }) {
   
@@ -99,6 +101,45 @@ function PostDetail({ post, recentPosts }) {
     };
   }, []);
 
+
+// function sanitizeJsonLd(raw) {
+//   if (!raw) return "";
+
+//   const clean = raw.replace(/<\/?script[^>]*>/g, "").trim();
+
+//   try {
+//     const parsed = JSON.parse(clean);
+
+//     if (Array.isArray(parsed["@graph"])) {
+//       parsed["@graph"] = parsed["@graph"].filter(
+//         (schema) =>
+//           !["Organization", "WebSite", "ImageObject", "BreadcrumbList"].includes(
+//             schema["@type"]
+//           )
+//       );
+//     }
+
+//     if (
+//       parsed["@type"] &&
+//       ["Organization", "WebSite", "ImageObject", "BreadcrumbList"].includes(
+//         parsed["@type"]
+//       )
+//     ) {
+//       return "";
+//     }
+
+//     return JSON.stringify(parsed);
+//   } catch (err) {
+//     console.error("Invalid JSON-LD from WordPress:", err);
+//     return "";
+//   }
+// }
+
+// Safer JSON-LD sanitizer/de-duper
+
+
+
+
   return (
     <>
       <NextSeo
@@ -124,14 +165,13 @@ function PostDetail({ post, recentPosts }) {
           siteName: 'Patronum',
         }}
         canonical={`https://www.patronum.io/${post.slug}`}
-        languageAlternates={{
-          hreflang: "en_US",
-          href: `https://www.patronum.io/${post.slug}`,
-        }}
+        languageAlternates={[
+    { hrefLang: 'en-US', href: `https://www.patronum.io/${post.slug}` },
+  ]}
       />
 
       <Head>
-        <script
+        {/* <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(
@@ -157,6 +197,7 @@ function PostDetail({ post, recentPosts }) {
                   "@id": `https://www.patronum.io/${post.slug}#website`
                 },
                 "image": {
+                  url:post.featuredImage.sourceUrl,
                   "@id": post.seo.image,
                 },
                 "inLanguage": "en_US",
@@ -166,8 +207,8 @@ function PostDetail({ post, recentPosts }) {
               }
             ),
           }}
-        />
-        <script
+        /> */}
+        {/* <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(
@@ -185,20 +226,29 @@ function PostDetail({ post, recentPosts }) {
                   "name": "Patronum",
                   "logo": {
                     "@type": "ImageObject",
-                    "url": "https://www.patronum.io/logo.svg",
+                    "url": "https://www.patronum.io/logo.png",
                   }
                 },
                 "about": {
-                  "@id": `https://www.www.patronum.io/${post.slug}#organization`
+                  "@id": `https://www.patronum.io/${post.slug}#organization`
                 },
                 "isPartOf": {
-                  "@id": `https://www.www.patronum.io/${post.slug}#website`
+                  "@id": `https://www.patronum.io/${post.slug}#website`
                 },
                 "inLanguage": "en_US",
               }
             ),
           }}
-        />
+        /> */}
+        {post?.seo?.jsonLd?.raw && (
+  <script
+  key="rankmath-jsonld-sanitized"
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: sanitizeRankMathGraph(post.seo.jsonLd.raw),
+    }}
+  />
+)}
       </Head>
 
       <BlogLayout
