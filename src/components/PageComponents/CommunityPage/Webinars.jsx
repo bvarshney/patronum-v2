@@ -21,7 +21,7 @@ const Webinars = () => {
             [videoId]: false
         }));
     };
-
+ 
     const handleModalClick = (e, videoId) => {
         if (e.target.classList.contains("video-modal-overlay")) {
             closeModal(videoId);
