@@ -4,9 +4,9 @@
         <description><![CDATA[Patronum provides a better way to manage Google Workspace (GSuite). Patronum is your Google Workspace (GSuite) manager that fully automates all administrator and user tasks to ensure an efficient, effective, and secure process.]]></description>
         <link>https://www.patronum.io</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 03 Oct 2025 14:38:35 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 07 Oct 2025 07:29:21 GMT</lastBuildDate>
         <atom:link href="https://www.patronum.io/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 03 Oct 2025 14:38:35 GMT</pubDate>
+        <pubDate>Tue, 07 Oct 2025 07:29:21 GMT</pubDate>
         <copyright><![CDATA[2025 Patronum]]></copyright>
         <item>
             <title><![CDATA[How to Organize Google Drive Efficiently: A Complete Step-by-Step Guide for 2025]]></title>
@@ -17,16 +17,6 @@
             <category><![CDATA[All]]></category>
             <category><![CDATA[Google Drive]]></category>
             <pubDate>Fri, 05 Sep 2025 08:36:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Summer Out-Of-Office Email Templates That Actually Set Boundaries with a Charm & a Smile]]></title>
-            <description><![CDATA[It begins with a sigh..! Not the weary sigh of inbox fatigue, but the long, contented exhale of sun-warmed skin, ocean breeze, or the quiet clink of ice in a glass. Around the world, summer strikes its chord.
-]]></description>
-            <link>https://www.patronum.io/global-summer-out-of-office-email-templates</link>
-            <guid isPermaLink="false">https://www.patronum.io/global-summer-out-of-office-email-templates</guid>
-            <category><![CDATA[All]]></category>
-            <category><![CDATA[Email Signature]]></category>
-            <pubDate>Thu, 28 Aug 2025 08:01:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[How to Store Email Signature Images In Google Drive]]></title>
@@ -76,6 +66,16 @@
             <category><![CDATA[All]]></category>
             <category><![CDATA[Tutorial]]></category>
             <pubDate>Thu, 03 Jul 2025 04:37:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Summer Out-Of-Office Email Templates That Actually Set Boundaries with a Charm & a Smile]]></title>
+            <description><![CDATA[It begins with a sigh..! Not the weary sigh of inbox fatigue, but the long, contented exhale of sun-warmed skin, ocean breeze, or the quiet clink of ice in a glass. Around the world, summer strikes its chord.
+]]></description>
+            <link>https://www.patronum.io/global-summer-out-of-office-email-templates</link>
+            <guid isPermaLink="false">https://www.patronum.io/global-summer-out-of-office-email-templates</guid>
+            <category><![CDATA[All]]></category>
+            <category><![CDATA[Email Signature]]></category>
+            <pubDate>Mon, 23 Jun 2025 08:01:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Navigating the Future of Email Security: What Google, Microsoft, and Yahoo’s New DMARC Enforcement Requirements Mean for You]]></title>
