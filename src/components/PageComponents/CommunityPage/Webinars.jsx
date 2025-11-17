@@ -106,48 +106,48 @@ export default Webinars
 const webinars = [
     {
         id: 1,
+        imgSrc: "/assets/community/how-to-webinar-28-oct.png",
+        title: "‘How to’ Webinar Series Drive Compliance",
+        videoId: "gd1xciPwVSY",
+        date: "October 28, 2025"
+    },
+    {
+        id: 2,
         imgSrc: "/assets/community/how-to-webinar-9-oct.png",
         title: "‘How to’ Webinar Series Dashboard Walkthrough",
         videoId: "zyb4xO-Swvg",
         date: "October 9, 2025"
     },
     {
-        id: 2,
+        id: 3,
         imgSrc: "/assets/community/how-to-webinar-25.png",
         title: "‘How to’ Webinar Series Offboarding Policy",
         videoId: "i8LqMLuo-WU",
         date: "September 25, 2025"
     },
     {
-        id: 3,
+        id: 4,
         imgSrc: "/assets/community/how-to-webinar-thumbnail.png",
         title: "‘How to’ Webinar Series Email Signature Management",
         videoId: "Cp1QN7e89ns",
         date: "September 11, 2025"
     },
     {
-        id: 4,
+        id: 5,
         imgSrc: "/assets/community/using-app-script-with-appsheet.png",
         title: " Using App Script with AppSheet- Going Beyond No Code",
         videoId: "hLdzMmhQlLc",
         date: "September 5, 2025"
     },
     {
-        id: 5,
+        id: 6,
         imgSrc: "/assets/community/automate-your-blog.png",
         title: "Automate Your Blog with AI Agents",
         videoId: "xQ8T79DgmA4",
         date: "August 29, 2025"
 
     },
-    {
-        id: 6,
-        imgSrc: "/assets/community/start-ups-and-downs.png",
-        title: "Start Ups and Downs: Parachutes that Worked/Failed",
-        videoId: "ai2uaL3fIVE",
-        date: "July 28, 2025"
-
-    },
+    
     
     
 ];
