@@ -9,7 +9,6 @@ import Link from "next/link";
 import styles from "../../components/Header/desktop.module.css";
 import LinkButton from "@/components/Buttons/LinkButton";
 
-
 const Navbar = ({setActive,active}) => {
   return (
     <div
@@ -18,7 +17,7 @@ const Navbar = ({setActive,active}) => {
       )}
     >
       <Menu setActive={setActive}>
-        <ul className="flex center font-head font-medium">
+        <ul className="flex items-center font-head font-medium w-fit">
           <li className={`${styles.navListItem} list-none w-fit`} onMouseEnter={()=>{setActive(null)}}>
             <Link href="/about-us" className={styles.pageLink} prefetch={false}>
               <div>
@@ -28,6 +27,7 @@ const Navbar = ({setActive,active}) => {
           </li>
           <li
             className={`${styles.navListItem} list-none w-fit`}
+            data-menu-item
             onMouseEnter={() => {
               setActive("Features");
             }}
@@ -107,6 +107,7 @@ const Navbar = ({setActive,active}) => {
           </li>
           <li
             className={`${styles.navListItem} list-none w-fit`}
+            data-menu-item
             onMouseEnter={() => {
               setActive("UseCases");
             }}
@@ -178,6 +179,7 @@ const Navbar = ({setActive,active}) => {
           </li>
           <li
             className={`${styles.navListItem} list-none w-fit`}
+            data-menu-item
             onMouseEnter={() => {
               setActive("Pricing");
             }}
@@ -275,6 +277,7 @@ const Navbar = ({setActive,active}) => {
           </li>
           <li
             className={`${styles.navListItem} list-none w-fit`}
+            data-menu-item
             onMouseEnter={() => {
               setActive("Resources");
             }}

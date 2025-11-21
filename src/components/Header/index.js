@@ -1,12 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { act, useEffect, useState } from "react";
-// import DesktopNavigation from "./DesktopNavigation";
 import MobileNavigation from "./MobileNavigation";
 import { useDevice } from "@/utils/useDevice";
 import Navbar from "./Navbar";
 import PinkButton from "../Buttons/PinkButton";
-import DesktopNavigation from "./DesktopNavigation";
 
 const Header = () => {
   const { isDesktop } = useDevice();
@@ -34,9 +32,9 @@ const Header = () => {
       >
         <div className="lg:w-[88%] mx-auto flex items-center justify-between w-[90%]">
           <div className="xl:w-[11.5vw] md:w-[25vw] w-[42%]">
-            <Link href="/" className="z-[1] relative">
+            <Link href="/">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto block relative z-[3]"
                 src="/logo.svg"
                 width={200}
                 height={50}
@@ -63,13 +61,12 @@ const Header = () => {
           {isClient && (
             <>
               {isDesktop ? (
-                <DesktopNavigation />
-                // <>
-                //   <Navbar setActive={setActive} active={active} />
-                //   <div className="header-anim lg:block md:hidden w-fit h-fit">
-                //     <PinkButton btnText={"Try for free"} />
-                //   </div>
-                // </>
+                <>
+                  <Navbar setActive={setActive} active={active} />
+                  <div className="header-anim lg:block md:hidden w-fit h-fit">
+                    <PinkButton btnText={"Try for free"} />
+                  </div>
+                </>
               ) : (
                 <MobileNavigation
                   isOpen={isSideNavOpen}
