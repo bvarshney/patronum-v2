@@ -386,14 +386,14 @@ const Navbar = ({setActive,active}) => {
             </MenuItem>
           </li>
           <li className={`${styles.navListItem} list-none w-fit`} onMouseEnter={()=>{setActive(null)}}>
-            <Link href="/about-us" className={styles.pageLink} prefetch={false}>
+            <Link href="/partner-with-us" className={styles.pageLink} prefetch={false}>
               <div>
                 <span className="">Partners</span>
               </div>
             </Link>
           </li>
           <li className={`${styles.navListItem} list-none w-fit`} onMouseEnter={()=>{setActive(null)}}>
-            <Link href="/about-us" className={styles.pageLink} prefetch={false}>
+            <Link href="/support" className={styles.pageLink} prefetch={false}>
               <div>
                 <span className="">Support</span>
               </div>
