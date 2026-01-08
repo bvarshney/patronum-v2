@@ -38,6 +38,7 @@ const PricingCard = ({ category, isAnnual, selectedCurrency, pricingImage, title
     },
   };
 
+
   return (
     <div className={`${styles.pricingCard} fadeUp !pt-[2vw]`}>
       <div className='w-full flex justify-center'>
@@ -72,13 +73,13 @@ const PricingCard = ({ category, isAnnual, selectedCurrency, pricingImage, title
 // Helper function to get the currency symbol
 const getCurrencySymbol = (currency) => {
   switch (currency) {
-    case '$ USD':
+    case 'USD $':
       return '$';
-    case '£ GBP':
+    case 'GBP £':
       return '£';
-    case '€ EUR':
+    case 'EUR €':
       return '€';
-    case 'A$ AUD':
+    case 'AUD A$':
       return 'A$';
     default:
       return '$';
