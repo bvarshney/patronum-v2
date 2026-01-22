@@ -96,7 +96,7 @@ export default function App({ Component, pageProps, router }) {
           }}
         />
 
-        <script
+        {/* <script
           defer
           dangerouslySetInnerHTML={{
             __html: `!function () {
@@ -128,14 +128,13 @@ export default function App({ Component, pageProps, router }) {
         reb2b.load("7N850HQ11KN1");
       }();`,
           }}
-        />
+        /> */}
       </Head>
 
       <Cookie />
       <Crispchat />
       <SearchProvider>
         <ModalProvider>
-
           <ReactLenis root options={{ lerp: 0.08 }}>
             <AnimatePresence mode="wait">
               <Component {...pageProps} key={router.route} />
@@ -148,11 +147,12 @@ export default function App({ Component, pageProps, router }) {
       {/* Google Tag Manager */}
       <GoogleTagManager gtmId="GTM-MDWM3Z7J" />
 
-      {/* Vercel Analytics */}
+      {/* Vercel Speed Insights */}
       <SpeedInsights
         strategy="afterInteractive"
       />
-
+      
+      {/* Vercel Analytics */}
       <Analytics
         strategy="afterInteractive"
       />
