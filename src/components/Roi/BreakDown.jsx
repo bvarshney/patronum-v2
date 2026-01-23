@@ -7,10 +7,11 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart";
-import BreakdownCard from "./BreakdownCard";
+// import BreakdownCard from "./BreakdownCard";
 import { formatMoney, formatNumber } from "@/lib/roi-math";
-import LinkButton from "../Buttons/LinkButton";
+// import LinkButton from "../Buttons/LinkButton";
 import gsap from "gsap";
+import BreakdownCard from "./BreakCard";
 
 function BreakDown({ roi, currency }) {
   const {
