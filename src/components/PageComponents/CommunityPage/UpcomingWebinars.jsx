@@ -23,7 +23,7 @@ const UpcomingWebinars = () => {
           <div className="lg:space-y-[0.5vw] space-y-[3vw]">
             {/* First clickable block */}
             <a
-               href="https://www.linkedin.com/events/7402646092665864192/"
+               href="https://meet.google.com/gjn-iczh-usy?hs=224"
               target="_blank"
               // onClick={scrollToJoinCommunity}
               className="h-full w-full rounded-[2.5vw] duration-200 overflow-hidden fadeUp hover:shadow-xl border hover:border-2 border-[#e8e8e8] hover:border-primary cursor-pointer block lg:rounded-[0.8vw]"
@@ -42,7 +42,7 @@ const UpcomingWebinars = () => {
 
             {/* Second clickable block */}
             <a
-              href="https://www.linkedin.com/events/7402646092665864192/"
+              href="https://meet.google.com/gjn-iczh-usy?hs=224"
               target="_blank"
               // onClick={scrollToJoinCommunity}
               className="block cursor-pointer"
