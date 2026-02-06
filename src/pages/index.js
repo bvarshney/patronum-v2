@@ -3,26 +3,23 @@ import SplitType from "split-type";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { NextSeo } from "next-seo";
-
 import Hero from '@/components/PageComponents/HomePage/Hero';
 import Features from '@/components/PageComponents/HomePage/Features';
 import About from '@/components/PageComponents/HomePage/About';
 import UseCases from '@/components/PageComponents/HomePage/UseCases';
 import Faqs from '@/components/PageComponents/HomePage/Faqs';
 import Pricing from '@/components/PageComponents/HomePage/Pricing';
-import Testimonial from '@/components/PageLayout/Testimonial';
 import RelatedPosts from "@/components/PageComponents/BlogPage/RelatedPosts";
-
 import { getHomePagePosts } from '@/lib/posts';
 import UseCasesMobile from "@/components/PageComponents/HomePage/UseCasesMobile";
 import Head from "next/head";
 import Ratings from "@/components/PageComponents/HomePage/Ratings";
 import Layout from "@/components/Layout";
-import { useDevice } from "@/utils/useDevice";
 
 gsap.registerPlugin(ScrollTrigger);
 
 import dynamic from "next/dynamic";
+import TestimonialSmoothy from "@/components/TestimonialSmoothy";
 
 const SideMenu = dynamic(() => import("@/components/SideMenu"));
 
@@ -354,7 +351,7 @@ export default function Home({ recentPosts }) {
           <UseCasesMobile />
           <Pricing />
           <About />
-          <Testimonial />
+          <TestimonialSmoothy/>
           <RelatedPosts
             sectionPara={"Discover a World of Knowledge with Expert Tips, In-Depth Tricks, Latest News, and Comprehensive Resources for Mastering Google Workspace."}
             recentPosts={recentPosts}
