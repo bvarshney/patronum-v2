@@ -44,14 +44,14 @@ const Search = () => {
       <div className={`absolute z-[100] lg:right-0 lg:left-auto left-0 top-full lg:mt-[1.5vw] mt-[4vw] transition-all duration-500 ease-out ${isSearchOpen ? "opacity-100 lg:w-[30vw] w-[90vw]" : "w-[0vw] opacity-0"}`}>
         <form ref={formRef} action="/search" data-search-is-active={!!query} className='w-full relative'>
           <input
-            type="search"
-            className="search-input lg:text-[1.1vw] text-[3.5vw] w-full lg:p-[1vw] p-[2vw] bg-transparent lg:border-b border-b-2 text-[#444444] border-primary focus-visible:outline-0"
-            placeholder="Enter your text to search"
-            value={query || ''}
-            name="q"
-            autoComplete="off"
-            onChange={handleOnSearch}
-          />
+  type="text"
+  className="search-input lg:text-[1.1vw] text-[3.5vw] w-full lg:p-[1vw] p-[2vw] bg-transparent lg:border-b border-b-2 text-[#444444] border-primary outline-none focus:outline-none"
+  placeholder="Enter your text to search"
+  value={query || ''}
+  name="q"
+  autoComplete="off"
+  onChange={handleOnSearch}
+/>
           <span
             aria-label='Close Search Input'
             className='absolute cursor-pointer lg:h-[1.2vw] lg:w-[1.2vw] w-[3vw] h-[3vw] lg:right-[1vw] right-[2vw] top-1/2 -translate-y-1/2 hover:rotate-180 hover:scale-80 transition duration-500'
