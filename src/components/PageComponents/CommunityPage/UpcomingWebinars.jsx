@@ -35,7 +35,7 @@ const UpcomingWebinars = () => {
                   alt="Upcoming Webinar Banner"
                   height={487}
                   width={1078}
-                  className="object-cover"
+                  className="object-cover w-full h-full"
                 />
               </div>
             </a>
