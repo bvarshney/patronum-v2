@@ -84,7 +84,7 @@ const featuresData = [
     para2:
       "",
     img: "/assets/home/features-8.svg",
-    link: "/archive",
+    link: "/archive-user-data",
   },
 ];
 
