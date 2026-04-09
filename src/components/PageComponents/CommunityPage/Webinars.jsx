@@ -19,7 +19,7 @@ const Webinars = () => {
     setModalOpen((prevState) => ({
       ...prevState,
       [videoId]: false,
-    }));
+    })); 
   };
 
   const handleModalClick = (e, videoId) => {
