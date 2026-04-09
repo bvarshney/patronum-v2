@@ -129,46 +129,47 @@ export default Webinars;
 const webinars = [
   {
     id: 1,
+    imgSrc: "/assets/community/google-workspace-hangout-webinar-thumbnail.png",
+    title: "Google Workspace Community Hangout- Elevating Project",
+    videoId: "pPgRbRcGd3k",
+    date: "March 26, 2026",
+  },
+  {
+    id: 2,
+    imgSrc: "/assets/community/webinar-thumbnail-how-to.png",
+    title: "'How to' Webinar Series: Understanding Groups, Calendars and Spaces.",
+    videoId: "PCQhVMA18fM",
+    date: "March 19, 2026",
+  },
+  {
+    id: 3,
     imgSrc: "/assets/community/google-workspace-hangout-thumbnail.png",
     title: "Google Workspace Hangout - Top Tips for Google Workspace Security",
     videoId: "MMEbPOXNS5g",
     date: "February 27, 2026",
   },
   {
-    id: 2,
+    id: 4,
     imgSrc: "/assets/community/dmarc-matters-thumbnail.png",
     title: "Why DMARC matters: Protecting your brand from BEC matters",
     videoId: "OKeXznGYEwc",
     date: "January 29, 2026",
   },
   {
-    id: 3,
+    id: 5,
     imgSrc: "/assets/community/how-to-webinar-thumbnail-18-dec.png",
     title: "‘How to’ Webinar Series : 12 Days of Patronum",
     videoId: "imk_dE6doCc",
     date: "December 18, 2025",
   },
   {
-    id: 4,
+    id: 6,
     imgSrc: "/assets/community/how-to-webinar-20-nov.png",
     title: "‘How to’ Webinar Series Fireside Chat- Email Signature Management",
     videoId: "eZZ4Nf3ee0k",
     date: "November 20, 2025",
   },
-  {
-    id: 5,
-    imgSrc: "/assets/community/how-to-webinar-28-oct.png",
-    title: "‘How to’ Webinar Series Drive Compliance",
-    videoId: "gd1xciPwVSY",
-    date: "October 28, 2025",
-  },
-  {
-    id: 6,
-    imgSrc: "/assets/community/how-to-webinar-9-oct.png",
-    title: "‘How to’ Webinar Series Dashboard Walkthrough",
-    videoId: "zyb4xO-Swvg",
-    date: "October 9, 2025",
-  },
+  
   
  
 ];
