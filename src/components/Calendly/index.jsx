@@ -5,7 +5,7 @@ export default function Calendly({isOpen, setIsOpen }) {
     return (
         <>
             <PopupModal
-                url="https://calendly.com/bespinlabs/60-minutes?primary_color=3d92c4&month=2024-06"
+                url="https://calendly.com/d/cyry-97y-ssp/patronum-demo-call?month=2026-04"
                 onModalClose={() => setIsOpen(false)}
                 open={isOpen}
                 rootElement={document.getElementById("footer")}
