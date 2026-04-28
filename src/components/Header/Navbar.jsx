@@ -101,11 +101,17 @@ const Navbar = ({setActive,active}) => {
                     link={"/organisational-chart"}
                     img={"organisational-chart.svg"}
                   />
-                  <NavItem
+                   <NavItem
                     title={"Archive User Data"}
                     disc={"Save on monthly licensing with smart archive"}
-                    link={"/archive-user-data"}
+                    link={"/archive"}
                     img={"archive.svg"}
+                  />
+                  <NavItem
+                    title={"Smart Workspace Migration"}
+                    disc={"Simplify your Google Workspace migration journey"}
+                    link={"/patronum-migrate"}
+                    img={"migrate.svg"}
                   />
                 </ul>
               </div>
