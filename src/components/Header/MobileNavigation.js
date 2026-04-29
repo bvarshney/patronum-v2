@@ -174,7 +174,7 @@ const MobileNavigation = ({ isOpen, setSideNavOpen }) => {
                                     </Link>
                                 </li>
                                 <li className=''>
-                                    <Link href='/archive' className='py-2 px-4 rounded flex gap-4 items-center' aria-label='Features - Archive Savings' prefetch={false}>
+                                    <Link href='/archive-user-data' className='py-2 px-4 rounded flex gap-4 items-center' aria-label='Features - Archive Savings' prefetch={false}>
                                         <div className='w-[4rem] h-[4rem] p-4 bg-head flex justify-center items-center rounded-full overflow-hidden'>
                                             <Image width={30} height={30} loading='lazy' src='/assets/menu/archive.svg' alt='use case icon' />
                                         </div>

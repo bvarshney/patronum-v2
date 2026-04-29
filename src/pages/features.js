@@ -84,10 +84,10 @@ const featuresData = [
     para2:
       "",
     img: "/assets/home/features-8.svg",
-    link: "/archive",
+    link: "/archive-user-data",
   },
   {
-    title: "Seamless Google Workspace Migration with Patronum Migrate",
+    title: "Seamless Google Workspace Migration",
     para1:
       " Moving to Google Workspace doesn’t have to be complex or risky. Patronum Migrate is an AI-powered migration solution designed to simplify the entire process - from planning to execution. Whether you're switching from Microsoft 365 or consolidating Google environments, it ensures a smooth, secure, and efficient transition with minimal disruption.",
     para2:

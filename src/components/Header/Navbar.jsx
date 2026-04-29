@@ -104,7 +104,7 @@ const Navbar = ({setActive,active}) => {
                    <NavItem
                     title={"Archive User Data"}
                     disc={"Save on monthly licensing with smart archive"}
-                    link={"/archive"}
+                    link={"/archive-user-data"}
                     img={"archive.svg"}
                   />
                   <NavItem
