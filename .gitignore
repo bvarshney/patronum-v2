@@ -36,3 +36,5 @@ yarn-error.log*
 next-env.d.ts
 public/wp-search.json
 public/feed.xml
+public/feed.xml
+public/wp-search.json

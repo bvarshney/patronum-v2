@@ -56,7 +56,7 @@ function security() {
       contentTop: "Cyber Essentials is a UK government-backed, industry-supported scheme to help organizations protect themselves against common online threats.",
       description: "It is also a prerequisite for bidding for some government contracts which involve handling sensitive and personal information. At Patronum, obtaining the Cyber Essentials certification reaffirms our commitment to cybersecurity. This certification specifically covers essential precautions related to internet security, such as boundary firewalls and internet gateways, secure configuration, access control, malware protection, and patch management. By adhering to these standards, Patronum not only boosts its defense against the most common cyber threats but also demonstrates its dedication to cybersecurity best practices.",
       imgSrc: "cyber-essentials.svg",
-      link: "https://drive.google.com/file/d/1mF9o4nkfvemiFz3Abue2NPPtnwOTkOJF/view",
+      link: "https://drive.google.com/file/d/1Jg_bux99yR7dgeL6vXMQxQREeUhjfJd2/view",
       btnText: "View Certificate"
     },
     {
