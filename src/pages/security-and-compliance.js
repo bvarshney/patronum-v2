@@ -59,6 +59,7 @@ function security() {
       link: "https://drive.google.com/file/d/1Jg_bux99yR7dgeL6vXMQxQREeUhjfJd2/view",
       btnText: "View Certificate"
     },
+    
     {
       id: "6",
       title: "CSA STAR Certification",
